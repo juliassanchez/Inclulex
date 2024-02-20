@@ -1,5 +1,4 @@
 # IncluLex
-## Julia Sánchez Esquivel
 
 ## React Client Application Routes
 
