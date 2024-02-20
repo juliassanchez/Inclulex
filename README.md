@@ -17,7 +17,7 @@
     {
       "palabra": "albornoz",
       "fecuencia": "1500",
-      "definición": "2023-03-11",
+      "definición": "Bata de tela de toalla.",
       "ejemplos": ["El albornoz es para uso exclusivo en la zona de baño o zona de recreo (piscina, club, etc.).", 
                     "El albornoz, es de una calidad excepcional y se lavana y se coloca sin problema.",
                     "El albornoz es imprescindible para cualquier baño y los clientes suelen recibir más de una vez a la semana por sus servicios en España."],
