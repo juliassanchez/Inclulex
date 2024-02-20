@@ -1,0 +1,200 @@
+/* App.css */
+body {
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.brand-text {
+  font-size: 100px;
+  text-align: center; /* Alinea el texto en el centro horizontalmente */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.brand-text-inclu {
+  color: #335EFF;
+}
+
+.brand-text-lex {
+  color: #42AFFE;
+}
+
+.app-container {
+  margin-top: 10vh; /* Ajusta el margen superior según sea necesario */
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: bottom;
+  justify-content: center; 
+  margin: 20vh;
+}
+
+.search-input {
+  margin-right: 5px;
+  padding: 10px;
+  font-size: calc(2rem - 0.2rem);
+  height: 8vh; /* Altura del input ajustada */
+  width: 40%;
+  border: 2px solid #335EFF; /* Color del borde del input */
+  background-color: #fff; /* Color de fondo del input */
+  border-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dark-mode .search-input {
+  background-color: #000;
+  color: #fff;
+}
+.light-mode .search-input {
+  background-color: #fff;
+  color: #335EFF;
+}
+
+.search-input::placeholder {
+  color: #335EFF; /* Cambia el color del placeholder según tu preferencia */
+}
+
+.dark-mode .search-input::placeholder {
+  color: #fff; /* Cambia el color del placeholder según tu preferencia */
+}
+
+.search-button {
+  margin-left: -5px;
+  height: 8vh;
+  background-color: #335EFF; /* Cambia el color de fondo del botón */
+  color: #fff; /* Cambia el color del texto del botón a blanco */
+  border: none; /* Elimina el borde del botón */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: calc(2.5rem - 0.2rem); /* Cambia el tamaño de la fuente del botón */
+  cursor: pointer;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.explanation-text {
+  margin: 10vh;
+  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  color: #000;
+}
+
+.dark-mode .explanation-text {
+  color: #fff; /* Color para el modo oscuro */
+}
+
+.wordmeaining-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.row-container {
+  margin: 5px;
+}
+
+.col-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinea horizontalmente en el centro */
+  flex-direction: column; /* Organiza las filas verticalmente */
+  margin: 10px;
+}
+
+.palabra {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #335EFF;
+  font-size: 70px;
+  text-transform:uppercase;
+  margin-top: 6vh;
+}
+
+.subtitulo {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 40px;
+}
+
+.dark-mode .subtitulo {
+  color: #fff;
+}
+
+.texto {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+.dark-mode .texto {
+  color: #fff;
+}
+
+.custom-list-group {
+  background-color: #fff;
+}
+
+.dark-mode .custom-list-group {
+  background-color: #000;
+}
+
+.go-back-button {
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+  padding: 8px 15px; /* Ajusta el relleno para un aspecto más agradable */
+  background-color: #335EFF; /* Cambia el color de fondo del botón */
+  color: #fff; /* Cambia el color del texto del botón a blanco */
+  border: none; /* Elimina el borde del botón */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px; /* Cambia el tamaño de la fuente del botón */
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: bottom;
+}
+
+.frecuency-button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px; /* Cambia el tamaño de la fuente del botón */
+  font-weight: bold;
+  border-radius: 0px;
+}
+
+.link-sinonimo {
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.link-sinonimo:hover {
+  font-weight: bold;
+}
+
+.switch {
+  position: absolute;
+  top: 20px; /* Ajusta según sea necesario */
+  right: 30px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dark-mode .switch {
+  color: #fff;
+}
