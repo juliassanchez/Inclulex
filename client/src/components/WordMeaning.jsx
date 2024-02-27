@@ -40,7 +40,7 @@ const WordMeaning = (props) => {
       }, [palabra]);
 
   return (
-    <Container className="wordmeaining-container">
+    <Container fluid="md" align="center">
       <h2 className='palabra'>{palabra}</h2>
       <OverlayTrigger
         placement="right"
@@ -56,14 +56,14 @@ const WordMeaning = (props) => {
           {frecuencia < 1000 ? "Compleja" : "Simple"}
         </Button>
       </OverlayTrigger>
-      <Row className='row-container align-items-start'>
-        <Col className='col-container'>
+      <Row>
+        <Col md={6}>
           <section>
             <h3 className="subtitulo">Significado</h3>
             <p className='texto'>{significado}</p>
           </section>
         </Col>
-        <Col className='col-container'>
+        <Col md={6}>
           <section>
             <h3 className='subtitulo'>Pictograma</h3>
             <img src={pictograma} alt="Pictograma" style={{ maxWidth: '100%', maxHeight: '200px' }}/>
@@ -71,7 +71,7 @@ const WordMeaning = (props) => {
         </Col>
       </Row>
 
-      <Row className='row-container align-items-start'>
+      <Row>
         <Col className='col-container'>
           <section>
             <h3 className='subtitulo'>Ejemplos de uso</h3>
