@@ -72,12 +72,19 @@ const WordMeaning = (props) => {
         </Button>
       </OverlayTrigger>
       <Row>
-        <Col md={6}>
-          <section>
-            <h3 className="subtitulo">Significado</h3>
-            {significado.map((definicion, index) => (<p key={index} className='texto'>{definicion}</p>))}
-          </section>
-        </Col>
+      <Col md={6} className="d-flex flex-column">
+        <h3 className="subtitulo">Significado</h3>
+        <ol className="texto my-auto">
+          {significado.map((definicion, index) => (
+            <li key={index} style={{ margin: '0.5em 0' }}>
+              {definicion}
+            </li>
+          ))}
+        </ol>
+      </Col>
+
+
+
         <Col md={6}>
           <section>
             <h3 className='subtitulo'>Pictograma</h3>
