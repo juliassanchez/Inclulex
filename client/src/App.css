@@ -114,9 +114,7 @@ body.light-mode {
   display: flex;
   align-items: center;
   justify-content: center; /* Alinea horizontalmente en el centro */
-  flex-direction: column; /* Organiza las filas verticalmente */
-  margin: 10px;
-  
+  flex-direction: column; /* Organiza las filas verticalmente */  
 }
 
 .palabra {

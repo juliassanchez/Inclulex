@@ -8,7 +8,7 @@ import API from '../API';
 const WordMeaning = (props) => {
     const { palabra } = useParams();
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
-    const [sinonimos, setSinonimos] = useState(['Cocodrilo', 'Calamar', 'Jirafa'])
+    const [sinonimos, setSinonimos] = useState(['Cocodrilo', 'Banco', 'Jirafa'])
     const [pictograma, setPictograma] = useState('')
     const [ejemplos, setEjemplos] = useState(['Este es un ejemplo de uso.', 'Otro ejemplo interesante.'])
     const [frecuencia, setFrecuencia] = useState(0)
@@ -76,7 +76,7 @@ const WordMeaning = (props) => {
         <h3 className="subtitulo">Significado</h3>
         <ol className="texto my-auto">
           {significado.map((definicion, index) => (
-            <li key={index} style={{ margin: '0.5em 0' }}>
+            <li key={index} style={{ margin: '0.2em 0' }}>
               {definicion}
             </li>
           ))}
