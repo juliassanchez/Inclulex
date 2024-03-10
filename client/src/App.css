@@ -103,6 +103,7 @@ body.light-mode {
 .wordmeaining-container {
   text-align: center;
   margin-top: 10px;
+  height: 100vh;
 }
 
 .row-container {
@@ -115,6 +116,7 @@ body.light-mode {
   justify-content: center; /* Alinea horizontalmente en el centro */
   flex-direction: column; /* Organiza las filas verticalmente */
   margin: 10px;
+  
 }
 
 .palabra {
@@ -141,6 +143,7 @@ body.light-mode {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #000;
   font-size: 20px;
+  text-align: justify;
 }
 
 .dark-mode .texto {

@@ -33,9 +33,7 @@ const obtenerFrecuencia = async (palabra) => {
       throw new Error(contentJson.error);
     }
 
-    const frecuencia = contentJson.frecuencia; // Ajusta esto según la estructura de tu objeto JSON
-    console.log('Frecuencia obtenida:', frecuencia);
-    
+    const frecuencia = contentJson.frecuencia; 
     return frecuencia;
   } catch (error) {
     console.error('Error al obtener la frecuencia:', error);
@@ -44,6 +42,29 @@ const obtenerFrecuencia = async (palabra) => {
   }
 };
 
+const obtenerDefinicion = async (palabra) => {
+  try {
+      const response = await fetch(`http://127.0.0.1:3000/api/definition-easy?word=${palabra}`);
 
-const API = { obtenerPictograma, obtenerFrecuencia };
+      if (!response.ok) {
+          throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+      }
+
+      const contentJson = await response.json();
+
+      if (contentJson.error) {
+          throw new Error(contentJson.error);
+      }
+
+      const definition = contentJson;
+      console.log('Definición obtenida:', definition);
+
+      return definition;
+  } catch (error) {
+      console.error('Error al obtener la definición:', error);
+      throw error;
+  }
+};
+
+const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion };
 export default API;

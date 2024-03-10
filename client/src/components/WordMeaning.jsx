@@ -7,7 +7,7 @@ import API from '../API';
 
 const WordMeaning = (props) => {
     const { palabra } = useParams();
-    const [significado, setSignificado] = useState('La definición de la palabra ejemplo.')
+    const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
     const [sinonimos, setSinonimos] = useState(['Cocodrilo', 'Calamar', 'Jirafa'])
     const [pictograma, setPictograma] = useState('')
     const [ejemplos, setEjemplos] = useState(['Este es un ejemplo de uso.', 'Otro ejemplo interesante.'])
@@ -17,7 +17,6 @@ const WordMeaning = (props) => {
         const obtenerPictograma = async () => {
           try {
             const pictoURL = await API.obtenerPictograma(palabra.toLowerCase());
-            console.log(pictoURL);
             setPictograma(pictoURL);
           } catch (error) {
             console.error('Error al obtener el pictograma:', error);
@@ -34,9 +33,25 @@ const WordMeaning = (props) => {
             console.error('Error al obtener la frecuencia:', error);
           }
         };
+
+        const obtenerDefinicion = async () => {
+          try {
+            const nuevaDefinicion = await API.obtenerDefinicion(palabra);
+    
+            // Asegúrate de que nuevaDefinicion.definition_list sea una matriz antes de asignarlo
+            const definiciones = nuevaDefinicion.definition_list || [];
+    
+            setSignificado(() => {
+              return definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios'];
+            });
+          } catch (error) {
+            console.error('Error al obtener la definición:', error);
+          }
+        };
       
         obtenerPictograma();
         obtenerFrecuencia();
+        obtenerDefinicion();
       }, [palabra]);
 
   return (
@@ -60,15 +75,21 @@ const WordMeaning = (props) => {
         <Col md={6}>
           <section>
             <h3 className="subtitulo">Significado</h3>
-            <p className='texto'>{significado}</p>
+            {significado.map((definicion, index) => (<p key={index} className='texto'>{definicion}</p>))}
           </section>
         </Col>
         <Col md={6}>
-          <section>
-            <h3 className='subtitulo'>Pictograma</h3>
-            <img src={pictograma} alt="Pictograma" style={{ maxWidth: '100%', maxHeight: '200px' }}/>
-          </section>
-        </Col>
+  <section>
+    <h3 className='subtitulo'>Pictograma</h3>
+    <div style={{ width: '200px', height: '200px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <img src={pictograma} alt="Pictograma" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    </div>
+  </section>
+</Col>
+
+
+
+
       </Row>
 
       <Row>
