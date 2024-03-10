@@ -79,17 +79,13 @@ const WordMeaning = (props) => {
           </section>
         </Col>
         <Col md={6}>
-  <section>
-    <h3 className='subtitulo'>Pictograma</h3>
-    <div style={{ width: '200px', height: '200px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <img src={pictograma} alt="Pictograma" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    </div>
-  </section>
-</Col>
-
-
-
-
+          <section>
+            <h3 className='subtitulo'>Pictograma</h3>
+            <div style={{ width: '200px', height: '200px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src={pictograma} alt="Pictograma" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+          </section>
+        </Col>
       </Row>
 
       <Row>
