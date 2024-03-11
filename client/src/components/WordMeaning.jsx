@@ -55,7 +55,7 @@ const WordMeaning = (props) => {
       }, [palabra]);
 
   return (
-    <Container fluid="md" align="center">
+    <Container fluid="md" align="center" style={{ marginTop: '80px' }}>
       <h2 className='palabra'>{palabra}</h2>
       <OverlayTrigger
         placement="right"
