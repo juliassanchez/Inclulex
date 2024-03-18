@@ -23,6 +23,24 @@ def get_definition_easy():
             return jsonify(definition_list=definition_list)
         else:
             return jsonify(definition_list=definition_list)
+        
+# @app.route('/api/definition-easy', methods=['GET'])
+# def get_definition_easy():
+#     if request.method == 'GET':
+#         word = escape(request.args.get('word'))
+        
+#         definition_list = list()
+#         page = requests.get(url='https://www.buscapalabra.com/definiciones.html?palabra='+ word + '#resultados')
+#         soup = BeautifulSoup(page.text, 'html.parser')
+#         error_content = soup.find("div", {"id": "infoBoxArrowError3contendor"})
+#         if page.status_code == 200 and not error_content:
+#             definitions_content = soup.find("ol", {"class": ["lista-ordenada"]})
+#             for definition_content in definitions_content:
+#                 definition_list.append(definition_content.text.replace("\n", ""))
+#             return jsonify(definition_list=definition_list)
+#         else:
+#             return jsonify(page.status_code)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
