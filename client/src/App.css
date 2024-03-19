@@ -147,7 +147,7 @@ body.light-mode {
 .texto {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #000;
-  font-size: 23px;
+  font-size: 21px;
   text-align: justify;
   margin-left: 35px;
 }
@@ -162,6 +162,14 @@ body.light-mode {
 
 .dark-mode .custom-list-group {
   background-color: #000;
+}
+
+.custom-list-group-container {
+  width: 40vh;
+}
+
+.custom-list-group-item {
+  text-align: center;
 }
 
 .go-back-button {

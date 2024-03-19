@@ -10,7 +10,10 @@ const WordMeaning = (props) => {
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
     const [sinonimos, setSinonimos] = useState(['Cocodrilo', 'Banco', 'Jirafa'])
     const [pictograma, setPictograma] = useState('')
-    const [ejemplos, setEjemplos] = useState(['Este es un ejemplo de uso.', 'Otro ejemplo interesante.'])
+    const [ejemplos, setEjemplos] = useState(['El caimán y el cocodrilo no se diferencian más que en el nombre.', 
+    'Allí, golpean por accidente a un cocodrilo, por lo que los encarcelan.', 
+    'Son devoradas por un cocodrilo, que dice Coors, en referencia a otra cervecería estadounidense.', 
+    'Cocodrilo, ¿dónde? Es la imagen de un río, en donde se supone hay un cocodrilo, pero no se ve.'])
     const [frecuencia, setFrecuencia] = useState(0)
 
     useEffect(() => {
@@ -71,32 +74,30 @@ const WordMeaning = (props) => {
           {frecuencia < 1000 ? "Compleja" : "Simple"}
         </Button>
       </OverlayTrigger>
+      <br />
       <Row>
-      <Col md={6} className="d-flex flex-column">
+      <Col md={8} className="d-flex flex-column">
         <h3 className="subtitulo">Significado</h3>
         <ol className="texto my-auto">
           {significado.map((definicion, index) => (
-            <li key={index} style={{ margin: '0.2em 0' }}>
+            <li key={index}>
               {definicion}
             </li>
           ))}
         </ol>
       </Col>
-
-
-
-        <Col md={6}>
+        <Col md={4}>
           <section>
             <h3 className='subtitulo'>Pictograma</h3>
-            <div style={{ width: '200px', height: '200px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img src={pictograma} alt="Pictograma" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
           </section>
         </Col>
       </Row>
-
+      <br />
       <Row>
-        <Col className='col-container'>
+        <Col md={8} className="d-flex flex-column">
           <section>
             <h3 className='subtitulo'>Ejemplos de uso</h3>
             <ListGroup className='custom-list-group'>
@@ -106,12 +107,12 @@ const WordMeaning = (props) => {
             </ListGroup>
           </section>
         </Col> 
-        <Col className='col-container'>
+        <Col md={4}>
           <section>
             <h3 className='subtitulo'>Sinónimos</h3>
-            <ListGroup>
+            <ListGroup className='custom-list-group-container'>
               {sinonimos.map((sinonimo, index) => (
-                <ListGroup.Item key={index} className='texto custom-list-group'>
+                <ListGroup.Item key={index} className='texto custom-list-group-item'>
                   <Link to={`/search/${sinonimo.toLowerCase()}`} className='link-sinonimo'>{sinonimo}</Link>
                 </ListGroup.Item>
               ))}
@@ -119,6 +120,7 @@ const WordMeaning = (props) => {
           </section>
         </Col>   
       </Row>
+      <br />
       <Button
         variant="primary"
         className="go-back-button"
