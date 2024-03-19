@@ -1,12 +1,34 @@
 const Proyecto = ({ darkMode }) => { 
-    const explanationTextClass = darkMode ? 'dark-mode-explanation-text' : 'light-mode-explanation-text';
     return (
         <div className="proyecto-container">
-        <h1 className={`explanation-text ${explanationTextClass}`}>Proyecto</h1>
-        <p className={`explanation-text ${explanationTextClass}`}>
-            IncluLex es un diccionario de lengua española que busca ser inclusivo y accesible para todas las personas.
-            Este proyecto es una iniciativa del departamento de informática de la Universidad Carlos III de Madrid.
+        <h2 className='explanation-text'>Proyecto</h2>
+        <p className='explanation-text'>
+        En la sociedad actual, es muy importante que todos puedan acceder a la información, sin importar sus capacidades o nivel 
+        de educación. Pero muchas veces, el lenguaje complicado puede ser un problema para algunas personas, como aquellos con 
+        discapacidades intelectuales o que no hablan bien el idioma principal.
+        <br /> <br />
+        Para solucionar esto, es útil escribir la información de una manera más sencilla, usando palabras fáciles de entender. 
+        Esto ayuda a todos, no solo a aquellos con dificultades. Evitamos usar palabras técnicas o extranjeras, abreviaturas o 
+        acrónimos sin explicarlos claramente.
+        <br /> <br />
+        Adaptar el texto de esta manera no es fácil, y a menudo se necesitan diferentes recursos como diccionarios y dibujos para 
+        ayudar. Esta plataforma pretende hacer que la información sea más fácil de entender para todos.
         </p>
+        <h2 className='explanation-text'>Accesibilidad</h2>
+        <p className='explanation-text'>
+        Estamos trabajando en desarrollar el IncluLex Hub, un sitio web fácil de usar para la mayor cantidad de personas posible. 
+        Utilizamos herramientas estándar de la web como HTML5 para la estructura, CSS3 para que se vea bien en todos los 
+        dispositivos, y JavaScript para hacerlo interactivo sin necesidad de recargar páginas. Nuestro objetivo principal es 
+        asegurarnos de que el sitio sea accesible para todos, incluyendo personas con discapacidades. Seguimos las pautas de 
+        Accesibilidad para el Contenido Web (<a href="https://www.w3.org/TR/WCAG22">WCAG</a>) para lograr esto.
+        </p>
+        <h2 className='explanation-text'>Descarga</h2>
+        <p className='explanation-text'>
+        IncluLex Hub es una plataforma de código abierto. Puedes descargarlo en el siguiente enlace al repositorio de
+        github: <a href="https://github.com/juliassanchez/IncluLex">https://github.com/juliassanchez/IncluLex</a>
+        </p>
+        <h2 className='explanation-text'>Referencias</h2>
+        <img src="/src/assets/ARASAAC.png" alt="ARASAAC" style={{ maxWidth: '30%', maxHeight: '30%', width: 'auto', height: 'auto', margin: 'auto', display: 'block' }} />
         </div>
     );
     };
