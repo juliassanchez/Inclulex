@@ -31,8 +31,8 @@ const Proyecto = ({ darkMode }) => {
         </p>
         <h2 className='explanation-text'>Referencias</h2>
         <Row className="justify-content-center">
-        <img src="/src/assets/ARASAAC.png" alt="ARASAAC" style={{ maxWidth: '20%', height: 'auto' }} />
-        <img src="/src/assets/busca-palabra.png" alt="BuscaPalabra" style={{ maxWidth: '20%', height: 'auto' }} />
+        <img src="/src/assets/ARASAAC.png" alt="ARASAAC" style={{ maxWidth: '20%', height: 'auto' }} href="https://arasaac.org/"/>
+        <img src="/src/assets/busca-palabra.png" alt="BuscaPalabra" style={{ maxWidth: '20%', height: 'auto' }} href="https://www.buscapalabra.com/"/>
         </Row>
         </div>
     );

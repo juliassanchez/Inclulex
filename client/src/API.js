@@ -2,19 +2,19 @@ const SERVER_URL = 'http://localhost:3000';
 
 const obtenerPictograma = async (palabra) => {
   try {
-    const respuestaId = await fetch(`https://api.arasaac.org/v1/pictograms/es/search/${palabra}`);
+    const respuestaIds = await fetch(`https://api.arasaac.org/v1/pictograms/es/search/${palabra}`);
 
-    if (!respuestaId.ok) {
-      throw new Error('Error al obtener el ID del pictograma');
+    if (!respuestaIds.ok) {
+      throw new Error('Error al obtener los IDs de los pictogramas');
     }
 
-    const datosId = await respuestaId.json();
-    const urlPictograma = `https://api.arasaac.org/v1/pictograms/${datosId[0]._id}/?download=false`;
+    const datosIds = await respuestaIds.json();
+    const urlsPictogramas = datosIds.map((dato) => `https://api.arasaac.org/v1/pictograms/${dato._id}/?download=false`);
 
-    return urlPictograma;
+    return urlsPictogramas;
   } catch (error) {
-    console.error('Error al obtener el pictograma:', error.message);
-    throw new Error('Error en la obtención del pictograma');
+    console.error('Error al obtener los pictogramas:', error.message);
+    throw new Error('Error en la obtención de los pictogramas');
   }
 };
 
