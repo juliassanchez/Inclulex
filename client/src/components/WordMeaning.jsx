@@ -8,7 +8,7 @@ import API from '../API';
 const WordMeaning = (props) => {
     const { palabra } = useParams();
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
-    const [sinonimos, setSinonimos] = useState(['Cocodrilo', 'Banco', 'Jirafa'])
+    const [sinonimos, setSinonimos] = useState(['Página web', 'Página web', 'Página web'])
     const [pictograma, setPictograma] = useState([])
     const [ejemplos, setEjemplos] = useState(['El caimán y el cocodrilo no se diferencian más que en el nombre.', 
     'Allí, golpean por accidente a un cocodrilo, por lo que los encarcelan.', 
@@ -51,10 +51,43 @@ const WordMeaning = (props) => {
             console.error('Error al obtener la definición:', error);
           }
         };
+
+        const obtenerSinonimos = async () => {
+          try {
+            const nuevosSinonimos = await API.obtenerSinonimos(palabra);
+            const sinonimos = nuevosSinonimos.synoyms_list || [];
+        
+            // Obtener la frecuencia de cada sinónimo
+            const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
+              try {
+                const frecuencia = await API.obtenerFrecuencia(sinonimo);
+                console.log(sinonimo, frecuencia)
+                return { sinonimo, frecuencia };
+              } catch (error) {
+                console.error('Error al obtener la frecuencia:', error);
+                return { sinonimo, frecuencia: 0 };
+              }
+            }));
+        
+            // Ordenar los sinónimos por frecuencia en orden descendente
+            frecuencias.sort((a, b) => b.frecuencia - a.frecuencia);
+        
+            // Tomar los primeros 5 sinónimos después de ordenarlos
+            const primerosSinonimos = frecuencias.slice(0, 5).map((obj) => obj.sinonimo);
+        
+            setSinonimos(() => {
+              return primerosSinonimos.length > 0 ? primerosSinonimos : ['No se encontraron sinónimos'];
+            });
+          } catch (error) {
+            console.error('Error al obtener los sinónimos:', error);
+          }
+        };
+        
       
         obtenerPictograma();
         obtenerFrecuencia();
         obtenerDefinicion();
+        obtenerSinonimos();
       }, [palabra]);
 
   return (

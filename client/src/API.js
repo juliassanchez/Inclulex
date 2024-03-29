@@ -33,14 +33,22 @@ const obtenerFrecuencia = async (palabra) => {
       throw new Error(contentJson.error);
     }
 
-    const frecuencia = contentJson.frecuencia; 
+    let frecuencia = contentJson.frecuencia; 
     return frecuencia;
   } catch (error) {
     console.error('Error al obtener la frecuencia:', error);
-    // Puedes lanzar nuevamente el error para manejarlo más arriba si es necesario
-    throw error;
+    // Intentar buscar la frecuencia de la palabra en singular si está en plural
+    if (palabra.endsWith('s')) {
+      const palabraSingular = palabra.slice(0, -1);
+      return obtenerFrecuencia(palabraSingular);
+    } else {
+      // Si no es una palabra en plural o si falla nuevamente, lanzar el error
+      throw error;
+    }
   }
 };
+
+
 
 const obtenerDefinicion = async (palabra) => {
   try {
@@ -66,5 +74,28 @@ const obtenerDefinicion = async (palabra) => {
   }
 };
 
-const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion };
+const obtenerSinonimos = async (palabra) => {
+  try {
+    const response = await fetch(`http://127.0.0.1:3000/api/synonym-lwn?word=${palabra}`);
+    if (!response.ok) {
+      throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+  }
+
+  const contentJson = await response.json();
+
+  if (contentJson.error) {
+      throw new Error(contentJson.error);
+  }
+
+    const synonyms = contentJson;
+    console.log('Sinonimos obtenidos:', synonyms);
+
+    return synonyms;
+  } catch (error) {
+    console.error('Error al obtener los sinónimos:', error);
+    throw error;
+  }
+};
+
+const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSinonimos };
 export default API;
