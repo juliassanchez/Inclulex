@@ -97,5 +97,30 @@ const obtenerSinonimos = async (palabra) => {
   }
 };
 
+// const obtenerEjemplos = async (palabra) => {
+//   try {
+//     const response = await fetch(`http://127.0.0.1:3000/api/examples?word=${palabra}`);
+//     if (!response.ok) {
+//       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+//     }
+
+//     const contentJson = await response.json();
+
+//     if (contentJson.error) {
+//       throw new Error(contentJson.error);
+//     }
+
+//     const examples = contentJson;
+//     console.log('Ejemplos obtenidos:', examples);
+
+//     return examples;
+//   }
+//   catch (error) {
+//     console.error('Error al obtener los ejemplos:', error);
+//     throw error;
+//   }
+// };
+
+//obtenerEjemplos
 const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSinonimos };
 export default API;
