@@ -1,7 +1,9 @@
 /* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 body {
   padding: 0;
   margin: 0 auto;
+  font-family: 'Gotham', sans-serif;
 }
 
 body.dark-mode {
@@ -15,23 +17,31 @@ body.light-mode {
 }
 
 .navbar {
-  height: 80px; /* Ajusta la altura según tus preferencias */
+  height: 80px;
   padding: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: large;
 }
-
 
 .brand-text {
   font-size: 100px;
   text-align: center; /* Alinea el texto en el centro horizontalmente */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: bold;
 }
 
 .brand-text-inclu {
-  color: #335EFF;
+  color: #000;
+}
+.dark-mode .brand-text-inclu {
+  color: #FFF;
 }
 
 .brand-text-lex {
+  color: #3240D1;
+}
+
+.dark-mode .brand-text-lex {
   color: #42AFFE;
 }
 
@@ -54,49 +64,52 @@ body.light-mode {
   font-size: calc(2rem - 0.2rem);
   height: 8vh; /* Altura del input ajustada */
   width: 40%;
-  border: 2px solid #335EFF; /* Color del borde del input */
+  border: 2px solid #3240D1 ; /* Color del borde del input */
   background-color: #fff; /* Color de fondo del input */
   border-radius: 0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
+  font-weight: bold;
 }
 
 .dark-mode .search-input {
   background-color: #000;
   color: #fff;
-}
-.light-mode .search-input {
-  background-color: #fff;
-  color: #335EFF;
+  border: 2px solid #42AFFE;
 }
 
 .search-input::placeholder {
-  color: #335EFF; /* Cambia el color del placeholder según tu preferencia */
+  color: #3240D1; 
 }
 
 .dark-mode .search-input::placeholder {
-  color: #fff; /* Cambia el color del placeholder según tu preferencia */
+  color: #fff; 
 }
 
 .search-button {
   margin-left: -5px;
   height: 8vh;
-  background-color: #335EFF; /* Cambia el color de fondo del botón */
-  color: #fff; /* Cambia el color del texto del botón a blanco */
-  border: none; /* Elimina el borde del botón */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: calc(2.5rem - 0.2rem); /* Cambia el tamaño de la fuente del botón */
+  background-color: #3240D1;
+  color: #fff; 
+  border: none; 
+  font-family: 'Gotham', sans-serif;
+  font-size: calc(2.5rem - 0.2rem);
   cursor: pointer;
   border-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  font-weight: bold;
+}
+
+.dark-mode .search-button{
+  background-color: #42AFFE;
 }
 
 .explanation-text {
   margin: 5vh;
   text-align: justify;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: lighter;
   color: #000;
   margin-left: 20vw;
@@ -125,16 +138,20 @@ body.light-mode {
 }
 
 .palabra {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: bold;
-  color: #335EFF;
+  color: #3240D1;
   font-size: 70px;
   text-transform:uppercase;
   margin-top: 6vh;
 }
 
+.dark-mode .palabra {
+  color: #42AFFE;
+}
+
 .subtitulo {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-weight: bold;
   color: #000;
   font-size: 40px;
@@ -145,7 +162,7 @@ body.light-mode {
 }
 
 .texto {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   color: #000;
   font-size: 21px;
   text-align: justify;
@@ -176,18 +193,25 @@ body.light-mode {
   margin-bottom: 5vh;
   margin-top: 3vh;
   padding: 8px 15px; /* Ajusta el relleno para un aspecto más agradable */
-  background-color: #335EFF; /* Cambia el color de fondo del botón */
+  background-color: #3240D1; /* Cambia el color de fondo del botón */
   color: #fff; /* Cambia el color del texto del botón a blanco */
   border: none; /* Elimina el borde del botón */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-size: 30px; /* Cambia el tamaño de la fuente del botón */
   cursor: pointer;
   border-radius: 5px;
   align-items: bottom;
+  font-weight: bold;
 }
 
+.dark-mode .go-back-button {
+  background-color: #42AFFE;
+  color: #000;
+}
+
+
 .frecuency-button {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-size: 20px; /* Cambia el tamaño de la fuente del botón */
   font-weight: bold;
   border-radius: 0px;
@@ -205,17 +229,10 @@ body.light-mode {
 
 .switch {
   position: absolute;
-  top: 20px; /* Ajusta según sea necesario */
+  top: 20px; 
   right: 30px;
   color: black;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.guia-uso:hover {
-  background-color: #EE5B23; 
-}
-.guia-uso:active {
-  background-color: #FF6B35 !important;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .dark-mode .switch {
@@ -224,6 +241,7 @@ body.light-mode {
 
 .guia-uso-container {
   margin-top: 12vh;
+  font-family: 'Gotham', sans-serif;
 }
 
 .section-content {
@@ -245,6 +263,7 @@ body.light-mode {
   background-color: #212529; /* Color de fondo para dark mode */
   color: #fff;
 }
+
 
 .proyecto-container {
   margin-top: 15vh;

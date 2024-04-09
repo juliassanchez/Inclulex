@@ -16,7 +16,7 @@ const GuiaUso = (props) => {
             </Col>
             <Col sm={9}>
                 <div >
-                    <Section title="Página de inicio - IncluLex" id="pagina-de-inicio">
+                    <Section title="Página de inicio - IncluLex" id="pagina-de-inicio" darkMode={props.darkMode}>
                         <Row>
                             <Col>
                                 <p>En nuestra página de inicio, te damos la bienvenida a una herramienta simple y poderosa para explorar el significado y la frecuencia de las palabras. Aquí puedes:</p>
@@ -37,7 +37,7 @@ const GuiaUso = (props) => {
                         </Row>
                     </Section>
 
-                    <Section title="Página de búsqueda" id="pagina-de-busqueda">
+                    <Section title="Página de búsqueda" id="pagina-de-busqueda" darkMode={props.darkMode}>
                         <Row>
                             <Col>
                                 <p>A esta página se accede una vez hemos realizado una búsqueda</p>
@@ -65,7 +65,7 @@ const GuiaUso = (props) => {
                             </Col>
                         </Row>
                     </Section>
-                    <Section title="Proyecto" id="pagina-proyecto">
+                    <Section title="Proyecto" id="pagina-proyecto" darkMode={props.darkMode}>
                       
                     </Section>
                 </div>
@@ -74,7 +74,7 @@ const GuiaUso = (props) => {
     );
 };
 
-const SectionIndex = ({ scrollToSection, darkMode }) => {
+const SectionIndex = ({ scrollToSection }) => {
   return (
     <div style={{ position: 'fixed', paddingLeft: '20px', width: '24%' }}>
       <h4>Índice de Secciones</h4>
@@ -87,13 +87,13 @@ const SectionIndex = ({ scrollToSection, darkMode }) => {
   );
 };
 
-const Section = ({ title, id, children }) => {
+const Section = ({ title, id, children, darkMode }) => {
     const titleStyle = {
-        color: '#FF6B35',
+        color: darkMode ? '#42AFFE':'#3240D1',
         textAlign: 'center',
-        fontFamily: 'Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif',
+        fontFamily: 'Noto Sans JP, sans-serif',
         fontSize: '2em',
-        marginTop: '20px'
+        marginTop: '10px'
     };
 
     return (

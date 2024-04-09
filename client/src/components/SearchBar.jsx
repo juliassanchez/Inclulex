@@ -22,7 +22,14 @@ const SearchBar = (props) => {
     console.log('suggestions:', suggestions);
     const correctedWord = suggestions.length > 0 ? suggestions[0] : searchTerm;
     console.log('correctedWord:', correctedWord);
-    navigate(`/search/${correctedWord.toLowerCase()}`);
+    if (!searchTerm.trim()) {
+      alert('Por favor ingrese una palabra antes de buscar.'); // Muestra un mensaje de alerta si el campo está vacío
+      return; // Detiene el proceso de envío del formulario
+    }
+    else{
+      navigate(`/search/${correctedWord.toLowerCase()}`);
+    }
+    
   };
 
   const searchInputClass = props.darkMode ? 'dark-mode-search-input' : 'light-mode-search-input';
@@ -46,11 +53,12 @@ const SearchBar = (props) => {
     </div>
     <div className="search-bar-container">
       <Form.Control
+        required
         type="text"
+        placeholder="Ingrese una palabra"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyPress={handleKeyPress}
-        placeholder="Ingrese una palabra"
         className={`search-input ${searchInputClass}`}
         spellCheck="true"
       />

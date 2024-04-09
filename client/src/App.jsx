@@ -33,14 +33,20 @@ function App() {
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <Navbar className='navbar' bg={darkMode ? 'dark' : 'light'} variant={darkMode ? 'dark' : 'ligth'} fixed="top">
         <Container>
-          <Navbar.Brand href="/">
-            <img alt="" src="/logo.svg" width="30" height="30" className="d-inline-block align-top" /> IncluLex
+          <Navbar.Brand href="/" style={{ fontWeight: 'bold' }}>
+            <img alt="" src="/logo.svg" width="30" height="30" className="d-inline-block align-top"/> IncluLex
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/guia-uso">Guía de uso</Nav.Link>
-              <Nav.Link href="/proyecto">Proyecto</Nav.Link>
+              <Nav.Link href="/guia-uso">
+                Guía de uso
+                <img src="/src/assets/question-circle.svg" alt="Info" style={{ width: '1.5vw', height: 'auto', marginLeft: '0.5vw' }} />
+              </Nav.Link>
+              <Nav.Link href="/proyecto">
+                Proyecto
+                <img src="/src/assets/book.svg" alt="Info" style={{ width: '1.5vw', height: 'auto', marginLeft: '0.5vw' }} />
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <Form.Check
@@ -50,7 +56,7 @@ function App() {
             className='switch'
             checked={darkMode}
             onChange={toggleDarkMode}
-            style={{ width: '160px' }}
+            style={{ width: '160px'}}
           />
         </Container>
       </Navbar>

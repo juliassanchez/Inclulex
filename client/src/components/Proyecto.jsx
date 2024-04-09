@@ -18,7 +18,7 @@ const Proyecto = ({ darkMode }) => {
         </p>
         <h2 className='explanation-text'>Accesibilidad</h2>
         <p className='explanation-text'>
-        Estamos trabajando en desarrollar el IncluLex Hub, un sitio web fácil de usar para la mayor cantidad de personas posible. 
+        Estamos trabajando en desarrollar IncluLex Hub, un sitio web fácil de usar para la mayor cantidad de personas posible. 
         Utilizamos herramientas estándar de la web como HTML5 para la estructura, CSS3 para que se vea bien en todos los 
         dispositivos, y JavaScript para hacerlo interactivo sin necesidad de recargar páginas. Nuestro objetivo principal es 
         asegurarnos de que el sitio sea accesible para todos, incluyendo personas con discapacidades. Seguimos las pautas de 
