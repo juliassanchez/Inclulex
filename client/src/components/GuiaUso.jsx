@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { useState } from 'react';
 
 const GuiaUso = (props) => {
     const scrollToSection = (id) => {
@@ -11,10 +12,10 @@ const GuiaUso = (props) => {
 
     return (
         <Row className='guia-uso-container'>
-            <Col sm={3}>
+            <Col sm={2}>
                 <SectionIndex scrollToSection={scrollToSection} />
             </Col>
-            <Col sm={9}>
+            <Col sm={10}>
                 <div >
                     <Section title="Página de inicio - IncluLex" id="pagina-de-inicio" darkMode={props.darkMode}>
                         <Row>
@@ -76,9 +77,9 @@ const GuiaUso = (props) => {
 
 const SectionIndex = ({ scrollToSection }) => {
   return (
-    <div style={{ position: 'fixed', paddingLeft: '20px', width: '24%' }}>
+    <div style={{ position: 'fixed', paddingLeft: '20px', width: 'auto', paddingTop: '2%'}}>
       <h4>Índice de Secciones</h4>
-      <ListGroup>
+      <ListGroup variant="flush">
         <ListGroupItem action onClick={() => scrollToSection('pagina-de-inicio')} className='list-item'>Página de inicio - IncluLex</ListGroupItem>
         <ListGroupItem action onClick={() => scrollToSection('pagina-de-busqueda')} className='list-item'>Página de búsqueda</ListGroupItem>
         <ListGroupItem action onClick={() => scrollToSection('pagina-proyecto')} className='list-item'>Proyecto</ListGroupItem>
@@ -89,21 +90,26 @@ const SectionIndex = ({ scrollToSection }) => {
 
 const Section = ({ title, id, children, darkMode }) => {
     const titleStyle = {
-        color: darkMode ? '#42AFFE':'#3240D1',
+        color: darkMode ? '#42AFFE' : '#3240D1',
         textAlign: 'center',
         fontFamily: 'Noto Sans JP, sans-serif',
         fontSize: '2em',
-        marginTop: '10px'
+        marginTop: '10px',
     };
 
+    // Determina el color de fondo basado en isGrayBackground
+    const backgroundColor = id % 2 === 0 ? '' : 'gray-background';
+
     return (
-        <div id={id} className='section-content'>
+        <div id={id} className={`section-content ${backgroundColor}`}>
             <h3 style={titleStyle}>{title}</h3>
-            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <hr style={{ borderTop: '1px solid #ccc' }} />
+            <div>
                 {children}
             </div>
         </div>
     );
 };
+
 
 export default GuiaUso;

@@ -66,7 +66,7 @@ function App() {
           <Route index element={<SearchBar darkMode={darkMode} />} />
           <Route path='search/:palabra' element={<WordMeaning darkMode={darkMode} />} />
           <Route path='/guia-uso' element={<GuiaUso darkMode={darkMode} />} />
-          <Route path='/proyecto' element={<Proyecto darkMode={darkMode} />} />
+          <Route path='/proyecto' element={<Proyecto/>} />
         </Routes>
       </BrowserRouter>
     </div>

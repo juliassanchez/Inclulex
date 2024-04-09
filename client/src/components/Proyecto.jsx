@@ -1,6 +1,6 @@
 import { Row } from "react-bootstrap";
 
-const Proyecto = ({ darkMode }) => { 
+const Proyecto = () => { 
     return (
         <div className="proyecto-container">
         <h2 className='explanation-text'>Proyecto</h2>

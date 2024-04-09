@@ -240,28 +240,34 @@ body.light-mode {
 }
 
 .guia-uso-container {
-  margin-top: 12vh;
+  margin-top: 10vh;
   font-family: 'Gotham', sans-serif;
 }
 
 .section-content {
-  background-color: #F0F0F0; /* Color por defecto para light mode */
-  padding: 30px;
-  border-radius: 10px;
-  margin: 30px;
+  background-color: #f0f0f0;
+  padding: 3%;
+  border-radius: 1%;
+  margin: 3%;
+
 }
 
 .dark-mode .section-content {
   background-color: #212529; /* Color para dark mode */
 }
 
-.list-item {
-  background-color: #F0F0F0; /* Color de fondo para light mode */
+.gray-background .section-content {
+  background-color: #f0f0f0; /* Color de fondo para light mode */
+
 }
 
 .dark-mode .list-item{
-  background-color: #212529; /* Color de fondo para dark mode */
+  background-color: #000; /* Color de fondo para dark mode */
   color: #fff;
+}
+
+.dark-mode .list-item:hover{
+  background-color: #212529; /* Color de fondo para dark mode */
 }
 
 
