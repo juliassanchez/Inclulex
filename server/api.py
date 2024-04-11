@@ -39,6 +39,29 @@ def get_definition_easy():
         else:
             return jsonify({"error": "No se pudo acceder a la página o no se encontró la palabra especificada. , page.status_code: " + str(page.status_code)})
 
+@app.route('/api/siglas', methods=['GET'])
+def get_siglas():
+    if request.method == 'GET':
+        word = escape(request.args.get('word'))
+
+        page = requests.get(url='https://www.siglas.com.es/letras/' + word[0], headers=headers)
+        soup = BeautifulSoup(page.text, 'html.parser')
+        error_content = soup.find("div", {"class": "error"})
+        
+        if page.status_code == 200 and not error_content:
+            titulo = soup.find("span", {"class": "titulo"}, text=lambda t: t and t.lower() == word.lower())
+            
+            if not titulo:
+                titulo = soup.find("span", {"class": "titulo"}, text=lambda t: t and t.lower() == word.upper())
+            
+            if titulo:
+                texto = titulo.find_next_sibling("span", {"class": "texto"}).text.strip()
+                return jsonify(texto=texto)
+            else:
+                return jsonify({"error": "No se encontró el título para la palabra proporcionada."}), 404
+        else:
+            return jsonify({"error": "No se pudo acceder a la página o no se encontró la palabra especificada, page.status_code: " + str(page.status_code)})
+
 @app.route('/api/synonym-lwn', methods=['GET'])
 def get_synonym_lwn():
     if request.method == 'GET':

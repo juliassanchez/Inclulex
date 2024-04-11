@@ -8,7 +8,7 @@ import API from '../API';
 const WordMeaning = (props) => {
     const { palabra } = useParams();
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
-    const [sinonimos, setSinonimos] = useState(['Página web', 'Página web', 'Página web'])
+    const [sinonimos, setSinonimos] = useState([])
     const [pictograma, setPictograma] = useState([])
     const [ejemplos, setEjemplos] = useState(['El caimán y el cocodrilo no se diferencian más que en el nombre.', 
     'Allí, golpean por accidente a un cocodrilo, por lo que los encarcelan.', 
@@ -17,14 +17,6 @@ const WordMeaning = (props) => {
     const [frecuencia, setFrecuencia] = useState(0)
 
     useEffect(() => {
-        const obtenerPictograma = async () => {
-          try {
-            const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase());
-            setPictograma(pictoURLs);
-          } catch (error) {
-            console.error('Error al obtener el pictograma:', error);
-          }
-        };
 
         const obtenerFrecuencia = async () => {
           try {
@@ -40,15 +32,23 @@ const WordMeaning = (props) => {
         const obtenerDefinicion = async () => {
           try {
             const nuevaDefinicion = await API.obtenerDefinicion(palabra);
-    
-            // Asegúrate de que nuevaDefinicion.definition_list sea una matriz antes de asignarlo
-            const definiciones = nuevaDefinicion.definition_list || [];
-    
-            setSignificado(() => {
-              return definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios'];
-            });
+            if (!nuevaDefinicion || nuevaDefinicion.length === 0) {
+              console.log('No se encontró una definición. Intentando obtener la sigla...');
+              throw new Error('Sin definición');
+            } else {
+              const definiciones = nuevaDefinicion.definition_list || [];
+              setSignificado(definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios']);
+            }
           } catch (error) {
             console.error('Error al obtener la definición:', error);
+            // Si hay un error al obtener la definición, intenta obtener la sigla
+            console.log('Intentando obtener la sigla...');
+            try {
+              const sigla = await API.obtenerSigla(palabra);
+              setSignificado([sigla]);
+            } catch (siglaError) {
+              console.error('Error al obtener la sigla:', siglaError);
+            }
           }
         };
 
@@ -61,7 +61,6 @@ const WordMeaning = (props) => {
             const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
               try {
                 const frecuencia = await API.obtenerFrecuencia(sinonimo);
-                console.log(sinonimo, frecuencia)
                 return { sinonimo, frecuencia };
               } catch (error) {
                 console.error('Error al obtener la frecuencia:', error);
@@ -82,6 +81,52 @@ const WordMeaning = (props) => {
             console.error('Error al obtener los sinónimos:', error);
           }
         };
+
+        const obtenerPictograma = async () => {
+          try {
+            const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase());
+            setPictograma(pictoURLs);
+          } catch (error) {
+            console.error('Error al obtener el pictograma:', error);
+        
+            // Si hay sinónimos, intentamos obtener el pictograma con cada sinónimo
+            if (sinonimos.length > 0) {
+              for (const sinonimo of sinonimos) {
+                try {
+                  const pictoURLs = await API.obtenerPictograma(sinonimo.toLowerCase());
+                  // Si pictoURLs no está vacío, lo establecemos como pictograma
+                  if (pictoURLs.length > 0) {
+                    setPictograma(pictoURLs);
+                    return;
+                  }
+                } catch (sinonimoError) {
+                  console.error('Error al obtener el pictograma con el sinónimo:', sinonimoError);
+                }
+              }
+            }
+        
+            // Si no se pudo obtener el pictograma con los sinónimos, intentamos con la definición
+            if (significado.length > 0) {
+              try {
+                const pictoURLs = await API.obtenerPictograma(significado[0].toLowerCase());
+                // Si pictoURLs no está vacío, lo establecemos como pictograma
+                if (pictoURLs.length > 0) {
+                  setPictograma(pictoURLs);
+                  return;
+                }
+              } catch (definicionError) {
+                console.error('Error al obtener el pictograma con la definición:', definicionError);
+              }
+            }
+        
+            // Si no se puede obtener el pictograma con ninguna palabra alternativa, establecemos pictograma como vacío
+            setPictograma([]);
+          }
+        };
+        
+        
+        
+        
         
         // const obtenerEjemplos = async () => {
         //   try {

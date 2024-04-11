@@ -48,8 +48,6 @@ const obtenerFrecuencia = async (palabra) => {
   }
 };
 
-
-
 const obtenerDefinicion = async (palabra) => {
   try {
       const response = await fetch(`http://127.0.0.1:3000/api/definition-easy?word=${palabra}`);
@@ -71,6 +69,28 @@ const obtenerDefinicion = async (palabra) => {
   } catch (error) {
       console.error('Error al obtener la definición:', error);
       throw error;
+  }
+};
+
+const obtenerSigla = async (palabra) => {
+  try {
+    const response = await fetch(`http://127.0.0.1:3000/api/siglas?word=${palabra}`);
+
+    if (!response.ok) {
+      throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+    }
+
+    const contentJson = await response.json();
+
+    if (contentJson.error) {
+      throw new Error(contentJson.error);
+    }
+    const sigla = contentJson.texto;
+
+    return sigla;
+  } catch (error) {
+    console.error('Error al obtener la sigla:', error);
+    throw error;
   }
 };
 
@@ -128,5 +148,5 @@ const obtenerSinonimos = async (palabra) => {
 // };
 
 //obtenerEjemplos
-const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSinonimos };
+const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSigla, obtenerSinonimos };
 export default API;
