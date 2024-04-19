@@ -82,6 +82,6 @@
 
 ## Quickstart
 
-cd server; python api.py;
-cd client; npm run dev;
-cd server; nodemon index.js;
+cd backend; python3 api.py;
+cd backend; nodemon index.js;
+cd frontend; npm run dev;
