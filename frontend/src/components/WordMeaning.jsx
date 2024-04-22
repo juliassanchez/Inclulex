@@ -124,10 +124,6 @@ const WordMeaning = (props) => {
           }
         };
         
-        
-        
-        
-        
         // const obtenerEjemplos = async () => {
         //   try {
         //     const nuevosEjemplos = await API.obtenerEjemplos(palabra);

@@ -1,5 +1,4 @@
 # import spacy
-# import random
 # from transformers import AutoTokenizer, AutoModelForCausalLM
 from flask import Flask, request, jsonify
 from werkzeug.utils import escape
@@ -87,20 +86,20 @@ def get_synonym_lwn():
 # model = AutoModelForCausalLM.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
 
 # def obtener_articulo(palabra):
-    # # Procesar la palabra con SpaCy
-    # doc = nlp(palabra)
+#     # Procesar la palabra con SpaCy
+#     doc = nlp(palabra)
     
-    # # Verificar el género de la palabra en el contexto
-    # for token in doc:
-    #     # Verificar si el token es un sustantivo y si tiene información de género
-    #     if token.pos_ == "NOUN" and token.morph.get("Gender"):
-    #         # Obtener el género de la palabra y convertirlo a cadena
-    #         genero = token.morph.get("Gender")[0]  # Tomar el primer elemento de la lista
-    #         # Devolver el artículo correspondiente al género
-    #         return "El" if genero == "Masc" else "La"
+#     # Verificar el género de la palabra en el contexto
+#     for token in doc:
+#         # Verificar si el token es un sustantivo y si tiene información de género
+#         if token.pos_ == "NOUN" and token.morph.get("Gender"):
+#             # Obtener el género de la palabra y convertirlo a cadena
+#             genero = token.morph.get("Gender")[0]  # Tomar el primer elemento de la lista
+#             # Devolver el artículo correspondiente al género
+#             return "El" if genero == "Masc" else "La"
     
-    # # Si no se encontró información de género, devolver None
-    # return None
+#     # Si no se encontró información de género, devolver None
+#     return None
 
 # def generar_frases_con_palabra(palabra, modelo, tokenizer, num_frases=3, max_length=50):
 #     frases_generadas = []
