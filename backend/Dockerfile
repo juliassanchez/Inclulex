@@ -1,9 +1,9 @@
-FROM node:18.12.1-alpine
+FROM python:3.10.2
 
 WORKDIR /app/backend
 
 COPY . .
 
-RUN npm install -g nodemon
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["nodemon", "index.js"]
+CMD ["python", "api.py"]
