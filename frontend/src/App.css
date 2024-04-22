@@ -23,6 +23,10 @@ body.light-mode {
   font-size: large;
 }
 
+.navbar-brand:focus {
+  outline: 2px solid #3240D1;
+}
+
 .brand-text {
   font-size: 100px;
   text-align: center; /* Alinea el texto en el centro horizontalmente */
@@ -76,7 +80,7 @@ body.light-mode {
 .dark-mode .search-input {
   background-color: #000;
   color: #fff;
-  border: 2px solid #42AFFE;
+  border: 2px solid #3240D1;
 }
 
 .search-input::placeholder {
@@ -102,9 +106,18 @@ body.light-mode {
   font-weight: bold;
 }
 
-.dark-mode .search-button{
-  background-color: #42AFFE;
+.search-button:focus {
+  border: 2px solid #3240D1; /* Cambia el borde del elemento cuando está enfocado */
 }
+
+.dark-mode .search-button{
+  background-color: #3240D1;
+}
+
+.carousel-item:focus {
+  outline: 2px solid blue; /* Add a blue outline when item is focused */
+}
+
 
 .explanation-text {
   margin: 5vh;
@@ -209,12 +222,19 @@ body.light-mode {
   color: #000;
 }
 
+.go-back-button:focus {
+  border: 2px solid #3240D1; /* Cambia el borde del elemento cuando está enfocado */
+}
 
 .frecuency-button {
   font-family: 'Gotham', sans-serif;
   font-size: 20px; /* Cambia el tamaño de la fuente del botón */
   font-weight: bold;
   border-radius: 0px;
+}
+
+.frecuency-button:focus {
+  border: 2px solid #3240D1; /* Cambia el borde del elemento cuando está enfocado */
 }
 
 .link-sinonimo {
@@ -225,6 +245,10 @@ body.light-mode {
 
 .link-sinonimo:hover {
   font-weight: bold;
+}
+
+.link-sinonimo:focus {
+  outline: 2px solid #3240D1; /* Add a blue outline when item is focused */
 }
 
 .switch {
@@ -269,14 +293,27 @@ body.light-mode {
 .dark-mode .list-item:hover{
   background-color: #212529; /* Color de fondo para dark mode */
 }
-
+.list-item:focus {
+  outline: 2px solid #3240D1 !important; /* Add a blue outline when item is focused */
+}
 
 .proyecto-container {
   margin-top: 15vh;
   margin-bottom: 10vh;
 }
 
+a {
+  color: #004080; /* Color azul */
+  text-decoration: underline; /* Subrayado */
+}
 
+a:focus {
+  outline: 2px solid #3240D1; /* Add a blue outline when item is focused */
+}
+
+.dark-mode a {
+  color: #fff;
+}
 
 
 

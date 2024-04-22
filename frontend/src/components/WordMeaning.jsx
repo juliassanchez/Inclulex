@@ -148,86 +148,87 @@ const WordMeaning = (props) => {
       }, [palabra]);
 
   return (
-    <Container fluid="md" align="center" style={{ marginTop: '90px' }}>
-      <h2 className='palabra'>{palabra}</h2>
-      <OverlayTrigger
-        placement="right"
-        delay={{ show: 250, hide: 400 }}
-        overlay={
-          frecuencia < 1000 ? (
-            <Tooltip id="frecuencia-tooltip">No es una palabra frecuente</Tooltip>
-          ) : (
-            <Tooltip id="frecuencia-tooltip">Es una palabra frecuente</Tooltip>
-          )
-        }>
-        <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button'>
-          {frecuencia < 1000 ? "Compleja" : "Simple"}
-        </Button>
-      </OverlayTrigger>
-      <br />
-      <Row>
-      <Col md={8} className="d-flex flex-column">
-        <h3 className="subtitulo">Significado</h3>
-        <ol className="texto my-auto">
-          {significado.map((definicion, index) => (
-            <li key={index}>
-              {definicion}
-            </li>
-          ))}
-        </ol>
-      </Col>
-      <Col md={4}>
-  <section>
-    <h3 className='subtitulo'>Pictogramas</h3>
-    {pictograma.length > 0 && (
-      <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <Carousel variant='dark'>
-          {pictograma.map((pictoURL, index) => (
-            <Carousel.Item key={index}>
-              <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
-    )}
-  </section>
-</Col>
+    <Container fluid className="word-meaning-container" role="main" style={{ marginTop: '90px', textAlign: 'center' }}>
+  <h1 className='palabra' role="banner">{palabra}</h1>
+  <OverlayTrigger
+    placement="right"
+    delay={{ show: 250, hide: 400 }}
+    overlay={
+      frecuencia < 1000 ? (
+        <Tooltip id="frecuencia-tooltip">No es una palabra frecuente</Tooltip>
+      ) : (
+        <Tooltip id="frecuencia-tooltip">Es una palabra frecuente</Tooltip>
+      )
+    }>
+    <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button' role="navigation">
+      {frecuencia < 1000 ? "Compleja" : "Simple"}
+    </Button>
+  </OverlayTrigger>
+  <br />
+  <Row>
+    <Col md={8} className="d-flex flex-column">
+      <h2 className="subtitulo">Significado</h2>
+      <ol className="texto my-auto">
+        {significado.map((definicion, index) => (
+          <li key={index}>
+            {definicion}
+          </li>
+        ))}
+      </ol>
+    </Col>
+    <Col md={4}>
+      <section>
+        <h2 className='subtitulo'>Pictogramas</h2>
+        {pictograma.length > 0 && (
+          <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Carousel variant='dark' className='carousel-item'>
+            {pictograma.map((pictoURL, index) => (
+              <Carousel.Item key={index}>
+                <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </Carousel.Item>
+            ))}
+          </Carousel>
 
-      </Row>
-      <br />
-      <Row>
-        <Col md={8} className="d-flex flex-column">
-          <section>
-            <h3 className='subtitulo'>Ejemplos de uso</h3>
-            <ListGroup className='custom-list-group'>
-              {ejemplos.map((ejemplo, index) => (
-                <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
-              ))}
-            </ListGroup>
-          </section>
-        </Col> 
-        <Col md={4}>
-          <section>
-            <h3 className='subtitulo'>Sinónimos</h3>
-            <ListGroup className='custom-list-group-container'>
-              {sinonimos.map((sinonimo, index) => (
-                <ListGroup.Item key={index} className='texto custom-list-group'>
-                  <Link to={`/search/${sinonimo.toLowerCase()}`} className='link-sinonimo'>{sinonimo}</Link>
-                </ListGroup.Item>
-              ))}
-            </ListGroup>
-          </section>
-        </Col>   
-      </Row>
-      <br />
-      <Button
-        variant="primary"
-        className="go-back-button"
-        as={Link} to={`/`}
-      >
-        Buscar otra palabra
-      </Button>
-    </Container>
+          </div>
+        )}
+      </section>
+    </Col>
+  </Row>
+  <br />
+  <Row>
+    <Col md={8} className="d-flex flex-column">
+      <section>
+        <h2 className='subtitulo'>Ejemplos de uso</h2>
+        <ListGroup className='custom-list-group'>
+          {ejemplos.map((ejemplo, index) => (
+            <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
+          ))}
+        </ListGroup>
+      </section>
+    </Col> 
+    <Col md={4}>
+      <section>
+        <h2 className='subtitulo'>Sinónimos</h2>
+        <ListGroup className='custom-list-group-container'>
+          {sinonimos.map((sinonimo, index) => (
+            <ListGroup.Item key={index} className='texto custom-list-group'>
+              <Link to={`/search/${sinonimo.toLowerCase()}`} className='link-sinonimo'>{sinonimo}</Link>
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+      </section>
+    </Col>   
+  </Row>
+  <br />
+  <Button
+    variant="primary"
+    className="go-back-button"
+    as={Link} to={`/`}
+  >
+    Buscar otra palabra
+  </Button>
+</Container>
+
   );
 };
 

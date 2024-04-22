@@ -11,9 +11,9 @@ const GuiaUso = (props) => {
     };
 
     return (
-        <Row className='guia-uso-container'>
+        <Row className='guia-uso-container' role="main">
             <Col sm={2}>
-                <SectionIndex scrollToSection={scrollToSection} />
+                <SectionIndex scrollToSection={scrollToSection}/>
             </Col>
             <Col sm={10}>
                 <div >
@@ -76,17 +76,19 @@ const GuiaUso = (props) => {
 };
 
 const SectionIndex = ({ scrollToSection }) => {
-  return (
-    <div style={{ position: 'fixed', paddingLeft: '20px', width: 'auto', paddingTop: '2%'}}>
-      <h4>Índice de Secciones</h4>
-      <ListGroup variant="flush">
-        <ListGroupItem action onClick={() => scrollToSection('pagina-de-inicio')} className='list-item'>Página de inicio - IncluLex</ListGroupItem>
-        <ListGroupItem action onClick={() => scrollToSection('pagina-de-busqueda')} className='list-item'>Página de búsqueda</ListGroupItem>
-        <ListGroupItem action onClick={() => scrollToSection('pagina-proyecto')} className='list-item'>Proyecto</ListGroupItem>
-      </ListGroup>
-    </div>
-  );
-};
+    return (
+      <div style={{ position: 'fixed', paddingLeft: '20px', width: 'auto', paddingTop: '2%'}}>
+        <p>Índice de Secciones</p>
+        <ListGroup variant="flush">
+          <ListGroupItem action onClick={() => scrollToSection('contenido-principal')} className='list-item'>Contenido Principal</ListGroupItem>
+          <ListGroupItem action onClick={() => scrollToSection('pagina-de-inicio')} className='list-item'>Página de inicio - IncluLex</ListGroupItem>
+          <ListGroupItem action onClick={() => scrollToSection('pagina-de-busqueda')} className='list-item'>Página de búsqueda</ListGroupItem>
+          <ListGroupItem action onClick={() => scrollToSection('pagina-proyecto')} className='list-item'>Proyecto</ListGroupItem>
+        </ListGroup>
+      </div>
+    );
+  };
+  
 
 const Section = ({ title, id, children, darkMode }) => {
     const titleStyle = {
@@ -102,7 +104,7 @@ const Section = ({ title, id, children, darkMode }) => {
 
     return (
         <div id={id} className={`section-content ${backgroundColor}`}>
-            <h3 style={titleStyle}>{title}</h3>
+            <h1 style={titleStyle}>{title}</h1>
             <hr style={{ borderTop: '1px solid #ccc' }} />
             <div>
                 {children}
