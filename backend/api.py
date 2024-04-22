@@ -1,5 +1,6 @@
 # import spacy
 # from transformers import AutoTokenizer, AutoModelForCausalLM
+import sqlite3
 from flask import Flask, request, jsonify
 from werkzeug.utils import escape
 from multiwordnet.wordnet import WordNet
@@ -15,7 +16,41 @@ CORS(app)
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
 }
-        
+
+# Ruta para obtener la frecuencia de una palabra
+@app.route('/api/frecuencia')
+def obtener_frecuencia_palabra():
+    palabra = escape(request.args.get('word'))
+    if not palabra:
+        return jsonify({'error': 'Palabra no proporcionada en los parámetros de la solicitud'}), 400
+
+    try:
+        # Conexión a la base de datos
+        conexion = sqlite3.connect('frecuencia.db')
+        cursor = conexion.cursor()
+
+        # Consulta SQL para obtener la frecuencia de la palabra
+        sql = "SELECT * FROM frecuencia_filtrada WHERE palabra = ?"
+        cursor.execute(sql, (palabra,))
+        row = cursor.fetchone()
+
+        if row is None:
+            return jsonify({'error': 'Palabra no encontrada en la base de datos'}), 404
+        else:
+            frecuencia = {
+                'palabra': row[0],
+                'frecuencia': row[1]
+            }
+            return jsonify(frecuencia)
+
+    except sqlite3.Error as error:
+        print("Error al ejecutar la consulta:", error)
+        return jsonify({'error': 'Error al ejecutar la consulta SQL'}), 500
+    finally:
+        if conexion:
+            conexion.close()
+
+
 @app.route('/api/definition-easy', methods=['GET'])
 def get_definition_easy():
     if request.method == 'GET':

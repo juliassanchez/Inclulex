@@ -20,7 +20,7 @@ const obtenerPictograma = async (palabra) => {
 
 const obtenerFrecuencia = async (palabra) => {
   try {
-    const response = await fetch(SERVER_URL + `/api/search/${palabra}`);
+    const response = await fetch(`http://127.0.0.1:3000/api/frecuencia?word=${palabra}`);
     
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
