@@ -11,6 +11,7 @@
   - request parameters: _None_
   - response status: `200 OK` (success), `500` (server error), `404`(page not found)
   - response body content:
+
   ```JSON
   [
     {
@@ -29,7 +30,8 @@
   - request parameters: _None_
   - response status: `200 OK` (success), `500` (server error)
   - response body content:
-  ``` JSON
+
+ ``` JSON
   [
       {
           "_id": 0,
