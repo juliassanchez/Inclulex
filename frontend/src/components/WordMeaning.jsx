@@ -181,13 +181,13 @@ const WordMeaning = (props) => {
         <h2 className='subtitulo'>Pictogramas</h2>
         {pictograma.length > 0 && (
           <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Carousel variant='dark' className='carousel-item'>
-            {pictograma.map((pictoURL, index) => (
-              <Carousel.Item key={index}>
-                <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <Carousel variant='dark'>
+          {pictograma.map((pictoURL, index) => (
+            <Carousel.Item key={index}>
+              <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
 
           </div>
         )}
