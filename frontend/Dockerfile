@@ -4,7 +4,7 @@ WORKDIR /app/frontend
 
 COPY . .
 
-RUN npm install
-RUN npm run build
+RUN npm install && \
+    npm run build
 
-CMD ["npm", "dev", "--host", "0.0.0.0"]
+CMD ["npm", "run", "dev"]

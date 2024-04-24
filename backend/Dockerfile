@@ -1,9 +1,11 @@
-FROM python:3.10.2
+FROM python:3.10.2-slim
 
 WORKDIR /app/backend
 
-COPY . .
+COPY requirements.txt requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 CMD ["python", "api.py"]
