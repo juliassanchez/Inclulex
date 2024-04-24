@@ -19,7 +19,7 @@ headers = {
 
 # Ruta para obtener la frecuencia de una palabra
 @app.route('/api/frecuencia')
-def obtener_frecuencia_palabra():
+def get_frecuencia():
     palabra = escape(request.args.get('word'))
     if not palabra:
         return jsonify({'error': 'Palabra no proporcionada en los parámetros de la solicitud'}), 400
@@ -167,7 +167,7 @@ def get_synonym_lwn():
 #     return frases_generadas
 
 # @app.route('/api/examples', methods=['GET'])
-# def get_examples():
+# def get_ejemplos():
 #     if request.method == 'GET':
 #         word = escape(request.args.get('word'))
 

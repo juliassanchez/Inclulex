@@ -55,6 +55,13 @@ body.light-mode {
   justify-content: center;
 }
 
+.not-found {
+  font-family: 'Gotham', sans-serif;
+  align-items: bottom;
+  justify-content: center; 
+  margin: 10vh;
+}
+
 .search-bar-container {
   display: flex;
   align-items: bottom;

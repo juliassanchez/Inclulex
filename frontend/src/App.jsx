@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import WordMeaning from './components/WordMeaning';
 import GuiaUso from './components/GuiaUso';
 import Proyecto from './components/Proyecto';
+import NotFound from './components/NotFound';
 import { Form, Navbar, Container, Nav } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -67,6 +68,7 @@ function App() {
           <Route path='search/:palabra' element={<WordMeaning darkMode={darkMode} />} />
           <Route path='/guia-uso' element={<GuiaUso darkMode={darkMode} />} />
           <Route path='/proyecto' element={<Proyecto/>} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
