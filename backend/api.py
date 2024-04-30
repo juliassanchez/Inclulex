@@ -1,5 +1,7 @@
 # import spacy
 # from transformers import AutoTokenizer, AutoModelForCausalLM
+import re
+import json
 import sqlite3
 from flask import Flask, request, jsonify
 from werkzeug.utils import escape
@@ -50,24 +52,57 @@ def get_frecuencia():
         if conexion:
             conexion.close()
 
-
 @app.route('/api/definition-easy', methods=['GET'])
 def get_definition_easy():
+    try:
+        # Abrir el archivo JSON
+        with open('Dictionary.json', 'r', encoding='utf-8') as json_file:
+            dictionary = json.load(json_file)
+
+        # Obtener la palabra de la solicitud
+        word = escape(request.args.get('word'))
+
+        # Buscar la palabra en el diccionario
+        definition = dictionary.get(word.lower())
+
+        if definition:
+            return jsonify({"definition_list": [definition]})
+        else:
+            # Si la palabra no se encuentra, intentar con su forma masculina
+            if word.endswith('a') and word[:-1] + 'o' in dictionary:
+                definition = dictionary.get(word[:-1] + 'o')
+            elif word.endswith('o') and word[:-1] + 'a' in dictionary:
+                definition = dictionary.get(word[:-1] + 'a')
+
+            if definition:
+                return jsonify({"definition_list": [definition]})
+            else:
+                return jsonify({"error": f"No se encontró una definición para la palabra '{word}'."})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@app.route('/api/definition-rae', methods=['GET'])
+def get_definition_rae():
     if request.method == 'GET':
         word = escape(request.args.get('word'))
         
-        definition_list = []
-        page = requests.get(url='https://www.buscapalabra.com/definiciones.html?palabra='+ word + '#resultados', headers=headers)
+        page = requests.get(url='https://dle.rae.es/'+ word + '?m=form', headers=headers)
         soup = BeautifulSoup(page.text, 'html.parser')
+        
         error_content = soup.find("div", {"id": "infoBoxArrowError3contendor"})
+        
         if page.status_code == 200 and not error_content:
-            definitions_content = soup.find("ol", {"class": "lista-ordenada"})
+            definitions_with_class_j = []
+            definitions_content = soup.find_all("p", {"class": "j"})
+            
             if definitions_content:
-                for li in definitions_content.find_all("li"):
-                    definition_text = li.text.strip()
-                    if definition_text not in definition_list: # A veces da definiciones repetidas
-                        definition_list.append(definition_text)
-                return jsonify(definition_list=definition_list)
+                for definition in definitions_content:
+                    definition_text = definition.text.strip()
+                    definition_text = re.sub(r'^\d+\.\s*[mf]\.\s*', '', definition_text)
+                    definitions_with_class_j.append(definition_text)
+                
+                return jsonify(definition_list=definitions_with_class_j)
             else:
                 return jsonify({"error": "No se encontraron definiciones para la palabra proporcionada."}), 404
         else:
