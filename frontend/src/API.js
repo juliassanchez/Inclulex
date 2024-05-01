@@ -94,6 +94,32 @@ const obtenerSigla = async (palabra) => {
   }
 };
 
+const obtenerRAE = async (palabra) => {
+  try {
+    const response = await fetch(`http://127.0.0.1:3000/api/definition-rae?word=${palabra}`);
+    if (!response.ok) {
+      throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+    }
+
+    const contentJson = await response.json();
+
+    if (contentJson.error) {
+      throw new Error(contentJson.error);
+    }
+
+    const definicion = contentJson;
+    console.log('Definición obtenida desde RAE:', definicion);
+    
+
+    return definicion;
+  } catch (error) {
+    console.error('Error al obtener la definición desde RAE:', error);
+    throw error;
+  }
+};
+
+
+
 const obtenerSinonimos = async (palabra) => {
   try {
     const response = await fetch(`http://127.0.0.1:3000/api/synonym-lwn?word=${palabra}`);
@@ -148,5 +174,5 @@ const obtenerSinonimos = async (palabra) => {
 // };
 
 //obtenerEjemplos
-const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSigla, obtenerSinonimos };
+const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSigla, obtenerRAE, obtenerSinonimos };
 export default API;

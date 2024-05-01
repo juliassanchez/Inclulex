@@ -1,7 +1,7 @@
 // WordMeaning.jsx
 
 import {React, useState, useEffect} from 'react';
-import { Container, Row, Col, Button, ListGroup, Tooltip, OverlayTrigger, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Button, ListGroup, Tooltip, OverlayTrigger, Carousel, ListGroupItem } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import API from '../API';
 
@@ -31,26 +31,39 @@ const WordMeaning = (props) => {
 
         const obtenerDefinicion = async () => {
           try {
+            let definiciones = [];
+            
+            // Intenta obtener la definición
             const nuevaDefinicion = await API.obtenerDefinicion(palabra);
-            if (!nuevaDefinicion || nuevaDefinicion.length === 0) {
-              console.log('No se encontró una definición. Intentando obtener la sigla...');
-              throw new Error('Sin definición');
+            if (nuevaDefinicion && nuevaDefinicion.definition_list && nuevaDefinicion.definition_list.length > 0) {
+              definiciones = nuevaDefinicion.definition_list;
             } else {
-              const definiciones = nuevaDefinicion.definition_list || [];
-              setSignificado(definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios']);
-            }
-          } catch (error) {
-            console.error('Error al obtener la definición:', error);
-            // Si hay un error al obtener la definición, intenta obtener la sigla
-            console.log('Intentando obtener la sigla...');
-            try {
+              console.log('No se encontró una definición. Intentando obtener la sigla...');
+              // Si no se encuentra definición, intenta obtener la sigla
               const sigla = await API.obtenerSigla(palabra);
               setSignificado([sigla]);
-            } catch (siglaError) {
-              console.error('Error al obtener la sigla:', siglaError);
+              return;
             }
+        
+            // Si hay definiciones, establecerlas
+            setSignificado(definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios']);
+          } catch (error) {
+            console.error('Error al obtener la definición:', error);
+            // Si hay un error al obtener la definición, intenta obtenerla desde la RAE
+            console.log('Intentando obtener desde RAE...');
+            try {
+              const respuestaRAE = await API.obtenerRAE(palabra);
+              const definicionesRAE = respuestaRAE.definition_list || [];
+              setSignificado(definicionesRAE.length > 0 ? definicionesRAE : ['No se encontraron definiciones en la RAE']);
+            } catch (raeError) {
+              console.error('Error al obtener la definición desde RAE:', raeError);
+              setSignificado(['No se pudo obtener la definición desde la RAE']);
+            }
+            
           }
-        };
+        };        
+        
+        
 
         const obtenerSinonimos = async () => {
           try {
@@ -164,13 +177,13 @@ const WordMeaning = (props) => {
   <Row>
     <Col md={8} className="d-flex flex-column">
       <h2 className="subtitulo">Significado</h2>
-      <ol className="texto my-auto">
+      <ListGroup className="texto my-auto">
         {significado.map((definicion, index) => (
-          <li key={index}>
+          <ListGroupItem key={index}>
             {definicion}
-          </li>
+          </ListGroupItem>
         ))}
-      </ol>
+      </ListGroup>
     </Col>
     <Col md={4}>
       <section>
