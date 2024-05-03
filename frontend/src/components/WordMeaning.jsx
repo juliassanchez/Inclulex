@@ -1,7 +1,7 @@
 // WordMeaning.jsx
 
 import {React, useState, useEffect} from 'react';
-import { Container, Row, Col, Button, ListGroup, Tooltip, OverlayTrigger, Carousel, ListGroupItem } from 'react-bootstrap';
+import { Container, Row, Col, Button, ListGroup, Tooltip, OverlayTrigger, Carousel, ListGroupItem, Spinner } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
 import API from '../API';
 
@@ -10,7 +10,11 @@ const WordMeaning = (props) => {
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
     const [sinonimos, setSinonimos] = useState([])
     const [pictograma, setPictograma] = useState([])
-    const [ejemplos, setEjemplos] = useState([])
+    const [ejemplos, setEjemplos] = useState([
+      <Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+    ])
     const [frecuencia, setFrecuencia] = useState(0)
 
     useEffect(() => {
@@ -133,23 +137,40 @@ const WordMeaning = (props) => {
         };
         
         const obtenerEjemplos = async () => {
+          console.log('Obteniendo ejemplos...');
           try {
             const nuevosEjemplos = await API.obtenerEjemplos(palabra);
             const ejemplos = nuevosEjemplos.frases_generadas || [];
-            setEjemplos(() => {
-              return ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos'];
-            });
+            console.log('Ejemplos obtenidos:', ejemplos);
+            // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
+            setEjemplos(ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos']);
           } catch (error) {
             console.error('Error al obtener los ejemplos:', error);
+            // Establecer el estado de los ejemplos como el spinner nuevamente
+            setEjemplos([
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            ]);
           }
         };
-      
+
         obtenerPictograma();
         obtenerFrecuencia();
         obtenerDefinicion();
         obtenerSinonimos();
         obtenerEjemplos();
+
+        return () => {
+          setEjemplos([
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          ]);
+          setPictograma([]);
+        };
       }, [palabra]);
+
 
   return (
     <Container fluid className="word-meaning-container" role="main" style={{ marginTop: '90px', textAlign: 'center' }}>
@@ -163,10 +184,13 @@ const WordMeaning = (props) => {
       ) : (
         <Tooltip id="frecuencia-tooltip">Es una palabra frecuente</Tooltip>
       )
-    }>
+    }><p className='mini-texto'>
+    Se trata de una palabra {' '}
     <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button' role="navigation">
       {frecuencia < 1000 ? "Compleja" : "Simple"}
     </Button>
+    </p>
+    
   </OverlayTrigger>
   <br />
   <Row>

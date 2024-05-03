@@ -165,7 +165,7 @@ def get_ejemplos():
 
         # Llamar a la función que genera frases con la palabra dada
         set_seed(18)
-        frases_generadas = generator(f"Se entiende por {word}", num_return_sequences=3)
+        frases_generadas = generator(f"Nos referimos a {word}", num_return_sequences=3)
         lista_frases = [generacion['generated_text'] for generacion in frases_generadas]
 
         return jsonify({"frases_generadas": lista_frases})
