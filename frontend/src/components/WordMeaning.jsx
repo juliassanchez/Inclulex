@@ -10,10 +10,7 @@ const WordMeaning = (props) => {
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
     const [sinonimos, setSinonimos] = useState([])
     const [pictograma, setPictograma] = useState([])
-    const [ejemplos, setEjemplos] = useState(['El caimán y el cocodrilo no se diferencian más que en el nombre.', 
-    'Allí, golpean por accidente a un cocodrilo, por lo que los encarcelan.', 
-    'Son devoradas por un cocodrilo, que dice Coors, en referencia a otra cervecería estadounidense.', 
-    'Cocodrilo, ¿dónde? Es la imagen de un río, en donde se supone hay un cocodrilo, pero no se ve.'])
+    const [ejemplos, setEjemplos] = useState([])
     const [frecuencia, setFrecuencia] = useState(0)
 
     useEffect(() => {
@@ -63,8 +60,6 @@ const WordMeaning = (props) => {
           }
         };        
         
-        
-
         const obtenerSinonimos = async () => {
           try {
             const nuevosSinonimos = await API.obtenerSinonimos(palabra);
