@@ -1,5 +1,5 @@
-# import spacy
-# from transformers import AutoTokenizer, AutoModelForCausalLM
+import spacy
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import re
 import json
 import sqlite3
@@ -148,68 +148,68 @@ def get_synonym_lwn():
                 synoyms_list.append(sinonimo.lemma)
         return jsonify(synoyms_list=synoyms_list)
         
-# # Cargar el modelo de lenguaje de español de Spacy
-# nlp = spacy.load("es_core_news_sm")
+# Cargar el modelo de lenguaje de español de Spacy
+nlp = spacy.load("es_core_news_sm")
 
-# # Cargar el tokenizador y el modelo pre-entrenado
-# tokenizer = AutoTokenizer.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
-# model = AutoModelForCausalLM.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
+# Cargar el tokenizador y el modelo pre-entrenado
+tokenizer = AutoTokenizer.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
+model = AutoModelForCausalLM.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
 
-# def obtener_articulo(palabra):
-#     # Procesar la palabra con SpaCy
-#     doc = nlp(palabra)
+def obtener_articulo(palabra):
+    # Procesar la palabra con SpaCy
+    doc = nlp(palabra)
     
-#     # Verificar el género de la palabra en el contexto
-#     for token in doc:
-#         # Verificar si el token es un sustantivo y si tiene información de género
-#         if token.pos_ == "NOUN" and token.morph.get("Gender"):
-#             # Obtener el género de la palabra y convertirlo a cadena
-#             genero = token.morph.get("Gender")[0]  # Tomar el primer elemento de la lista
-#             # Devolver el artículo correspondiente al género
-#             return "El" if genero == "Masc" else "La"
+    # Verificar el género de la palabra en el contexto
+    for token in doc:
+        # Verificar si el token es un sustantivo y si tiene información de género
+        if token.pos_ == "NOUN" and token.morph.get("Gender"):
+            # Obtener el género de la palabra y convertirlo a cadena
+            genero = token.morph.get("Gender")[0]  # Tomar el primer elemento de la lista
+            # Devolver el artículo correspondiente al género
+            return "El" if genero == "Masc" else "La"
     
-#     # Si no se encontró información de género, devolver None
-#     return None
+    # Si no se encontró información de género, devolver None
+    return None
 
-# def generar_frases_con_palabra(palabra, modelo, tokenizer, num_frases=3, max_length=50):
-#     frases_generadas = []
-#     for _ in range(num_frases):
-#         # Obtener el artículo adecuado para la palabra
-#         articulo = obtener_articulo(str(palabra))
+def generar_frases_con_palabra(palabra, modelo, tokenizer, num_frases=3, max_length=50):
+    frases_generadas = []
+    for _ in range(num_frases):
+        # Obtener el artículo adecuado para la palabra
+        articulo = obtener_articulo(str(palabra))
         
-#         # Construir el inicio de la frase con el artículo y la palabra
-#         inicio_frase = f"{articulo} {palabra} "
+        # Construir el inicio de la frase con el artículo y la palabra
+        inicio_frase = f"{articulo} {palabra} "
         
-#         # Inicializar la longitud máxima inicial
-#         current_max_length = max_length
+        # Inicializar la longitud máxima inicial
+        current_max_length = max_length
         
-#         # Generar texto adicional con el modelo de lenguaje
-#         while True:
-#             input_ids = tokenizer.encode(inicio_frase, return_tensors="pt")
-#             output = modelo.generate(input_ids, do_sample=True, max_length=current_max_length, num_return_sequences=1, pad_token_id=tokenizer.eos_token_id, top_k=50, top_p=0.95, temperature=0.7)
-#             texto_generado = tokenizer.decode(output[0], skip_special_tokens=True)
+        # Generar texto adicional con el modelo de lenguaje
+        while True:
+            input_ids = tokenizer.encode(inicio_frase, return_tensors="pt")
+            output = modelo.generate(input_ids, do_sample=True, max_length=current_max_length, num_return_sequences=1, pad_token_id=tokenizer.eos_token_id, top_k=50, top_p=0.95, temperature=0.7)
+            texto_generado = tokenizer.decode(output[0], skip_special_tokens=True)
             
-#             # Verificar si la frase generada excede la longitud máxima deseada
-#             if len(texto_generado.split()) <= max_length:
-#                 break
-#             else:
-#                 # Reducir la longitud máxima y generar nuevamente
-#                 current_max_length -= 10
+            # Verificar si la frase generada excede la longitud máxima deseada
+            if len(texto_generado.split()) <= max_length:
+                break
+            else:
+                # Reducir la longitud máxima y generar nuevamente
+                current_max_length -= 10
         
-#         # Agregar el texto generado a la lista de frases generadas
-#         frases_generadas.append(texto_generado)
+        # Agregar el texto generado a la lista de frases generadas
+        frases_generadas.append(texto_generado)
 
-#     return frases_generadas
+    return frases_generadas
 
-# @app.route('/api/examples', methods=['GET'])
-# def get_ejemplos():
-#     if request.method == 'GET':
-#         word = escape(request.args.get('word'))
+@app.route('/api/examples', methods=['GET'])
+def get_ejemplos():
+    if request.method == 'GET':
+        word = escape(request.args.get('word'))
 
-#         # Llamar a la función que genera frases con la palabra dada
-#         frases_generadas = generar_frases_con_palabra(word, model, tokenizer, num_frases=5)
+        # Llamar a la función que genera frases con la palabra dada
+        frases_generadas = generar_frases_con_palabra(word, model, tokenizer, num_frases=5)
 
-#         return jsonify({"frases_generadas": frases_generadas})
+        return jsonify({"frases_generadas": frases_generadas})
 
     
 if __name__ == '__main__':

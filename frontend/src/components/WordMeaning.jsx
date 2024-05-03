@@ -137,23 +137,23 @@ const WordMeaning = (props) => {
           }
         };
         
-        // const obtenerEjemplos = async () => {
-        //   try {
-        //     const nuevosEjemplos = await API.obtenerEjemplos(palabra);
-        //     const ejemplos = nuevosEjemplos.frases_generadas || [];
-        //     setEjemplos(() => {
-        //       return ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos'];
-        //     });
-        //   } catch (error) {
-        //     console.error('Error al obtener los ejemplos:', error);
-        //   }
-        // };
+        const obtenerEjemplos = async () => {
+          try {
+            const nuevosEjemplos = await API.obtenerEjemplos(palabra);
+            const ejemplos = nuevosEjemplos.frases_generadas || [];
+            setEjemplos(() => {
+              return ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos'];
+            });
+          } catch (error) {
+            console.error('Error al obtener los ejemplos:', error);
+          }
+        };
       
         obtenerPictograma();
         obtenerFrecuencia();
         obtenerDefinicion();
         obtenerSinonimos();
-        // obtenerEjemplos();
+        obtenerEjemplos();
       }, [palabra]);
 
   return (
