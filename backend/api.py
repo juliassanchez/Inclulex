@@ -211,7 +211,4 @@ def get_ejemplos():
 
         return jsonify({"frases_generadas": frases_generadas})
 
-    
-if __name__ == '__main__':
-    app.run(debug=True, port=3000)
 
