@@ -1,5 +1,5 @@
-const SERVER_URL = 'http://localhost:3000';
-
+//const SERVER_URL = 'http://127.0.0.1:3000/api';
+const SERVER_URL = 'http://10.117.129.37:3000/api';
 const obtenerPictograma = async (palabra) => {
   try {
     const respuestaIds = await fetch(`https://api.arasaac.org/v1/pictograms/es/search/${palabra}`);
@@ -20,7 +20,7 @@ const obtenerPictograma = async (palabra) => {
 
 const obtenerFrecuencia = async (palabra) => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/api/frecuencia?word=${palabra}`);
+    const response = await fetch(SERVER_URL+`/frecuencia?word=${palabra}`);
     
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
@@ -50,7 +50,7 @@ const obtenerFrecuencia = async (palabra) => {
 
 const obtenerDefinicion = async (palabra) => {
   try {
-      const response = await fetch(`http://127.0.0.1:3000/api/definition-easy?word=${palabra}`);
+      const response = await fetch(SERVER_URL +`/definition-easy?word=${palabra}`);
 
       if (!response.ok) {
           throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
@@ -74,7 +74,7 @@ const obtenerDefinicion = async (palabra) => {
 
 const obtenerSigla = async (palabra) => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/api/siglas?word=${palabra}`);
+    const response = await fetch(SERVER_URL +`/siglas?word=${palabra}`);
 
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
@@ -96,7 +96,7 @@ const obtenerSigla = async (palabra) => {
 
 const obtenerRAE = async (palabra) => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/api/definition-rae?word=${palabra}`);
+    const response = await fetch(SERVER_URL +`/definition-rae?word=${palabra}`);
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
     }
@@ -122,7 +122,7 @@ const obtenerRAE = async (palabra) => {
 
 const obtenerSinonimos = async (palabra) => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/api/synonym-lwn?word=${palabra}`);
+    const response = await fetch(SERVER_URL +`/synonym-lwn?word=${palabra}`);
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
     }
@@ -151,7 +151,7 @@ const obtenerSinonimos = async (palabra) => {
 
 const obtenerEjemplos = async (palabra) => {
   try {
-    const response = await fetch(`http://127.0.0.1:3000/api/examples?word=${palabra}`);
+    const response = await fetch(SERVER_URL +`/examples?word=${palabra}`);
     if (!response.ok) {
       throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
     }
