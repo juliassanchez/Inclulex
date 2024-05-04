@@ -147,6 +147,40 @@ def get_synonym_lwn():
             for sinonimo in sinonimos:
                 synoyms_list.append(sinonimo.lemma)
         return jsonify(synoyms_list=synoyms_list)
+
+@app.route('/api/synonym-sinant', methods=['GET'])
+def get_synonym_sinant():
+    try:
+        # Abrir el archivo JSON de sinónimos
+        with open('sinant.json', 'r', encoding='utf-8') as json_file:
+            sinant_data = json.load(json_file)
+
+        # Obtener la palabra de la solicitud
+        word = request.args.get('word')
+
+        # Buscar la palabra en el diccionario de sinónimos
+        synonyms = sinant_data.get(word.lower())
+
+        if synonyms:
+            synoyms_list = synonyms.get("sinonimos", [])
+            return jsonify({"synoyms_list": synoyms_list})
+        else:
+            # Si la palabra no se encuentra, intentar con su forma masculina o femenina
+            if word.endswith('a') and word[:-1] + 'o' in sinant_data:
+                synonyms = sinant_data.get(word[:-1] + 'o')
+            elif word.endswith('o') and word[:-1] + 'a' in sinant_data:
+                synonyms = sinant_data.get(word[:-1] + 'a')
+
+            if synonyms:
+                synoyms_list = synonyms.get("sinonimos", [])
+                return jsonify({"synoyms_list": synoyms_list})
+            else:
+                return jsonify({"error": f"No se encontraron sinónimos para la palabra '{word}'."}), 404
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+
         
 # Cargar el modelo de lenguaje de español de Spacy
 nlp = spacy.load("es_core_news_sm")
@@ -162,9 +196,7 @@ generator = pipeline('text-generation', tokenizer=tokenizer, model=model)
 def get_ejemplos():
     if request.method == 'GET':
         word = escape(request.args.get('word'))
-
-        # Llamar a la función que genera frases con la palabra dada
-        set_seed(18)
+        # Obtener ejemplos de uso de la palabra
         frases_generadas = generator(f"Nos referimos a {word}", num_return_sequences=3)
         lista_frases = [generacion['generated_text'] for generacion in frases_generadas]
 

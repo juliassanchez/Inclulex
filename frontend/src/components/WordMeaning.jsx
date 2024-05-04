@@ -66,9 +66,14 @@ const WordMeaning = (props) => {
         
         const obtenerSinonimos = async () => {
           try {
-            const nuevosSinonimos = await API.obtenerSinonimos(palabra);
-            const sinonimos = nuevosSinonimos.synoyms_list || [];
+            let nuevosSinonimos = await API.obtenerSinonimos(palabra);
+            let sinonimos = nuevosSinonimos.synoyms_list || [];
         
+            if (sinonimos.length === 0) {
+              nuevosSinonimos = await API.obtenerSinonimos2(palabra);
+              sinonimos = nuevosSinonimos.synoyms_list || [];
+            }
+                
             // Obtener la frecuencia de cada sinónimo
             const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
               try {
@@ -79,13 +84,13 @@ const WordMeaning = (props) => {
                 return { sinonimo, frecuencia: 0 };
               }
             }));
-        
+                
             // Ordenar los sinónimos por frecuencia en orden descendente
             frecuencias.sort((a, b) => b.frecuencia - a.frecuencia);
-        
+                
             // Tomar los primeros 5 sinónimos después de ordenarlos
             const primerosSinonimos = frecuencias.slice(0, 5).map((obj) => obj.sinonimo);
-        
+                
             setSinonimos(() => {
               return primerosSinonimos.length > 0 ? primerosSinonimos : ['No se encontraron sinónimos'];
             });
@@ -93,6 +98,8 @@ const WordMeaning = (props) => {
             console.error('Error al obtener los sinónimos:', error);
           }
         };
+        
+        
 
         const obtenerPictograma = async () => {
           try {

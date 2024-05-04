@@ -1,0 +1,6712 @@
+{
+    "abacería": {
+        "sinonimos": [
+            "tienda",
+            "comercio"
+        ],
+        "antonimos": []
+    },
+    "abigarrado": {
+        "sinonimos": [
+            "heterogéneo",
+            "recargado",
+            "mezclado ¹"
+        ],
+        "antonimos": []
+    },
+    "abisal": {
+        "sinonimos": [
+            "abismal",
+            "hondo",
+            "profundo"
+        ],
+        "antonimos": []
+    },
+    "abjurar": {
+        "sinonimos": [
+            "renegar",
+            "renunciar",
+            "retractar ¹ confirmar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "abocar": {
+        "sinonimos": [
+            "acercar",
+            "aproximar. pactar"
+        ],
+        "antonimos": []
+    },
+    "abolición": {
+        "sinonimos": [
+            "revocación"
+        ],
+        "antonimos": [
+            "validez",
+            "reposición"
+        ]
+    },
+    "abolir": {
+        "sinonimos": [
+            "suprimir",
+            "derogar"
+        ],
+        "antonimos": [
+            "instituir"
+        ]
+    },
+    "abominación": {
+        "sinonimos": [
+            "aversión",
+            "asco",
+            "odio",
+            "execración ≠"
+        ],
+        "antonimos": []
+    },
+    "abominar": {
+        "sinonimos": [
+            "condenar",
+            "maldecir",
+            "aborrecer"
+        ],
+        "antonimos": [
+            "amar"
+        ]
+    },
+    "abotargado": {
+        "sinonimos": [
+            "hinchado",
+            "inflado"
+        ],
+        "antonimos": []
+    },
+    "abrogar": {
+        "sinonimos": [
+            "abolir",
+            "revocar"
+        ],
+        "antonimos": [
+            "restablecer"
+        ]
+    },
+    "abrupto": {
+        "sinonimos": [
+            "escarpado",
+            "escabroso",
+            "áspero"
+        ],
+        "antonimos": [
+            "suave",
+            "culto"
+        ]
+    },
+    "absurdo": {
+        "sinonimos": [
+            "ridículo",
+            "extravagante",
+            "ilógico"
+        ],
+        "antonimos": [
+            "posible"
+        ]
+    },
+    "abulia": {
+        "sinonimos": [
+            "dejación",
+            "pasividad",
+            "desgana"
+        ],
+        "antonimos": [
+            "actividad",
+            ""
+        ]
+    },
+    "abúlico": {
+        "sinonimos": [
+            "apático",
+            "desganado",
+            "perezoso"
+        ],
+        "antonimos": [
+            "activo"
+        ]
+    },
+    "abuzarse": {
+        "sinonimos": [
+            "echarse de bruces (boca abajo)"
+        ],
+        "antonimos": []
+    },
+    "abyecto": {
+        "sinonimos": [
+            "despreciable",
+            "vil en extremo / humillado"
+        ],
+        "antonimos": []
+    },
+    "accésit": {
+        "sinonimos": [
+            "recompensa",
+            "diploma"
+        ],
+        "antonimos": []
+    },
+    "acedo": {
+        "sinonimos": [
+            "ácido",
+            "desabrido"
+        ],
+        "antonimos": [
+            "dulce"
+        ]
+    },
+    "acendrar": {
+        "sinonimos": [
+            "limpiar",
+            "depurar"
+        ],
+        "antonimos": [
+            "contaminar"
+        ]
+    },
+    "acerbo": {
+        "sinonimos": [
+            "cruel",
+            "áspero",
+            "agrio"
+        ],
+        "antonimos": [
+            "dulce",
+            "suave",
+            "amable"
+        ]
+    },
+    "aciago": {
+        "sinonimos": [
+            "desafortunado",
+            "infeliz"
+        ],
+        "antonimos": []
+    },
+    "acibarado": {
+        "sinonimos": [
+            "amargo"
+        ],
+        "antonimos": [
+            "endulzado",
+            "consolado"
+        ]
+    },
+    "acibarar": {
+        "sinonimos": [
+            "amargar",
+            "afligir"
+        ],
+        "antonimos": [
+            "endulzar",
+            "consolar"
+        ]
+    },
+    "acicate": {
+        "sinonimos": [
+            "incentivo",
+            "estímulo",
+            "aguijón",
+            "espuela ≠"
+        ],
+        "antonimos": []
+    },
+    "acrecer": {
+        "sinonimos": [
+            "acrecentar",
+            "arrojar",
+            "aumentar"
+        ],
+        "antonimos": [
+            "desminuir",
+            ""
+        ]
+    },
+    "adalid": {
+        "sinonimos": [
+            "caudillo",
+            "jefe",
+            "dirigente"
+        ],
+        "antonimos": []
+    },
+    "adenda": {
+        "sinonimos": [
+            "apéndice"
+        ],
+        "antonimos": []
+    },
+    "adhesión": {
+        "sinonimos": [
+            "apego",
+            "amistad",
+            "solidaridad",
+            "fanatismo",
+            ""
+        ],
+        "antonimos": []
+    },
+    "adjurar": {
+        "sinonimos": [
+            "renegar",
+            "traicionar"
+        ],
+        "antonimos": []
+    },
+    "admonición": {
+        "sinonimos": [
+            "amonestación",
+            "reconvención",
+            "reproche",
+            ""
+        ],
+        "antonimos": []
+    },
+    "adusto": {
+        "sinonimos": [
+            "seco",
+            "desabrido",
+            "hosco",
+            "serio"
+        ],
+        "antonimos": [
+            "amable"
+        ]
+    },
+    "advenedizo": {
+        "sinonimos": [
+            "forastero",
+            "foráneo",
+            "extranjero",
+            "intruso ≠"
+        ],
+        "antonimos": []
+    },
+    "afanoso": {
+        "sinonimos": [
+            "muy penoso",
+            "trabajoso",
+            "voluntario",
+            "ágil",
+            ""
+        ],
+        "antonimos": []
+    },
+    "afrenta": {
+        "sinonimos": [
+            "ultraje",
+            "mancilla",
+            "injuria"
+        ],
+        "antonimos": [
+            "respeto"
+        ]
+    },
+    "agareno": {
+        "sinonimos": [
+            "árabe",
+            "musulmán"
+        ],
+        "antonimos": []
+    },
+    "ajado": {
+        "sinonimos": [
+            "marchitado",
+            "deteriorado",
+            "sobado"
+        ],
+        "antonimos": [
+            "nuevo",
+            "joven",
+            ""
+        ]
+    },
+    "algazara": {
+        "sinonimos": [
+            "ruido",
+            "gritería"
+        ],
+        "antonimos": [
+            "tranquilidad",
+            "paz"
+        ]
+    },
+    "almoneda": {
+        "sinonimos": [
+            "subasta",
+            "licitación",
+            "compraventa"
+        ],
+        "antonimos": []
+    },
+    "alocución": {
+        "sinonimos": [
+            "arenga",
+            "perorata",
+            "charla"
+        ],
+        "antonimos": []
+    },
+    "altruismo": {
+        "sinonimos": [
+            "filantropía",
+            "desinterés",
+            "bondad"
+        ],
+        "antonimos": [
+            "egoísmo",
+            ""
+        ]
+    },
+    "altruista": {
+        "sinonimos": [
+            "generoso",
+            "dadivoso",
+            "filántropo",
+            "benévolo",
+            ""
+        ],
+        "antonimos": []
+    },
+    "amanerar": {
+        "sinonimos": [
+            "afectar",
+            "rebuscar"
+        ],
+        "antonimos": []
+    },
+    "amilanado": {
+        "sinonimos": [
+            "acobardado",
+            "apocado",
+            "abatido",
+            "medroso ≠"
+        ],
+        "antonimos": []
+    },
+    "amojonar": {
+        "sinonimos": [
+            "acotar",
+            "delimitar"
+        ],
+        "antonimos": [
+            "abrir"
+        ]
+    },
+    "anacoreta": {
+        "sinonimos": [
+            "cenobita",
+            "eremita",
+            "ermitaño",
+            "solitario"
+        ],
+        "antonimos": []
+    },
+    "anacrónico": {
+        "sinonimos": [
+            "anticuado",
+            "inadecuado",
+            "equivocado",
+            ""
+        ],
+        "antonimos": []
+    },
+    "anatema": {
+        "sinonimos": [
+            "excomunión",
+            "censura",
+            "imprecación ≠"
+        ],
+        "antonimos": []
+    },
+    "anegación": {
+        "sinonimos": [
+            "inundación",
+            "avenida",
+            "riada"
+        ],
+        "antonimos": []
+    },
+    "anfibología": {
+        "sinonimos": [
+            "doble sentido",
+            "vicio de la palabra",
+            ""
+        ],
+        "antonimos": []
+    },
+    "angosto": {
+        "sinonimos": [
+            "estrecho",
+            "emboscado",
+            "penoso"
+        ],
+        "antonimos": [
+            "ancho",
+            ""
+        ]
+    },
+    "angostura": {
+        "sinonimos": [
+            "desfiladero",
+            "estrechez"
+        ],
+        "antonimos": []
+    },
+    "anodino": {
+        "sinonimos": [
+            "soso",
+            "desangelado",
+            "insignificante",
+            ""
+        ],
+        "antonimos": [
+            "sabroso",
+            ""
+        ]
+    },
+    "antenado": {
+        "sinonimos": [
+            "con anticipación",
+            "anteriormente"
+        ],
+        "antonimos": []
+    },
+    "anuencia": {
+        "sinonimos": [
+            "consentimiento",
+            "aquiescencia",
+            "venia ≠"
+        ],
+        "antonimos": []
+    },
+    "añagaza": {
+        "sinonimos": [
+            "señuelo",
+            "artimaña"
+        ],
+        "antonimos": [
+            "sinceridad"
+        ]
+    },
+    "apocado": {
+        "sinonimos": [
+            "tímido",
+            "inseguro",
+            "vacilante",
+            "timorato",
+            ""
+        ],
+        "antonimos": []
+    },
+    "apócrifo": {
+        "sinonimos": [
+            "falso",
+            "simulado",
+            "inventado",
+            "fingido ≠"
+        ],
+        "antonimos": []
+    },
+    "apología": {
+        "sinonimos": [
+            "alabanza",
+            "defensa",
+            "encomio",
+            "loa ≠"
+        ],
+        "antonimos": []
+    },
+    "apostatar": {
+        "sinonimos": [
+            "abjurar",
+            "renegar",
+            "traicionar"
+        ],
+        "antonimos": []
+    },
+    "aquiescencia": {
+        "sinonimos": [
+            "consentimiento",
+            "concesión",
+            ""
+        ],
+        "antonimos": []
+    },
+    "aquilatar": {
+        "sinonimos": [
+            "comprobar",
+            "verificar",
+            "graduar",
+            "determinar"
+        ],
+        "antonimos": []
+    },
+    "arancel": {
+        "sinonimos": [
+            "tarifa",
+            "arbitrio"
+        ],
+        "antonimos": []
+    },
+    "arcano": {
+        "sinonimos": [
+            "oculto",
+            "secreto"
+        ],
+        "antonimos": [
+            "claro"
+        ]
+    },
+    "ardid": {
+        "sinonimos": [
+            "treta",
+            "estratagema",
+            "astucia"
+        ],
+        "antonimos": [
+            "sinceridad"
+        ]
+    },
+    "armisticio": {
+        "sinonimos": [
+            "tregua",
+            "pacto"
+        ],
+        "antonimos": [
+            "guerra"
+        ]
+    },
+    "arriar": {
+        "sinonimos": [
+            "bajar recoger"
+        ],
+        "antonimos": [
+            "izar"
+        ]
+    },
+    "arrojado": {
+        "sinonimos": [
+            "decidido",
+            "valiente",
+            "arriesgado"
+        ],
+        "antonimos": [
+            "recogido"
+        ]
+    },
+    "arrumaco": {
+        "sinonimos": [
+            "zalamería",
+            "halago"
+        ],
+        "antonimos": [
+            "hostilidad"
+        ]
+    },
+    "artero": {
+        "sinonimos": [
+            "sutil",
+            "astuto",
+            "sagaz",
+            "ladino",
+            "traidor"
+        ],
+        "antonimos": [
+            "noble",
+            ""
+        ]
+    },
+    "asaz": {
+        "sinonimos": [
+            "bastante",
+            "suficiente"
+        ],
+        "antonimos": []
+    },
+    "asceta": {
+        "sinonimos": [
+            "insociable",
+            "sobrio",
+            "que hace vida ASCÉTICA"
+        ],
+        "antonimos": []
+    },
+    "asentir": {
+        "sinonimos": [
+            "afirmar",
+            "consentir",
+            "admitir como cierto o"
+        ],
+        "antonimos": []
+    },
+    "asepsia": {
+        "sinonimos": [
+            "limpieza",
+            "esterilización"
+        ],
+        "antonimos": []
+    },
+    "aseverar": {
+        "sinonimos": [
+            "afirmar",
+            "confirmar",
+            "probar"
+        ],
+        "antonimos": [
+            "negar"
+        ]
+    },
+    "asueto": {
+        "sinonimos": [
+            "descanso",
+            "pausa",
+            "reposo",
+            "fiesta",
+            "recreo"
+        ],
+        "antonimos": []
+    },
+    "atavío": {
+        "sinonimos": [
+            "adorno",
+            "compostura",
+            "vestido"
+        ],
+        "antonimos": []
+    },
+    "atinar": {
+        "sinonimos": [
+            "encontrar",
+            "acertar",
+            "hallar",
+            "conseguir"
+        ],
+        "antonimos": [
+            "errar"
+        ]
+    },
+    "atónito": {
+        "sinonimos": [
+            "sorprendido",
+            "desconcentrado",
+            "estupefacto ≠"
+        ],
+        "antonimos": []
+    },
+    "atrabiliario": {
+        "sinonimos": [
+            "irascible",
+            "irritable",
+            "colérico",
+            "adusto"
+        ],
+        "antonimos": []
+    },
+    "atrofia": {
+        "sinonimos": [
+            "parálisis"
+        ],
+        "antonimos": [
+            "desarrollo"
+        ]
+    },
+    "auspiciar": {
+        "sinonimos": [
+            "predecir",
+            "augurar",
+            "favorecer",
+            "ayudar ≠"
+        ],
+        "antonimos": []
+    },
+    "austero": {
+        "sinonimos": [
+            "severo",
+            "sobrio",
+            "sencillo",
+            "riguroso",
+            "áspero ≠"
+        ],
+        "antonimos": []
+    },
+    "autarquía": {
+        "sinonimos": [
+            "independencia",
+            "bienestar"
+        ],
+        "antonimos": []
+    },
+    "avenencia": {
+        "sinonimos": [
+            "conciliación",
+            "armonía",
+            "arreglo ≠"
+        ],
+        "antonimos": []
+    },
+    "averno": {
+        "sinonimos": [
+            "infierno"
+        ],
+        "antonimos": [
+            "cielo"
+        ]
+    },
+    "aversión": {
+        "sinonimos": [
+            "rechazo",
+            "repugnancia",
+            "antipatía"
+        ],
+        "antonimos": [
+            "simpatía",
+            ""
+        ]
+    },
+    "avezado": {
+        "sinonimos": [
+            "experimentado",
+            "habituado",
+            "experto",
+            "ducho ≠"
+        ],
+        "antonimos": []
+    },
+    "avezar": {
+        "sinonimos": [
+            "acostumbrar",
+            "experimentar",
+            "habituarse ≠"
+        ],
+        "antonimos": []
+    },
+    "avidez": {
+        "sinonimos": [
+            "ansia",
+            "codicia",
+            "ambición"
+        ],
+        "antonimos": [
+            "indiferencia",
+            ""
+        ]
+    },
+    "avieso": {
+        "sinonimos": [
+            "malo",
+            "perverso",
+            "torcido",
+            "atravesado"
+        ],
+        "antonimos": [
+            "recto",
+            ""
+        ]
+    },
+    "avulsión": {
+        "sinonimos": [
+            "extirpación",
+            "mutilación",
+            "supresión",
+            ""
+        ],
+        "antonimos": []
+    },
+    "axiomático": {
+        "sinonimos": [
+            "evidente",
+            "indiscutible"
+        ],
+        "antonimos": [
+            "falso",
+            "dudoso"
+        ]
+    },
+    "azaroso": {
+        "sinonimos": [
+            "expuesto",
+            "arriesgado",
+            "aventurado",
+            "aciago",
+            ""
+        ],
+        "antonimos": []
+    },
+    "bagaje": {
+        "sinonimos": [
+            "equipaje",
+            "acervo",
+            "patrimonio"
+        ],
+        "antonimos": []
+    },
+    "bagatela": {
+        "sinonimos": [
+            "nimiedad",
+            "menudencia",
+            "minucia ≠"
+        ],
+        "antonimos": []
+    },
+    "baladí": {
+        "sinonimos": [
+            "insignificante",
+            "superficial",
+            "trivial"
+        ],
+        "antonimos": [
+            "importante",
+            ""
+        ]
+    },
+    "baldío": {
+        "sinonimos": [
+            "vano",
+            "infundado",
+            "yermo",
+            "ocioso"
+        ],
+        "antonimos": [
+            "fértil",
+            ""
+        ]
+    },
+    "baliza": {
+        "sinonimos": [
+            "boya",
+            "indicación",
+            "señal"
+        ],
+        "antonimos": []
+    },
+    "baluarte": {
+        "sinonimos": [
+            "bastión",
+            "fortificación",
+            "defensa"
+        ],
+        "antonimos": []
+    },
+    "baquiano": {
+        "sinonimos": [
+            "experto",
+            "versado",
+            "ducho"
+        ],
+        "antonimos": []
+    },
+    "barahunda": {
+        "sinonimos": [
+            "ruido y confusión grandes"
+        ],
+        "antonimos": []
+    },
+    "barruntar": {
+        "sinonimos": [
+            "presentir",
+            "sospechar",
+            "conjeturar",
+            "colegir"
+        ],
+        "antonimos": []
+    },
+    "bastión": {
+        "sinonimos": [
+            "fortificación",
+            "pilar",
+            "baluarte"
+        ],
+        "antonimos": []
+    },
+    "batahola": {
+        "sinonimos": [
+            "alboroto",
+            "bulla",
+            "escándalo"
+        ],
+        "antonimos": [
+            "tranquilidad",
+            ""
+        ]
+    },
+    "beodo": {
+        "sinonimos": [
+            "borracho",
+            "ebrio"
+        ],
+        "antonimos": []
+    },
+    "bisoñez": {
+        "sinonimos": [
+            "BISOÑO ~ inexperto",
+            "novicio",
+            "novato"
+        ],
+        "antonimos": []
+    },
+    "bisoño": {
+        "sinonimos": [
+            "inexperto",
+            "novicio",
+            "novato"
+        ],
+        "antonimos": [
+            "veterano",
+            "maestro",
+            ""
+        ]
+    },
+    "bitongo": {
+        "sinonimos": [
+            "niño"
+        ],
+        "antonimos": []
+    },
+    "bizarría": {
+        "sinonimos": [
+            "arrogancia",
+            "gallardía",
+            "intrepidez",
+            ""
+        ],
+        "antonimos": []
+    },
+    "bizarro": {
+        "sinonimos": [
+            "valiente",
+            "generoso",
+            "lucido",
+            "espléndido",
+            ""
+        ],
+        "antonimos": []
+    },
+    "boato": {
+        "sinonimos": [
+            "lujo",
+            "suntuosidad ostentación en el porte"
+        ],
+        "antonimos": []
+    },
+    "bogar": {
+        "sinonimos": [
+            "remar",
+            "navegar"
+        ],
+        "antonimos": []
+    },
+    "bosquejar": {
+        "sinonimos": [
+            "esbozar",
+            "proyectar",
+            "pintar o modelar sin"
+        ],
+        "antonimos": []
+    },
+    "botulismo": {
+        "sinonimos": [
+            "Enfermedad producida por la toxina de un"
+        ],
+        "antonimos": []
+    },
+    "bramante": {
+        "sinonimos": [
+            "cuerda",
+            "cordel"
+        ],
+        "antonimos": []
+    },
+    "brío": {
+        "sinonimos": [
+            "carácter",
+            "ánimo",
+            "gallardía"
+        ],
+        "antonimos": [
+            "indecisión"
+        ]
+    },
+    "bronco": {
+        "sinonimos": [
+            "áspero",
+            "tosco",
+            "ronco",
+            "riguroso"
+        ],
+        "antonimos": [
+            "blando"
+        ]
+    },
+    "bruñir": {
+        "sinonimos": [
+            "pulir",
+            "lustrar",
+            "pulimentar",
+            "molestar",
+            "fastidiar ≠"
+        ],
+        "antonimos": []
+    },
+    "bucólico": {
+        "sinonimos": [
+            "pastoril",
+            "campestre",
+            "poético",
+            "sereno",
+            ""
+        ],
+        "antonimos": []
+    },
+    "burdo": {
+        "sinonimos": [
+            "basto",
+            "tosco",
+            "zafio",
+            "vulgar"
+        ],
+        "antonimos": [
+            "refinado"
+        ]
+    },
+    "cabal": {
+        "sinonimos": [
+            "justo",
+            "íntegro",
+            "ajustado",
+            "completo",
+            "perfecto ≠"
+        ],
+        "antonimos": []
+    },
+    "cabezo": {
+        "sinonimos": [
+            "cerro",
+            "colina",
+            "cumbre"
+        ],
+        "antonimos": [
+            "llano",
+            "planicie"
+        ]
+    },
+    "calentura": {
+        "sinonimos": [
+            "temperatura",
+            "fuego",
+            "fiebre",
+            "enojo ≠"
+        ],
+        "antonimos": []
+    },
+    "camándula": {
+        "sinonimos": [
+            "hipocresía",
+            "astucia",
+            "trastienda",
+            "malicia ≠"
+        ],
+        "antonimos": []
+    },
+    "cambalache": {
+        "sinonimos": [
+            "trueque",
+            "cambio",
+            "trapicheo"
+        ],
+        "antonimos": []
+    },
+    "canícula": {
+        "sinonimos": [
+            "verano",
+            "calor"
+        ],
+        "antonimos": []
+    },
+    "capcioso": {
+        "sinonimos": [
+            "engañoso",
+            "insidioso",
+            "artificioso",
+            "≠"
+        ],
+        "antonimos": []
+    },
+    "capitalizar": {
+        "sinonimos": [
+            "atesorar",
+            "reunir",
+            "acopiar",
+            "acaudalar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "cariz": {
+        "sinonimos": [
+            "aspecto",
+            "apariencia",
+            "pinta",
+            "perspectiva"
+        ],
+        "antonimos": []
+    },
+    "cartapacio": {
+        "sinonimos": [
+            "carpeta",
+            "cartera",
+            "vademécum"
+        ],
+        "antonimos": []
+    },
+    "categórico": {
+        "sinonimos": [
+            "absoluto",
+            "concluyente",
+            "claro",
+            "absoluto ≠"
+        ],
+        "antonimos": []
+    },
+    "caución": {
+        "sinonimos": [
+            "garantía",
+            "fianza",
+            "precaución"
+        ],
+        "antonimos": [
+            "imprevisión",
+            ""
+        ]
+    },
+    "cáustico": {
+        "sinonimos": [
+            "corrosivo",
+            "mordaz",
+            "incisivo"
+        ],
+        "antonimos": [
+            "amistoso",
+            ""
+        ]
+    },
+    "cauto": {
+        "sinonimos": [
+            "prudente",
+            "precavido",
+            "previsor"
+        ],
+        "antonimos": [
+            "imprudente"
+        ]
+    },
+    "cayado": {
+        "sinonimos": [
+            "báculo",
+            "bastón"
+        ],
+        "antonimos": []
+    },
+    "célibe": {
+        "sinonimos": [
+            "soltero",
+            "mozo",
+            "mancebo",
+            "libre",
+            "suelto"
+        ],
+        "antonimos": []
+    },
+    "cenagoso": {
+        "sinonimos": [
+            "pantanoso",
+            "fangoso",
+            "palúdico"
+        ],
+        "antonimos": []
+    },
+    "cenit": {
+        "sinonimos": [
+            "prosperidad",
+            "mediodía",
+            "culminación",
+            "cumbre",
+            ""
+        ],
+        "antonimos": []
+    },
+    "ceñudo": {
+        "sinonimos": [
+            "hosco",
+            "enfadado",
+            "preocupado",
+            "cetrino",
+            ""
+        ],
+        "antonimos": []
+    },
+    "cercenar": {
+        "sinonimos": [
+            "cortar",
+            "disminuir",
+            "suprimir",
+            "limitar ≠"
+        ],
+        "antonimos": []
+    },
+    "chacota": {
+        "sinonimos": [
+            "broma",
+            "chanza",
+            "zumba"
+        ],
+        "antonimos": [
+            "aflicción",
+            "seriedad"
+        ]
+    },
+    "cicatería": {
+        "sinonimos": [
+            "tacañería",
+            "mezquindad"
+        ],
+        "antonimos": []
+    },
+    "cicatero": {
+        "sinonimos": [
+            "tacaño",
+            "mezquino",
+            "escaso"
+        ],
+        "antonimos": [
+            "generoso",
+            ""
+        ]
+    },
+    "cinestesia": {
+        "sinonimos": [
+            "percepción del equilibrio y de la posición"
+        ],
+        "antonimos": []
+    },
+    "circundar": {
+        "sinonimos": [
+            "rodear",
+            "cercar"
+        ],
+        "antonimos": []
+    },
+    "circunspección": {
+        "sinonimos": [
+            "discreción",
+            "prudencia",
+            "mesura ≠"
+        ],
+        "antonimos": []
+    },
+    "circunspecto": {
+        "sinonimos": [
+            "discreto",
+            "reservado",
+            "mesurado",
+            ""
+        ],
+        "antonimos": []
+    },
+    "cisma": {
+        "sinonimos": [
+            "escisión",
+            "discordia",
+            "desavenencia",
+            "rompimiento",
+            ""
+        ],
+        "antonimos": []
+    },
+    "clemencia": {
+        "sinonimos": [
+            "compasión",
+            "piedad moderación al aplicar"
+        ],
+        "antonimos": []
+    },
+    "clemente": {
+        "sinonimos": [
+            "compasivo",
+            "caritativo",
+            "magnánimo",
+            "blando"
+        ],
+        "antonimos": []
+    },
+    "coadyuvar": {
+        "sinonimos": [
+            "ayudar",
+            "cooperar",
+            "combinar"
+        ],
+        "antonimos": [
+            "contrariar",
+            ""
+        ]
+    },
+    "coercer": {
+        "sinonimos": [
+            "contener",
+            "reprimir",
+            "coartar"
+        ],
+        "antonimos": [
+            "dejar",
+            "libertar"
+        ]
+    },
+    "coercido": {
+        "sinonimos": [
+            "inhibido",
+            "restrictivo"
+        ],
+        "antonimos": []
+    },
+    "colegir": {
+        "sinonimos": [
+            "deducir",
+            "reunir",
+            "juntar",
+            "entender"
+        ],
+        "antonimos": [
+            "prever",
+            ""
+        ]
+    },
+    "colidir": {
+        "sinonimos": [
+            "chocar",
+            "tropezar con una oposición física o"
+        ],
+        "antonimos": []
+    },
+    "coludir": {
+        "sinonimos": [
+            "COLUSIÓN ~ complicidad",
+            "pacto ilícito en"
+        ],
+        "antonimos": []
+    },
+    "columbrar": {
+        "sinonimos": [
+            "divisar",
+            "distinguir",
+            "entrever",
+            "sospechar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "comanditar": {
+        "sinonimos": [
+            "adelantar",
+            "aprontar",
+            "prevenir",
+            "disponer"
+        ],
+        "antonimos": []
+    },
+    "comedia": {
+        "sinonimos": [
+            "ficción",
+            "drama"
+        ],
+        "antonimos": [
+            "realidad"
+        ]
+    },
+    "comedimiento": {
+        "sinonimos": [
+            "moderación",
+            "urbanidad",
+            "cortesía",
+            ""
+        ],
+        "antonimos": []
+    },
+    "cómico": {
+        "sinonimos": [
+            "histrión",
+            "jocoso",
+            "bufón",
+            "hipócrita"
+        ],
+        "antonimos": []
+    },
+    "compeler": {
+        "sinonimos": [
+            "apremiar",
+            "obligar",
+            "constreñir",
+            "impulsar ≠"
+        ],
+        "antonimos": []
+    },
+    "compulsar": {
+        "sinonimos": [
+            "cotejar",
+            "comparar"
+        ],
+        "antonimos": []
+    },
+    "concitar": {
+        "sinonimos": [
+            "provocar",
+            "instigar",
+            "hostigar"
+        ],
+        "antonimos": [
+            "aplacar",
+            ""
+        ]
+    },
+    "concomitancia": {
+        "sinonimos": [
+            "acompañamiento",
+            "relación",
+            ""
+        ],
+        "antonimos": []
+    },
+    "concomitar": {
+        "sinonimos": [
+            "acompañar",
+            "coincidir",
+            "ayudar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "conculcar": {
+        "sinonimos": [
+            "hollar",
+            "quebrantar",
+            "infligir"
+        ],
+        "antonimos": [
+            "respetar"
+        ]
+    },
+    "concupiscencia": {
+        "sinonimos": [
+            "apetito desordenado de placeres"
+        ],
+        "antonimos": []
+    },
+    "condonación": {
+        "sinonimos": [
+            "perdón"
+        ],
+        "antonimos": []
+    },
+    "confabulación": {
+        "sinonimos": [
+            "maquinación",
+            "conspiración",
+            ""
+        ],
+        "antonimos": []
+    },
+    "conferir": {
+        "sinonimos": [
+            "conceder",
+            "otorgar",
+            "comparar"
+        ],
+        "antonimos": [
+            "privar",
+            ""
+        ]
+    },
+    "confinar": {
+        "sinonimos": [
+            "limitar",
+            "desterrar"
+        ],
+        "antonimos": []
+    },
+    "confluir": {
+        "sinonimos": [
+            "concurrir",
+            "converger"
+        ],
+        "antonimos": [
+            "separarse",
+            ""
+        ]
+    },
+    "congruente": {
+        "sinonimos": [
+            "conveniente",
+            "coherente",
+            "lógico ≠"
+        ],
+        "antonimos": []
+    },
+    "conjetura": {
+        "sinonimos": [
+            "juicio que se forma de las cosas o"
+        ],
+        "antonimos": []
+    },
+    "conjura": {
+        "sinonimos": [
+            "complot",
+            "conspiración",
+            "evita"
+        ],
+        "antonimos": [
+            "respeta",
+            ""
+        ]
+    },
+    "conminación": {
+        "sinonimos": [
+            "amenaza",
+            "intimidación"
+        ],
+        "antonimos": []
+    },
+    "conminar": {
+        "sinonimos": [
+            "amenazar",
+            "intimar",
+            "advertir"
+        ],
+        "antonimos": []
+    },
+    "connivencia": {
+        "sinonimos": [
+            "disimulo",
+            "tolerancia",
+            "confabulación ≠"
+        ],
+        "antonimos": []
+    },
+    "conspicuo": {
+        "sinonimos": [
+            "egregio",
+            "preeminente",
+            "ilustre",
+            "insigne ≠"
+        ],
+        "antonimos": []
+    },
+    "consumición": {
+        "sinonimos": [
+            "extenuación",
+            "agotamiento /"
+        ],
+        "antonimos": []
+    },
+    "consunción": {
+        "sinonimos": [
+            "consumición",
+            "gasto"
+        ],
+        "antonimos": []
+    },
+    "contingencia": {
+        "sinonimos": [
+            "riesgo",
+            "peligro",
+            "posibilidad"
+        ],
+        "antonimos": [
+            "certeza"
+        ]
+    },
+    "contubernio": {
+        "sinonimos": [
+            "confabulación",
+            "cohabitación"
+        ],
+        "antonimos": [
+            "lealtad"
+        ]
+    },
+    "contumancia": {
+        "sinonimos": [
+            "CONTUMAZ ~ rebelde",
+            "porfiado",
+            ""
+        ],
+        "antonimos": []
+    },
+    "cortapisa": {
+        "sinonimos": [
+            "obstáculo",
+            "dificultad"
+        ],
+        "antonimos": [
+            "libertad"
+        ]
+    },
+    "craso": {
+        "sinonimos": [
+            "gordo",
+            "grueso",
+            "espeso"
+        ],
+        "antonimos": [
+            "seco",
+            "pequeño",
+            "fluido"
+        ]
+    },
+    "crematístico": {
+        "sinonimos": [
+            "monetario",
+            "económico"
+        ],
+        "antonimos": []
+    },
+    "crespo": {
+        "sinonimos": [
+            "ensortijado",
+            "rizado",
+            "retorcido"
+        ],
+        "antonimos": [
+            "liso",
+            "lacio",
+            "laso"
+        ]
+    },
+    "cuajo": {
+        "sinonimos": [
+            "pachorra",
+            "fermento",
+            "aguante"
+        ],
+        "antonimos": [
+            "rapidez",
+            "agilidad"
+        ]
+    },
+    "cuévano": {
+        "sinonimos": [
+            "cesto",
+            "canasto"
+        ],
+        "antonimos": []
+    },
+    "cuitado": {
+        "sinonimos": [
+            "afligido",
+            "desventurado",
+            "apocado"
+        ],
+        "antonimos": []
+    },
+    "dádiva": {
+        "sinonimos": [
+            "regalo",
+            "óbolo",
+            "donativo"
+        ],
+        "antonimos": [
+            "tacañería",
+            "avaricia"
+        ]
+    },
+    "dadivoso": {
+        "sinonimos": [
+            "generoso",
+            "desinteresado"
+        ],
+        "antonimos": [
+            "tacaño",
+            "avaro"
+        ]
+    },
+    "dantesco": {
+        "sinonimos": [
+            "terrible",
+            "infernal",
+            "espantoso"
+        ],
+        "antonimos": []
+    },
+    "dechado": {
+        "sinonimos": [
+            "ejemplo",
+            "modelo",
+            "arquetipo",
+            "parangón"
+        ],
+        "antonimos": []
+    },
+    "declamar": {
+        "sinonimos": [
+            "recitar",
+            "pronunciar",
+            "orar"
+        ],
+        "antonimos": []
+    },
+    "decomisar": {
+        "sinonimos": [
+            "confiscar"
+        ],
+        "antonimos": []
+    },
+    "decoro": {
+        "sinonimos": [
+            "honor",
+            "respeto",
+            "estimación",
+            "recato ≠"
+        ],
+        "antonimos": []
+    },
+    "defección": {
+        "sinonimos": [
+            "traición",
+            "deserción",
+            "abandono"
+        ],
+        "antonimos": [
+            "lealtad",
+            ""
+        ]
+    },
+    "deglutir": {
+        "sinonimos": [
+            "tragar",
+            "digerir"
+        ],
+        "antonimos": [
+            "devolver",
+            "echar"
+        ]
+    },
+    "deificar": {
+        "sinonimos": [
+            "divinizar",
+            "glorificar"
+        ],
+        "antonimos": [
+            "humillar",
+            "insultar"
+        ]
+    },
+    "delación": {
+        "sinonimos": [
+            "denuncia",
+            "acusación",
+            "difamación"
+        ],
+        "antonimos": [
+            "silencio",
+            ""
+        ]
+    },
+    "demasía": {
+        "sinonimos": [
+            "exceso",
+            "atrevimiento",
+            "maldad",
+            "delito ≠"
+        ],
+        "antonimos": []
+    },
+    "denigrante": {
+        "sinonimos": [
+            "infamante",
+            "vil",
+            "indigno"
+        ],
+        "antonimos": [
+            "honroso",
+            ""
+        ]
+    },
+    "denigrar": {
+        "sinonimos": [
+            "deslustrar",
+            "ofender",
+            "injuriar"
+        ],
+        "antonimos": [
+            "alabar",
+            "elogiar"
+        ]
+    },
+    "denodado": {
+        "sinonimos": [
+            "intrépido",
+            "esforzado",
+            "resuelto"
+        ],
+        "antonimos": [
+            "tímido",
+            ""
+        ]
+    },
+    "denostar": {
+        "sinonimos": [
+            "injuriar",
+            "ultrajar",
+            "vilipendiar",
+            "infamar ≠"
+        ],
+        "antonimos": []
+    },
+    "denuedo": {
+        "sinonimos": [
+            "valor",
+            "ánimo",
+            "brío"
+        ],
+        "antonimos": [
+            "cobardía",
+            "timidez"
+        ]
+    },
+    "derogación": {
+        "sinonimos": [
+            "anulación",
+            "disminución"
+        ],
+        "antonimos": []
+    },
+    "desacato": {
+        "sinonimos": [
+            "irreverencia",
+            "delito que se comete"
+        ],
+        "antonimos": []
+    },
+    "desafuero": {
+        "sinonimos": [
+            "abuso"
+        ],
+        "antonimos": [
+            "observancia",
+            "respeto"
+        ]
+    },
+    "desapego": {
+        "sinonimos": [
+            "falta de afición o interés",
+            "alejamiento",
+            ""
+        ],
+        "antonimos": []
+    },
+    "descapitalizar": {
+        "sinonimos": [
+            "hacer perder las riquezas"
+        ],
+        "antonimos": []
+    },
+    "descollar": {
+        "sinonimos": [
+            "sobresalir"
+        ],
+        "antonimos": [
+            "moderarse",
+            "desaparecer"
+        ]
+    },
+    "descomedido": {
+        "sinonimos": [
+            "exagerado",
+            "descortés",
+            "insolente ≠"
+        ],
+        "antonimos": []
+    },
+    "desdoro": {
+        "sinonimos": [
+            "mancilla",
+            "mancha",
+            "descrédito"
+        ],
+        "antonimos": [
+            "prestigio",
+            ""
+        ]
+    },
+    "desidia": {
+        "sinonimos": [
+            "descuido",
+            "dejadez",
+            "indolencia",
+            "pereza"
+        ],
+        "antonimos": []
+    },
+    "despeñar": {
+        "sinonimos": [
+            "tratar con desdén",
+            "precipitar",
+            "arrojar",
+            "caer ≠"
+        ],
+        "antonimos": []
+    },
+    "desvaído": {
+        "sinonimos": [
+            "pálido",
+            "descolorido",
+            "insignificante ≠"
+        ],
+        "antonimos": []
+    },
+    "detestar": {
+        "sinonimos": [
+            "aborrecer",
+            "abominar"
+        ],
+        "antonimos": [
+            "querer",
+            "admirar"
+        ]
+    },
+    "detracción": {
+        "sinonimos": [
+            "murmuración",
+            "mala fama",
+            "difamación ≠"
+        ],
+        "antonimos": []
+    },
+    "detractar": {
+        "sinonimos": [
+            "denigrar",
+            "desacreditar"
+        ],
+        "antonimos": [
+            "alabar",
+            "elogiar"
+        ]
+    },
+    "devastar": {
+        "sinonimos": [
+            "desolar",
+            "destruir",
+            "arruinar"
+        ],
+        "antonimos": [
+            "enriquecer",
+            ""
+        ]
+    },
+    "diáspora": {
+        "sinonimos": [
+            "dispersión",
+            "éxodo",
+            "marcha"
+        ],
+        "antonimos": []
+    },
+    "diatriba": {
+        "sinonimos": [
+            "injuria",
+            "sátira",
+            "invectiva"
+        ],
+        "antonimos": [
+            "alabanza",
+            "himno",
+            ""
+        ]
+    },
+    "difuso": {
+        "sinonimos": [
+            "ancho",
+            "dilatado",
+            "borroso"
+        ],
+        "antonimos": [
+            "limitado",
+            "detallado"
+        ]
+    },
+    "dilación": {
+        "sinonimos": [
+            "demora",
+            "retraso"
+        ],
+        "antonimos": [
+            "adelanto",
+            "prisa"
+        ]
+    },
+    "dilatorio": {
+        "sinonimos": [
+            "perentorio"
+        ],
+        "antonimos": []
+    },
+    "dilecto": {
+        "sinonimos": [
+            "querido",
+            "amado"
+        ],
+        "antonimos": []
+    },
+    "diligente": {
+        "sinonimos": [
+            "rápido",
+            "presto",
+            "cumplidor",
+            "activo ≠"
+        ],
+        "antonimos": []
+    },
+    "dipsomanía": {
+        "sinonimos": [
+            "alcoholismo"
+        ],
+        "antonimos": []
+    },
+    "discernimiento": {
+        "sinonimos": [
+            "juicio",
+            "acierto",
+            "perspicacia ≠"
+        ],
+        "antonimos": []
+    },
+    "discernir": {
+        "sinonimos": [
+            "discriminar",
+            "diferenciar",
+            "apreciar"
+        ],
+        "antonimos": [
+            "ignorar"
+        ]
+    },
+    "díscolo": {
+        "sinonimos": [
+            "desobediente",
+            "indisciplinado",
+            "revoltoso ≠"
+        ],
+        "antonimos": []
+    },
+    "disertar": {
+        "sinonimos": [
+            "razonar con método",
+            "discurrir",
+            "tratar"
+        ],
+        "antonimos": []
+    },
+    "disoluto": {
+        "sinonimos": [
+            "corrupto",
+            "licencioso",
+            "libertino"
+        ],
+        "antonimos": [
+            "austero",
+            ""
+        ]
+    },
+    "dispendio": {
+        "sinonimos": [
+            "derroche",
+            "despilfarro"
+        ],
+        "antonimos": [
+            "ahorro"
+        ]
+    },
+    "displicencia": {
+        "sinonimos": [
+            "desagrado o indiferencia en el trato",
+            ""
+        ],
+        "antonimos": []
+    },
+    "displicente": {
+        "sinonimos": [
+            "desabrido",
+            "indiferente",
+            "áspero ≠"
+        ],
+        "antonimos": []
+    },
+    "distender": {
+        "sinonimos": [
+            "aflojar",
+            "relajar",
+            "dislocar"
+        ],
+        "antonimos": []
+    },
+    "divisa": {
+        "sinonimos": [
+            "insignia",
+            "señal",
+            "moneda",
+            "lazo"
+        ],
+        "antonimos": []
+    },
+    "docto": {
+        "sinonimos": [
+            "erudito",
+            "sabio",
+            "culto"
+        ],
+        "antonimos": [
+            "inculto"
+        ]
+    },
+    "dolo": {
+        "sinonimos": [
+            "engaño",
+            "fraude",
+            "simulación"
+        ],
+        "antonimos": [
+            "sinceridad",
+            ""
+        ]
+    },
+    "domeñar": {
+        "sinonimos": [
+            "dominar",
+            "someter",
+            "reducir"
+        ],
+        "antonimos": []
+    },
+    "donoso": {
+        "sinonimos": [
+            "gracioso",
+            "irónico"
+        ],
+        "antonimos": [
+            "soso",
+            "torpe"
+        ]
+    },
+    "ducho": {
+        "sinonimos": [
+            "experimentado",
+            "diestro"
+        ],
+        "antonimos": [
+            "inexperto"
+        ]
+    },
+    "ebúrneo": {
+        "sinonimos": [
+            "marfileño",
+            "claro"
+        ],
+        "antonimos": []
+    },
+    "eclecticismo": {
+        "sinonimos": [
+            "conciliador",
+            "comedido"
+        ],
+        "antonimos": []
+    },
+    "ecléctico": {
+        "sinonimos": [
+            "conciliador",
+            "comedido",
+            "moderado ≠"
+        ],
+        "antonimos": []
+    },
+    "ecuánime": {
+        "sinonimos": [
+            "imparcial",
+            "ponderado",
+            "sereno",
+            "inalterable"
+        ],
+        "antonimos": []
+    },
+    "ecuanimidad": {
+        "sinonimos": [
+            "igualdad",
+            "imparcialidad",
+            "paciencia ≠"
+        ],
+        "antonimos": []
+    },
+    "ecuménico": {
+        "sinonimos": [
+            "universal",
+            "total"
+        ],
+        "antonimos": []
+    },
+    "edicto": {
+        "sinonimos": [
+            "mandato",
+            "decreto",
+            "orden",
+            "bando"
+        ],
+        "antonimos": []
+    },
+    "efímero": {
+        "sinonimos": [
+            "corto",
+            "fugaz",
+            "pasajero"
+        ],
+        "antonimos": [
+            "duradero"
+        ]
+    },
+    "efluvio": {
+        "sinonimos": [
+            "irradiación",
+            "emanación"
+        ],
+        "antonimos": []
+    },
+    "efugio": {
+        "sinonimos": [
+            "evasiva",
+            "salida",
+            "subterfugio"
+        ],
+        "antonimos": [
+            "desafío",
+            "claridad"
+        ]
+    },
+    "efusión": {
+        "sinonimos": [
+            "expansión",
+            "desahogo",
+            "cariño"
+        ],
+        "antonimos": [
+            "dureza",
+            "ahogo"
+        ]
+    },
+    "egregio": {
+        "sinonimos": [
+            "insigne",
+            "ilustre",
+            "celebre"
+        ],
+        "antonimos": [
+            "vulgar",
+            "ignoto"
+        ]
+    },
+    "elegíaco": {
+        "sinonimos": [
+            "lastimero",
+            "triste festivo",
+            "animado"
+        ],
+        "antonimos": []
+    },
+    "elenco": {
+        "sinonimos": [
+            "repertorio",
+            "catálogo",
+            "rol"
+        ],
+        "antonimos": []
+    },
+    "elidir": {
+        "sinonimos": [
+            "frustrar",
+            "suprimir"
+        ],
+        "antonimos": [
+            "poner",
+            "reforzar"
+        ]
+    },
+    "elisión": {
+        "sinonimos": [
+            "eliminación",
+            "supresión"
+        ],
+        "antonimos": [
+            "alta"
+        ]
+    },
+    "eludir": {
+        "sinonimos": [
+            "esquivar",
+            "rehuir",
+            "soslayar"
+        ],
+        "antonimos": [
+            "afrontar",
+            "acometer"
+        ]
+    },
+    "embotar": {
+        "sinonimos": [
+            "enervar",
+            "debilitar",
+            "hacer menos activo y"
+        ],
+        "antonimos": []
+    },
+    "embrollado": {
+        "sinonimos": [
+            "complicado",
+            "confuso",
+            "aturdido ≠"
+        ],
+        "antonimos": []
+    },
+    "embrollar": {
+        "sinonimos": [
+            "enredar",
+            "confundir",
+            "embaucar"
+        ],
+        "antonimos": [
+            "resolver",
+            ""
+        ]
+    },
+    "eminente": {
+        "sinonimos": [
+            "distinguido",
+            "insigne",
+            "célebre",
+            "ilustre ≠"
+        ],
+        "antonimos": []
+    },
+    "emoliente": {
+        "sinonimos": [
+            "ablandativo",
+            "suavizante"
+        ],
+        "antonimos": []
+    },
+    "empacar": {
+        "sinonimos": [
+            "empaquetar",
+            "encajonar"
+        ],
+        "antonimos": [
+            "desembalar",
+            ""
+        ]
+    },
+    "empellón": {
+        "sinonimos": [
+            "empujón",
+            "envite",
+            "violencia"
+        ],
+        "antonimos": []
+    },
+    "enacerar": {
+        "sinonimos": [
+            "vigorizar",
+            "endurecer"
+        ],
+        "antonimos": []
+    },
+    "enarbolar": {
+        "sinonimos": [
+            "izar",
+            "levantar"
+        ],
+        "antonimos": [
+            "bajar",
+            "arriar"
+        ]
+    },
+    "enardecer": {
+        "sinonimos": [
+            "excitar",
+            "avivar",
+            "entusiasmar",
+            "acalorar ≠"
+        ],
+        "antonimos": []
+    },
+    "encomiable": {
+        "sinonimos": [
+            "digno de encomio o alabanza",
+            "loable",
+            ""
+        ],
+        "antonimos": []
+    },
+    "encomiar": {
+        "sinonimos": [
+            "alabar con encarecimiento",
+            "ensalzar ≠"
+        ],
+        "antonimos": []
+    },
+    "encomio": {
+        "sinonimos": [
+            "elogio",
+            "loa",
+            "alabanza"
+        ],
+        "antonimos": [
+            "desprecio"
+        ]
+    },
+    "enconable": {
+        "sinonimos": [
+            "encarnizado",
+            "violento y muy porfiado"
+        ],
+        "antonimos": []
+    },
+    "encoro": {
+        "sinonimos": [
+            "rencor",
+            "animadversión"
+        ],
+        "antonimos": []
+    },
+    "endémico": {
+        "sinonimos": [
+            "habitual",
+            "frecuente / epidémico",
+            "infeccioso"
+        ],
+        "antonimos": []
+    },
+    "enerdecer": {
+        "sinonimos": [
+            "excitar",
+            "avivar",
+            "encenderse",
+            "requemarse"
+        ],
+        "antonimos": []
+    },
+    "enervar": {
+        "sinonimos": [
+            "debilitar",
+            "abatir",
+            "desanimar"
+        ],
+        "antonimos": [
+            "fortalecer",
+            ""
+        ]
+    },
+    "enfático": {
+        "sinonimos": [
+            "hinchado",
+            "afectado",
+            "insistente",
+            "campanudo ≠"
+        ],
+        "antonimos": []
+    },
+    "engarzar": {
+        "sinonimos": [
+            "enlazar",
+            "trabar",
+            "encadenar",
+            "encajar",
+            "enredar"
+        ],
+        "antonimos": []
+    },
+    "enjundia": {
+        "sinonimos": [
+            "sustancia",
+            "meollo",
+            "núcleo",
+            "grasa",
+            "empuje ≠"
+        ],
+        "antonimos": []
+    },
+    "enjuto": {
+        "sinonimos": [
+            "flaco",
+            "magro",
+            "seco"
+        ],
+        "antonimos": [
+            "gordo",
+            "desbocado"
+        ]
+    },
+    "enseña": {
+        "sinonimos": [
+            "bandera",
+            "señal"
+        ],
+        "antonimos": []
+    },
+    "ensortijado": {
+        "sinonimos": [
+            "rizado",
+            "crespo",
+            "retorcido"
+        ],
+        "antonimos": [
+            "liso",
+            ""
+        ]
+    },
+    "ensortijar": {
+        "sinonimos": [
+            "rizar",
+            "encrespar"
+        ],
+        "antonimos": []
+    },
+    "ensotarse": {
+        "sinonimos": [
+            "meterse",
+            "ocultarse en un soto"
+        ],
+        "antonimos": []
+    },
+    "enteco": {
+        "sinonimos": [
+            "enfermizo",
+            "débil",
+            "enclenque"
+        ],
+        "antonimos": [
+            "fuerte",
+            "robusto",
+            ""
+        ]
+    },
+    "envés": {
+        "sinonimos": [
+            "revés",
+            "reverso",
+            "dorso"
+        ],
+        "antonimos": [
+            "anverso",
+            "delante"
+        ]
+    },
+    "envilecer": {
+        "sinonimos": [
+            "corromper",
+            "rebajar"
+        ],
+        "antonimos": [
+            "honrar"
+        ]
+    },
+    "epicúreo": {
+        "sinonimos": [
+            "entregado a los placeres",
+            "sensual",
+            "gozador",
+            ""
+        ],
+        "antonimos": []
+    },
+    "epístola": {
+        "sinonimos": [
+            "carta",
+            "mensaje",
+            "esquela"
+        ],
+        "antonimos": []
+    },
+    "epitafio": {
+        "sinonimos": [
+            "inscripción",
+            "lápida"
+        ],
+        "antonimos": []
+    },
+    "epítome": {
+        "sinonimos": [
+            "compendio",
+            "sumario",
+            "resumen"
+        ],
+        "antonimos": []
+    },
+    "eremita": {
+        "sinonimos": [
+            "ermitaño",
+            "anacoreta"
+        ],
+        "antonimos": []
+    },
+    "esbarar": {
+        "sinonimos": [
+            "resbalar",
+            "deslizar"
+        ],
+        "antonimos": []
+    },
+    "esbozar": {
+        "sinonimos": [
+            "bosquejar",
+            "diseñar",
+            "apuntar",
+            "proponer"
+        ],
+        "antonimos": []
+    },
+    "escarnio": {
+        "sinonimos": [
+            "burla",
+            "mofa",
+            "befa",
+            "afrenta"
+        ],
+        "antonimos": [
+            "aprecio"
+        ]
+    },
+    "escindir": {
+        "sinonimos": [
+            "separar",
+            "dividir"
+        ],
+        "antonimos": []
+    },
+    "eslabonar": {
+        "sinonimos": [
+            "enlazar",
+            "encadenar"
+        ],
+        "antonimos": [
+            "desunir"
+        ]
+    },
+    "esnobismo": {
+        "sinonimos": [
+            "afectación",
+            "modernismo"
+        ],
+        "antonimos": []
+    },
+    "espartano": {
+        "sinonimos": [
+            "estoico",
+            "heroico",
+            "entero",
+            "impertérrito"
+        ],
+        "antonimos": []
+    },
+    "especimen": {
+        "sinonimos": [
+            "Muestra",
+            "modelo",
+            "ejemplar"
+        ],
+        "antonimos": []
+    },
+    "espectro": {
+        "sinonimos": [
+            "imagen",
+            "fantasma",
+            "aparición"
+        ],
+        "antonimos": []
+    },
+    "espurio": {
+        "sinonimos": [
+            "falso",
+            "bastardo",
+            "adulterado",
+            "ilegítimo ≠"
+        ],
+        "antonimos": []
+    },
+    "estandarte": {
+        "sinonimos": [
+            "insignia",
+            "bandera"
+        ],
+        "antonimos": []
+    },
+    "estentóreo": {
+        "sinonimos": [
+            "fuerte",
+            "retumbante",
+            "resonante"
+        ],
+        "antonimos": [
+            "callado",
+            ""
+        ]
+    },
+    "estereotipo": {
+        "sinonimos": [
+            "imagen o idea aceptada comúnmente"
+        ],
+        "antonimos": []
+    },
+    "estipendio": {
+        "sinonimos": [
+            "sueldo",
+            "remuneración"
+        ],
+        "antonimos": []
+    },
+    "estulticia": {
+        "sinonimos": [
+            "necedad",
+            "estupidez"
+        ],
+        "antonimos": [
+            "inteligencia"
+        ]
+    },
+    "etéreo": {
+        "sinonimos": [
+            "vago",
+            "sutil",
+            "vaporoso"
+        ],
+        "antonimos": [
+            "grosero"
+        ]
+    },
+    "etimología": {
+        "sinonimos": [
+            "procedencia",
+            "raíz",
+            "derivación"
+        ],
+        "antonimos": []
+    },
+    "etiología": {
+        "sinonimos": [
+            "causa",
+            "razón",
+            "motivo"
+        ],
+        "antonimos": []
+    },
+    "etnología": {
+        "sinonimos": [
+            "costumbres",
+            "tradiciones"
+        ],
+        "antonimos": []
+    },
+    "etología": {
+        "sinonimos": [
+            "carácter",
+            "comportamiento"
+        ],
+        "antonimos": []
+    },
+    "evasiva": {
+        "sinonimos": [
+            "pretexto",
+            "excusa",
+            "subterfugio",
+            "rodeo"
+        ],
+        "antonimos": []
+    },
+    "evasivo": {
+        "sinonimos": [
+            "ambiguo",
+            "confuso",
+            "huidizo"
+        ],
+        "antonimos": []
+    },
+    "eviterno": {
+        "sinonimos": [
+            "que no tendrá fin",
+            "eterno",
+            "duradero",
+            "inmortal"
+        ],
+        "antonimos": []
+    },
+    "exacción": {
+        "sinonimos": [
+            "requerimiento",
+            "abuso",
+            "injusticia",
+            ""
+        ],
+        "antonimos": []
+    },
+    "exacerbado": {
+        "sinonimos": [
+            "EXACERBAR ~ enojar",
+            "exasperar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "exasperar": {
+        "sinonimos": [
+            "enojar",
+            "exacerbar",
+            "irritar",
+            "alterar ≠"
+        ],
+        "antonimos": []
+    },
+    "excelso": {
+        "sinonimos": [
+            "eminente",
+            "ilustre",
+            "elevado"
+        ],
+        "antonimos": [
+            "pésimo"
+        ]
+    },
+    "excrecencia": {
+        "sinonimos": [
+            "bulto",
+            "grano",
+            "verruga"
+        ],
+        "antonimos": []
+    },
+    "execrable": {
+        "sinonimos": [
+            "abominable",
+            "atroz"
+        ],
+        "antonimos": [
+            "bueno",
+            "admirable"
+        ]
+    },
+    "execrar": {
+        "sinonimos": [
+            "reprobar",
+            "censurar",
+            "condenar",
+            "maldecir ≠"
+        ],
+        "antonimos": []
+    },
+    "exégesis": {
+        "sinonimos": [
+            "explicación",
+            "interpretación"
+        ],
+        "antonimos": []
+    },
+    "exhalar": {
+        "sinonimos": [
+            "emanar",
+            "despedir"
+        ],
+        "antonimos": [
+            "recibir",
+            "tragar",
+            "absorber"
+        ]
+    },
+    "exiguo": {
+        "sinonimos": [
+            "insuficiente",
+            "escaso",
+            "pequeño"
+        ],
+        "antonimos": [
+            "excesivo",
+            ""
+        ]
+    },
+    "eximio": {
+        "sinonimos": [
+            "ilustre",
+            "egregio",
+            "conspicuo",
+            "excelso"
+        ],
+        "antonimos": [
+            "pésimo",
+            ""
+        ]
+    },
+    "exonerado": {
+        "sinonimos": [
+            "separado",
+            "destituido"
+        ],
+        "antonimos": [
+            "gravado",
+            "otorgado"
+        ]
+    },
+    "exonerar": {
+        "sinonimos": [
+            "aliviar",
+            "descargar",
+            "relevar",
+            "privar"
+        ],
+        "antonimos": [
+            "gravar",
+            ""
+        ]
+    },
+    "exorar": {
+        "sinonimos": [
+            "pedir",
+            "solicitar con empeño"
+        ],
+        "antonimos": []
+    },
+    "exordio": {
+        "sinonimos": [
+            "introducción",
+            "prefacio",
+            "preámbulo"
+        ],
+        "antonimos": [
+            "resumen",
+            ""
+        ]
+    },
+    "exornar": {
+        "sinonimos": [
+            "embellecer",
+            "hermosear",
+            "adornar"
+        ],
+        "antonimos": [
+            "estropear"
+        ]
+    },
+    "expedito": {
+        "sinonimos": [
+            "despejado",
+            "libre",
+            "rápido",
+            "abierto"
+        ],
+        "antonimos": [
+            "obstruido",
+            ""
+        ]
+    },
+    "expeler": {
+        "sinonimos": [
+            "arrojar",
+            "lanzar",
+            "emitir"
+        ],
+        "antonimos": [
+            "recibir"
+        ]
+    },
+    "expendio": {
+        "sinonimos": [
+            "gasto",
+            "dispendio",
+            "consumo"
+        ],
+        "antonimos": []
+    },
+    "expiar": {
+        "sinonimos": [
+            "reparar",
+            "purgar",
+            "penar"
+        ],
+        "antonimos": []
+    },
+    "expurgar": {
+        "sinonimos": [
+            "depurar",
+            "purificar",
+            "corregir",
+            "eliminar ≠"
+        ],
+        "antonimos": []
+    },
+    "extemporáneo": {
+        "sinonimos": [
+            "inoportuno",
+            "inconveniente"
+        ],
+        "antonimos": [
+            "propio",
+            ""
+        ]
+    },
+    "falacia": {
+        "sinonimos": [
+            "mentira",
+            "falsedad",
+            "bulo"
+        ],
+        "antonimos": [
+            "verdad"
+        ]
+    },
+    "fámula": {
+        "sinonimos": [
+            "criada",
+            "sirvienta"
+        ],
+        "antonimos": []
+    },
+    "fardo": {
+        "sinonimos": [
+            "bulto",
+            "paquete",
+            "saco"
+        ],
+        "antonimos": []
+    },
+    "farsa": {
+        "sinonimos": [
+            "comedia",
+            "sainete",
+            "ficción",
+            "tramoya"
+        ],
+        "antonimos": [
+            "verdad"
+        ]
+    },
+    "fastuoso": {
+        "sinonimos": [
+            "ostentoso",
+            "suntuoso",
+            "bello"
+        ],
+        "antonimos": [
+            "modesto"
+        ]
+    },
+    "fatuo": {
+        "sinonimos": [
+            "necio",
+            "petulante",
+            "presumido"
+        ],
+        "antonimos": [
+            "modesto",
+            "humilde"
+        ]
+    },
+    "febril": {
+        "sinonimos": [
+            "ardoroso",
+            "desosegado",
+            "inquieto"
+        ],
+        "antonimos": [
+            "frío",
+            "tranquilo"
+        ]
+    },
+    "fehaciente": {
+        "sinonimos": [
+            "indudable",
+            "indiscutible"
+        ],
+        "antonimos": [
+            "cuestionable"
+        ]
+    },
+    "felonía": {
+        "sinonimos": [
+            "traición",
+            "deslealtad"
+        ],
+        "antonimos": [
+            "lealtad"
+        ]
+    },
+    "fénix": {
+        "sinonimos": [
+            "inmortalidad"
+        ],
+        "antonimos": []
+    },
+    "feraz": {
+        "sinonimos": [
+            "fértil",
+            "fecundo",
+            "ubérrimo"
+        ],
+        "antonimos": []
+    },
+    "férfidia": {
+        "sinonimos": [
+            "maldad",
+            "traición",
+            "alevosía"
+        ],
+        "antonimos": []
+    },
+    "fervor": {
+        "sinonimos": [
+            "entusiasmo",
+            "ardor",
+            "hervor"
+        ],
+        "antonimos": [
+            "frialdad",
+            "desgana"
+        ]
+    },
+    "feudatario": {
+        "sinonimos": [
+            "tributario",
+            "vasallo"
+        ],
+        "antonimos": []
+    },
+    "filandria": {
+        "sinonimos": [
+            "parásito del aparato digestivo de algunas"
+        ],
+        "antonimos": []
+    },
+    "filantropía": {
+        "sinonimos": [
+            "altruismo",
+            "generosidad"
+        ],
+        "antonimos": [
+            "egoísmo",
+            ""
+        ]
+    },
+    "filántropo": {
+        "sinonimos": [
+            "altruista",
+            "benefactor"
+        ],
+        "antonimos": []
+    },
+    "finado": {
+        "sinonimos": [
+            "difunto",
+            "muerto"
+        ],
+        "antonimos": []
+    },
+    "firmante": {
+        "sinonimos": [
+            "que firma",
+            "infrascrito",
+            "suscritor",
+            "parte",
+            ""
+        ],
+        "antonimos": []
+    },
+    "flamear": {
+        "sinonimos": [
+            "ondear",
+            "arder",
+            "desinfectar",
+            "llamear"
+        ],
+        "antonimos": []
+    },
+    "flema": {
+        "sinonimos": [
+            "apatía",
+            "calma",
+            "lentitud",
+            "mucosidad"
+        ],
+        "antonimos": [
+            "inquietud",
+            ""
+        ]
+    },
+    "flemático": {
+        "sinonimos": [
+            "impasible",
+            "calmoso",
+            "lento"
+        ],
+        "antonimos": [
+            "impaciente"
+        ]
+    },
+    "floresta": {
+        "sinonimos": [
+            "bosque",
+            "selva",
+            "fronda"
+        ],
+        "antonimos": []
+    },
+    "fortuito": {
+        "sinonimos": [
+            "inopinado",
+            "casual",
+            "imprevisto"
+        ],
+        "antonimos": [
+            "previsto",
+            ""
+        ]
+    },
+    "fragoso": {
+        "sinonimos": [
+            "áspero",
+            "intrincado",
+            "lleno de quiebras",
+            "maleza"
+        ],
+        "antonimos": []
+    },
+    "friolera": {
+        "sinonimos": [
+            "gran cantidad de algo"
+        ],
+        "antonimos": []
+    },
+    "frugal": {
+        "sinonimos": [
+            "parco en comer y beber",
+            "parco"
+        ],
+        "antonimos": [
+            "desmedido"
+        ]
+    },
+    "fruición": {
+        "sinonimos": [
+            "complacencia",
+            "goce"
+        ],
+        "antonimos": []
+    },
+    "fruslería": {
+        "sinonimos": [
+            "bagatela",
+            "pequeñez",
+            "trivialidad"
+        ],
+        "antonimos": []
+    },
+    "fuero": {
+        "sinonimos": [
+            "jurisdicción",
+            "poder",
+            "privilegio",
+            "arrogancia",
+            ""
+        ],
+        "antonimos": []
+    },
+    "funesto": {
+        "sinonimos": [
+            "aciago",
+            "triste",
+            "desgraciado"
+        ],
+        "antonimos": [
+            "dichoso"
+        ]
+    },
+    "fungible": {
+        "sinonimos": [
+            "que se consume en su uso"
+        ],
+        "antonimos": []
+    },
+    "fútil": {
+        "sinonimos": [
+            "baladí",
+            "insignificante",
+            "nimio"
+        ],
+        "antonimos": [
+            "fundamental"
+        ]
+    },
+    "gabela": {
+        "sinonimos": [
+            "tributo",
+            "impuesto",
+            "gravamen"
+        ],
+        "antonimos": [
+            "privilegio"
+        ]
+    },
+    "gandul": {
+        "sinonimos": [
+            "holgazán",
+            "vago",
+            "haragán"
+        ],
+        "antonimos": [
+            "dinámico",
+            ""
+        ]
+    },
+    "gárrulo": {
+        "sinonimos": [
+            "vulgar",
+            "ramplón",
+            "parlanchín"
+        ],
+        "antonimos": [
+            "mudo",
+            ""
+        ]
+    },
+    "génesis": {
+        "sinonimos": [
+            "origen",
+            "principio"
+        ],
+        "antonimos": [
+            "acabamiento"
+        ]
+    },
+    "gesta": {
+        "sinonimos": [
+            "hazaña",
+            "proeza"
+        ],
+        "antonimos": [
+            "cobardía"
+        ]
+    },
+    "glosar": {
+        "sinonimos": [
+            "comentar",
+            "anotar",
+            "explicar"
+        ],
+        "antonimos": []
+    },
+    "greguería": {
+        "sinonimos": [
+            "gritería",
+            "confusión",
+            "escándalo ≠"
+        ],
+        "antonimos": []
+    },
+    "grey": {
+        "sinonimos": [
+            "rebaño"
+        ],
+        "antonimos": []
+    },
+    "guarda": {
+        "sinonimos": [
+            "tutela"
+        ],
+        "antonimos": []
+    },
+    "guarismo": {
+        "sinonimos": [
+            "número",
+            "cifra"
+        ],
+        "antonimos": []
+    },
+    "hastiar": {
+        "sinonimos": [
+            "aburrir",
+            "fastidiar",
+            "cansar",
+            "hartar"
+        ],
+        "antonimos": [
+            "divertir",
+            ""
+        ]
+    },
+    "hato": {
+        "sinonimos": [
+            "manada",
+            "rebaño"
+        ],
+        "antonimos": []
+    },
+    "herrumbroso": {
+        "sinonimos": [
+            "mohoso",
+            "oxidado",
+            "enmohecido ≠"
+        ],
+        "antonimos": []
+    },
+    "heterodoxia": {
+        "sinonimos": [
+            "herejía"
+        ],
+        "antonimos": []
+    },
+    "heterodoxo": {
+        "sinonimos": [
+            "hereje"
+        ],
+        "antonimos": []
+    },
+    "hilarante": {
+        "sinonimos": [
+            "alegre",
+            "jocoso",
+            "festivo",
+            "divertido",
+            "bromista"
+        ],
+        "antonimos": []
+    },
+    "hilaridad": {
+        "sinonimos": [
+            "risa",
+            "alegría",
+            "regocijo"
+        ],
+        "antonimos": [
+            "llanto",
+            "tristeza"
+        ]
+    },
+    "hipocresía": {
+        "sinonimos": [
+            "fingimiento de cualidades o sentimientos"
+        ],
+        "antonimos": []
+    },
+    "hisopo": {
+        "sinonimos": [
+            "rociador",
+            "aspersorio",
+            "varilla",
+            "escoba"
+        ],
+        "antonimos": []
+    },
+    "histrión": {
+        "sinonimos": [
+            "actor",
+            "cómico",
+            "farsante"
+        ],
+        "antonimos": []
+    },
+    "hollar": {
+        "sinonimos": [
+            "pisotear",
+            "humillar",
+            "profanar",
+            "abatir"
+        ],
+        "antonimos": [
+            "respetar",
+            ""
+        ]
+    },
+    "hontanar": {
+        "sinonimos": [
+            "manantial",
+            "venero",
+            "chorro"
+        ],
+        "antonimos": []
+    },
+    "horadar": {
+        "sinonimos": [
+            "agujerear",
+            "taladrar",
+            "perforar"
+        ],
+        "antonimos": [
+            "cerrar",
+            ""
+        ]
+    },
+    "hosco": {
+        "sinonimos": [
+            "ceñudo",
+            "huraño",
+            "áspero"
+        ],
+        "antonimos": [
+            "suave",
+            "claro"
+        ]
+    },
+    "hueste": {
+        "sinonimos": [
+            "ejército",
+            "tropa",
+            "mesnada"
+        ],
+        "antonimos": []
+    },
+    "idiosincrasia": {
+        "sinonimos": [
+            "rasgos",
+            "temperamento",
+            "peculiaridad",
+            ""
+        ],
+        "antonimos": []
+    },
+    "ignominia": {
+        "sinonimos": [
+            "oprobio",
+            "afrenta",
+            "deshonra",
+            "vergüenza ≠"
+        ],
+        "antonimos": []
+    },
+    "ignoto": {
+        "sinonimos": [
+            "desconocido"
+        ],
+        "antonimos": [
+            "conocido"
+        ]
+    },
+    "ilegible": {
+        "sinonimos": [
+            "que no puede leerse",
+            "ininteligible"
+        ],
+        "antonimos": [
+            "claro",
+            ""
+        ]
+    },
+    "imbuir": {
+        "sinonimos": [
+            "infundir",
+            "inculcar",
+            "inspirar"
+        ],
+        "antonimos": [
+            "disuadir"
+        ]
+    },
+    "impeler": {
+        "sinonimos": [
+            "impulsar",
+            "empujar",
+            "arrastrar",
+            "arrojar"
+        ],
+        "antonimos": [
+            "retener",
+            ""
+        ]
+    },
+    "impetrado": {
+        "sinonimos": [
+            "IMPETRAR ~ rogar",
+            "suplicar"
+        ],
+        "antonimos": []
+    },
+    "impetrar": {
+        "sinonimos": [
+            "rogar",
+            "suplicar"
+        ],
+        "antonimos": []
+    },
+    "impío": {
+        "sinonimos": [
+            "incrédulo",
+            "hereje",
+            "laico"
+        ],
+        "antonimos": [
+            "fiel",
+            "devoto"
+        ]
+    },
+    "imprecar": {
+        "sinonimos": [
+            "maldecir"
+        ],
+        "antonimos": []
+    },
+    "ímprobo": {
+        "sinonimos": [
+            "trabajoso",
+            "penoso",
+            "malvado",
+            "vil"
+        ],
+        "antonimos": [
+            "bueno",
+            ""
+        ]
+    },
+    "impugnar": {
+        "sinonimos": [
+            "recusar",
+            "refutar",
+            "oponerse"
+        ],
+        "antonimos": [
+            "ayudar",
+            ""
+        ]
+    },
+    "inalienable": {
+        "sinonimos": [
+            "enajenable",
+            "irrenunciable",
+            "propio"
+        ],
+        "antonimos": []
+    },
+    "inane": {
+        "sinonimos": [
+            "fútil",
+            "vano",
+            "inútil"
+        ],
+        "antonimos": [
+            "importante",
+            "esencial"
+        ]
+    },
+    "ínclito": {
+        "sinonimos": [
+            "ilustre",
+            "célebre",
+            "afamado"
+        ],
+        "antonimos": [
+            "desconocido",
+            ""
+        ]
+    },
+    "incoercible": {
+        "sinonimos": [
+            "irrefrenable",
+            "irresistible"
+        ],
+        "antonimos": []
+    },
+    "incongruente": {
+        "sinonimos": [
+            "impropio",
+            "incoherente"
+        ],
+        "antonimos": [
+            "lógico"
+        ]
+    },
+    "incuria": {
+        "sinonimos": [
+            "abandono",
+            "desidia"
+        ],
+        "antonimos": [
+            "cuidado",
+            "interés"
+        ]
+    },
+    "indecoroso": {
+        "sinonimos": [
+            "indecente",
+            "obsceno"
+        ],
+        "antonimos": [
+            "honesto",
+            "honrado",
+            ""
+        ]
+    },
+    "indeleble": {
+        "sinonimos": [
+            "imborrable",
+            "permanente"
+        ],
+        "antonimos": [
+            "transitorio",
+            ""
+        ]
+    },
+    "indemne": {
+        "sinonimos": [
+            "ileso",
+            "incólume",
+            "intacto"
+        ],
+        "antonimos": [
+            "vulnerable",
+            "dañado"
+        ]
+    },
+    "indolencia": {
+        "sinonimos": [
+            "apatía",
+            "desidia",
+            "pereza"
+        ],
+        "antonimos": [
+            "actividad",
+            "fervor"
+        ]
+    },
+    "indolente": {
+        "sinonimos": [
+            "flojo",
+            "perezoso",
+            "insensible",
+            "que no siente"
+        ],
+        "antonimos": []
+    },
+    "inédito": {
+        "sinonimos": [
+            "desconocido",
+            "ignoto",
+            "nuevo",
+            "original ≠"
+        ],
+        "antonimos": []
+    },
+    "inefable": {
+        "sinonimos": [
+            "inenarrable",
+            "maravilloso",
+            "indecible ≠"
+        ],
+        "antonimos": []
+    },
+    "inepto": {
+        "sinonimos": [
+            "necio",
+            "incapaz"
+        ],
+        "antonimos": [
+            "hábil"
+        ]
+    },
+    "inerme": {
+        "sinonimos": [
+            "indefenso",
+            "desarmado"
+        ],
+        "antonimos": [
+            "amparado",
+            "apoyado"
+        ]
+    },
+    "inextricable": {
+        "sinonimos": [
+            "enmarañado",
+            "intrincado",
+            "confuso ≠"
+        ],
+        "antonimos": []
+    },
+    "infamar": {
+        "sinonimos": [
+            "difamar",
+            "desacreditar"
+        ],
+        "antonimos": [
+            "alabar",
+            "honrar"
+        ]
+    },
+    "infausto": {
+        "sinonimos": [
+            "desgraciado",
+            "desafortunado"
+        ],
+        "antonimos": [
+            "fausto",
+            "alegre"
+        ]
+    },
+    "inferir": {
+        "sinonimos": [
+            "deducir",
+            "colegir",
+            "inducir"
+        ],
+        "antonimos": []
+    },
+    "inflación": {
+        "sinonimos": [
+            "engreimiento",
+            "hinchamiento"
+        ],
+        "antonimos": [
+            "humildad"
+        ]
+    },
+    "ingente": {
+        "sinonimos": [
+            "enorme",
+            "grandioso",
+            "colosal"
+        ],
+        "antonimos": [
+            "mínimo"
+        ]
+    },
+    "inicuo": {
+        "sinonimos": [
+            "injusto",
+            "malvado"
+        ],
+        "antonimos": [
+            "bueno"
+        ]
+    },
+    "injerencia": {
+        "sinonimos": [
+            "intromisión",
+            "fisgoneo"
+        ],
+        "antonimos": []
+    },
+    "inmolar": {
+        "sinonimos": [
+            "sacrificar una víctima",
+            "sacrificar",
+            "ofrecer",
+            ""
+        ],
+        "antonimos": []
+    },
+    "inmoto": {
+        "sinonimos": [
+            "inmóvil",
+            "quieto"
+        ],
+        "antonimos": []
+    },
+    "inmune": {
+        "sinonimos": [
+            "invulnerable",
+            "no atacable por enfermedades ≠"
+        ],
+        "antonimos": []
+    },
+    "inmunidad": {
+        "sinonimos": [
+            "exención",
+            "privilegio"
+        ],
+        "antonimos": [
+            "debilidad"
+        ]
+    },
+    "inopia": {
+        "sinonimos": [
+            "pobreza",
+            "ignorancia",
+            "escasez"
+        ],
+        "antonimos": []
+    },
+    "inquinar": {
+        "sinonimos": [
+            "manchar",
+            "contagiar"
+        ],
+        "antonimos": [
+            "asear"
+        ]
+    },
+    "inquirir": {
+        "sinonimos": [
+            "indagar",
+            "examinar",
+            "averiguar"
+        ],
+        "antonimos": [
+            "inhibirse"
+        ]
+    },
+    "insidia": {
+        "sinonimos": [
+            "asechanza",
+            "trampa"
+        ],
+        "antonimos": [
+            "franqueza"
+        ]
+    },
+    "insidioso": {
+        "sinonimos": [
+            "intrigante",
+            "capcioso",
+            "engañoso"
+        ],
+        "antonimos": [
+            "franco",
+            ""
+        ]
+    },
+    "insolencia": {
+        "sinonimos": [
+            "atrevimiento",
+            "descaro",
+            "desfachatez ≠"
+        ],
+        "antonimos": []
+    },
+    "inteligible": {
+        "sinonimos": [
+            "claro",
+            "legible"
+        ],
+        "antonimos": [
+            "ininteligible"
+        ]
+    },
+    "introspección": {
+        "sinonimos": [
+            "observación interior de los propios"
+        ],
+        "antonimos": []
+    },
+    "introspectivo": {
+        "sinonimos": [
+            "íntimo",
+            "reflexivo"
+        ],
+        "antonimos": []
+    },
+    "invectiva": {
+        "sinonimos": [
+            "diatriba",
+            "ofensa"
+        ],
+        "antonimos": [
+            "apología",
+            "elogio"
+        ]
+    },
+    "inverosímil": {
+        "sinonimos": [
+            "absurdo",
+            "raro",
+            "imposible",
+            "sorprendente ≠"
+        ],
+        "antonimos": []
+    },
+    "irascible": {
+        "sinonimos": [
+            "propenso a la ira",
+            "irritable",
+            "incontrolado"
+        ],
+        "antonimos": []
+    },
+    "irresoluto": {
+        "sinonimos": [
+            "perplejo",
+            "indeciso"
+        ],
+        "antonimos": [
+            "firme",
+            "resuelto"
+        ]
+    },
+    "irrogar": {
+        "sinonimos": [
+            "causar",
+            "ocasionar perjuicios o daños"
+        ],
+        "antonimos": []
+    },
+    "izar": {
+        "sinonimos": [
+            "levantar",
+            "subir",
+            "enarbolar"
+        ],
+        "antonimos": [
+            "arriar"
+        ]
+    },
+    "jalonar": {
+        "sinonimos": [
+            "señalar",
+            "marcar",
+            "limitar"
+        ],
+        "antonimos": []
+    },
+    "jofaina": {
+        "sinonimos": [
+            "palangana"
+        ],
+        "antonimos": []
+    },
+    "jolgorio": {
+        "sinonimos": [
+            "fiesta",
+            "bullicio",
+            "jarana"
+        ],
+        "antonimos": [
+            "calma"
+        ]
+    },
+    "lacerado": {
+        "sinonimos": [
+            "infeliz",
+            "desdichado",
+            "mezquino",
+            "miserable",
+            ""
+        ],
+        "antonimos": []
+    },
+    "lacerar": {
+        "sinonimos": [
+            "lastimar",
+            "dañar",
+            "herir"
+        ],
+        "antonimos": [
+            "sanar"
+        ]
+    },
+    "lacio": {
+        "sinonimos": [
+            "mustio",
+            "marchito",
+            "fláccido",
+            "ajado"
+        ],
+        "antonimos": [
+            "fuerte",
+            ""
+        ]
+    },
+    "lacónico": {
+        "sinonimos": [
+            "conciso",
+            "breve",
+            "sucinto"
+        ],
+        "antonimos": [
+            "elocuente",
+            "prolijo"
+        ]
+    },
+    "laconismo": {
+        "sinonimos": [
+            "sequedad",
+            "sobriedad"
+        ],
+        "antonimos": [
+            "abundancia"
+        ]
+    },
+    "lacrar": {
+        "sinonimos": [
+            "dañar o perjudicar a alguien en sus intereses",
+            ""
+        ],
+        "antonimos": []
+    },
+    "ladino": {
+        "sinonimos": [
+            "astuto",
+            "taimado"
+        ],
+        "antonimos": [
+            "inocente",
+            "ingenuo"
+        ]
+    },
+    "languidez": {
+        "sinonimos": [
+            "flaqueza",
+            "debilidad"
+        ],
+        "antonimos": [
+            "energía",
+            "ánimo"
+        ]
+    },
+    "lascivia": {
+        "sinonimos": [
+            "propensión de los deseos carnales",
+            "lujuria /"
+        ],
+        "antonimos": []
+    },
+    "laso": {
+        "sinonimos": [
+            "flojo",
+            "macilento / cansado",
+            "desfallecido",
+            "falto de"
+        ],
+        "antonimos": []
+    },
+    "latrocinio": {
+        "sinonimos": [
+            "hurto",
+            "robo",
+            "estafa"
+        ],
+        "antonimos": [
+            "restitución",
+            "honradez"
+        ]
+    },
+    "laudo": {
+        "sinonimos": [
+            "premio",
+            "galardón",
+            "recompensa"
+        ],
+        "antonimos": []
+    },
+    "lenidad": {
+        "sinonimos": [
+            "blancura",
+            "suavidad",
+            "benevolencia"
+        ],
+        "antonimos": [
+            "severidad"
+        ]
+    },
+    "lenitivo": {
+        "sinonimos": [
+            "calmante",
+            "suavizante",
+            "balsámico"
+        ],
+        "antonimos": [
+            "doloroso"
+        ]
+    },
+    "letanía": {
+        "sinonimos": [
+            "retahíla",
+            "sarta",
+            "rosario",
+            "cadena",
+            "invocación",
+            ""
+        ],
+        "antonimos": []
+    },
+    "levantisco": {
+        "sinonimos": [
+            "inquieto",
+            "rebelde"
+        ],
+        "antonimos": [
+            "dócil",
+            "obediente"
+        ]
+    },
+    "levítico": {
+        "sinonimos": [
+            "aficionado a la iglesia",
+            "clerical"
+        ],
+        "antonimos": []
+    },
+    "libelo": {
+        "sinonimos": [
+            "panfleto",
+            "folleto",
+            "impreso",
+            "difamación ≠"
+        ],
+        "antonimos": []
+    },
+    "licencioso": {
+        "sinonimos": [
+            "libre",
+            "atrevido",
+            "disoluto"
+        ],
+        "antonimos": []
+    },
+    "licitar": {
+        "sinonimos": [
+            "subastar",
+            "ofrecer precio por algo en una"
+        ],
+        "antonimos": []
+    },
+    "lid": {
+        "sinonimos": [
+            "liza",
+            "pelea",
+            "combate"
+        ],
+        "antonimos": [
+            "acuerdo"
+        ]
+    },
+    "ligazón": {
+        "sinonimos": [
+            "unión",
+            "trabazón",
+            "enlace"
+        ],
+        "antonimos": [
+            "desajuste"
+        ]
+    },
+    "lisura": {
+        "sinonimos": [
+            "ingenuidad",
+            "sinceridad"
+        ],
+        "antonimos": [
+            "altivez"
+        ]
+    },
+    "liza": {
+        "sinonimos": [
+            "pelea",
+            "combate"
+        ],
+        "antonimos": [
+            "apaciguamiento"
+        ]
+    },
+    "lóbrego": {
+        "sinonimos": [
+            "oscuro",
+            "tenebroso",
+            "lúgubre"
+        ],
+        "antonimos": [
+            "iluminado",
+            ""
+        ]
+    },
+    "lúbrico": {
+        "sinonimos": [
+            "lujurioso",
+            "libidinoso"
+        ],
+        "antonimos": [
+            "casto"
+        ]
+    },
+    "ludibrio": {
+        "sinonimos": [
+            "burla",
+            "befa",
+            "escarnio"
+        ],
+        "antonimos": [
+            "loa",
+            "alabanza",
+            "aprecio"
+        ]
+    },
+    "luneta": {
+        "sinonimos": [
+            "cristal o vidrio",
+            "media luna / sillón",
+            "asiento"
+        ],
+        "antonimos": []
+    },
+    "lupino": {
+        "sinonimos": [
+            "Perteneciente o relativo al lobo"
+        ],
+        "antonimos": []
+    },
+    "macilento": {
+        "sinonimos": [
+            "demacrado",
+            "flaco",
+            "descolorido"
+        ],
+        "antonimos": [
+            "fuerte"
+        ]
+    },
+    "mácula": {
+        "sinonimos": [
+            "mancha",
+            "mancilla",
+            "sombra"
+        ],
+        "antonimos": [
+            "perfección"
+        ]
+    },
+    "magro": {
+        "sinonimos": [
+            "flaco",
+            "enjuto",
+            "delgado"
+        ],
+        "antonimos": [
+            "gordo"
+        ]
+    },
+    "malbaratar": {
+        "sinonimos": [
+            "malvender",
+            "malgastar",
+            "disipar"
+        ],
+        "antonimos": []
+    },
+    "mancilla": {
+        "sinonimos": [
+            "mácula",
+            "mancha",
+            "desdoro"
+        ],
+        "antonimos": [
+            "honor",
+            ""
+        ]
+    },
+    "manido": {
+        "sinonimos": [
+            "vulgar",
+            "visto",
+            "trivial",
+            "socorrido"
+        ],
+        "antonimos": []
+    },
+    "manubrio": {
+        "sinonimos": [
+            "empuñadura",
+            "manija",
+            "manivela"
+        ],
+        "antonimos": []
+    },
+    "manumiso": {
+        "sinonimos": [
+            "horra (que ha alcanzado la libertad)"
+        ],
+        "antonimos": []
+    },
+    "marasmo": {
+        "sinonimos": [
+            "inmovilidad",
+            "paralización"
+        ],
+        "antonimos": [
+            "vigor"
+        ]
+    },
+    "marcial": {
+        "sinonimos": [
+            "militar",
+            "guerrero"
+        ],
+        "antonimos": [
+            "cobarde"
+        ]
+    },
+    "mascarada": {
+        "sinonimos": [
+            "carnaval",
+            "comparsa",
+            "piñata",
+            "payasada",
+            ""
+        ],
+        "antonimos": []
+    },
+    "mascular": {
+        "sinonimos": [
+            "farfullar",
+            "balbucir",
+            "gruñir"
+        ],
+        "antonimos": []
+    },
+    "mayorazgo": {
+        "sinonimos": [
+            "hijo primogénito",
+            "primogenitura"
+        ],
+        "antonimos": []
+    },
+    "mejer": {
+        "sinonimos": [
+            "remover"
+        ],
+        "antonimos": []
+    },
+    "melifluo": {
+        "sinonimos": [
+            "meloso",
+            "melindroso",
+            "dulzón"
+        ],
+        "antonimos": [
+            "franco",
+            "duro"
+        ]
+    },
+    "menesteroso": {
+        "sinonimos": [
+            "necesitado",
+            "indigente"
+        ],
+        "antonimos": [
+            "pudiente",
+            "rico"
+        ]
+    },
+    "meollo": {
+        "sinonimos": [
+            "enjundia",
+            "fundamento",
+            "núcleo"
+        ],
+        "antonimos": []
+    },
+    "mesura": {
+        "sinonimos": [
+            "prudencia"
+        ],
+        "antonimos": [
+            "descomedimiento"
+        ]
+    },
+    "mesurado": {
+        "sinonimos": [
+            "prudente",
+            "comedido"
+        ],
+        "antonimos": []
+    },
+    "miríada": {
+        "sinonimos": [
+            "multitud",
+            "infinidad",
+            "legión"
+        ],
+        "antonimos": []
+    },
+    "misántropo": {
+        "sinonimos": [
+            "arisco",
+            "huraño",
+            "egoísta"
+        ],
+        "antonimos": []
+    },
+    "misógino": {
+        "sinonimos": [
+            "tímido",
+            "solitario",
+            "insociable"
+        ],
+        "antonimos": []
+    },
+    "misoneísta": {
+        "sinonimos": [
+            "hostil a las novedades",
+            "tradicionalista"
+        ],
+        "antonimos": []
+    },
+    "mitigar": {
+        "sinonimos": [
+            "suavizar",
+            "moderar"
+        ],
+        "antonimos": [
+            "encender",
+            "aumentar",
+            ""
+        ]
+    },
+    "mixtificado": {
+        "sinonimos": [
+            "falso",
+            "adulterado",
+            "engañado",
+            "falsificado"
+        ],
+        "antonimos": []
+    },
+    "módico": {
+        "sinonimos": [
+            "reducido",
+            "moderado",
+            "barato"
+        ],
+        "antonimos": [
+            "caro",
+            "grande"
+        ]
+    },
+    "mohína": {
+        "sinonimos": [
+            "enfado",
+            "enojo"
+        ],
+        "antonimos": []
+    },
+    "mohíno": {
+        "sinonimos": [
+            "triste",
+            "melancólico",
+            "enojado"
+        ],
+        "antonimos": [
+            "alegre"
+        ]
+    },
+    "molice": {
+        "sinonimos": [
+            "comodidad extrema",
+            "blandura"
+        ],
+        "antonimos": []
+    },
+    "monopolizar": {
+        "sinonimos": [
+            "adquirir",
+            "usurpar",
+            "acaparar"
+        ],
+        "antonimos": [
+            "repartir",
+            ""
+        ]
+    },
+    "moratoria": {
+        "sinonimos": [
+            "prórroga",
+            "demora"
+        ],
+        "antonimos": [
+            "exigencia"
+        ]
+    },
+    "mórbido": {
+        "sinonimos": [
+            "blando",
+            "enfermizo",
+            "fláccido"
+        ],
+        "antonimos": [
+            "sano",
+            "áspero"
+        ]
+    },
+    "morigerado": {
+        "sinonimos": [
+            "bien criado",
+            "de buenas costumbres ≠"
+        ],
+        "antonimos": []
+    },
+    "mugrue": {
+        "sinonimos": [
+            "suciedad"
+        ],
+        "antonimos": [
+            "limpieza"
+        ]
+    },
+    "munificencia": {
+        "sinonimos": [
+            "generosidad",
+            "esplendidez"
+        ],
+        "antonimos": [
+            "tacañería"
+        ]
+    },
+    "mutis": {
+        "sinonimos": [
+            "salida",
+            "retirada",
+            "silencio",
+            "mutismo"
+        ],
+        "antonimos": [
+            "entrada"
+        ]
+    },
+    "ndolencia": {
+        "sinonimos": [
+            "apatía",
+            "desidia",
+            "pereza"
+        ],
+        "antonimos": []
+    },
+    "necedad": {
+        "sinonimos": [
+            "sandez",
+            "desatino",
+            "pamplina"
+        ],
+        "antonimos": [
+            "ingenio",
+            ""
+        ]
+    },
+    "necio": {
+        "sinonimos": [
+            "ignorante",
+            "mentecato"
+        ],
+        "antonimos": [
+            "listo"
+        ]
+    },
+    "necrópolis": {
+        "sinonimos": [
+            "cementerio",
+            "camposanto"
+        ],
+        "antonimos": []
+    },
+    "neófito": {
+        "sinonimos": [
+            "novicio",
+            "bautizado",
+            "novel"
+        ],
+        "antonimos": []
+    },
+    "neólogo": {
+        "sinonimos": [
+            "que emplea NEOLOGISMOS ~ vocablo"
+        ],
+        "antonimos": []
+    },
+    "neurálgico": {
+        "sinonimos": [
+            "vital",
+            "fundamental",
+            "principal"
+        ],
+        "antonimos": [
+            "auxiliar"
+        ]
+    },
+    "nimio": {
+        "sinonimos": [
+            "prolijo",
+            "insignificante",
+            "pueril",
+            "pequeño ≠"
+        ],
+        "antonimos": []
+    },
+    "nolición": {
+        "sinonimos": [
+            "repulsa",
+            "resistencia",
+            "repulsión"
+        ],
+        "antonimos": []
+    },
+    "notorio": {
+        "sinonimos": [
+            "destacado",
+            "evidente",
+            "patente"
+        ],
+        "antonimos": [
+            "oscuro",
+            ""
+        ]
+    },
+    "nubilidad": {
+        "sinonimos": [
+            "pubertad",
+            "adolescencia"
+        ],
+        "antonimos": []
+    },
+    "obcecación": {
+        "sinonimos": [
+            "ofuscación tenaz y persistente",
+            "arrebato"
+        ],
+        "antonimos": []
+    },
+    "obcecado": {
+        "sinonimos": [
+            "terco",
+            "testarudo"
+        ],
+        "antonimos": [
+            "lúcido"
+        ]
+    },
+    "óbito": {
+        "sinonimos": [
+            "muerte",
+            "defunción"
+        ],
+        "antonimos": [
+            "nacimiento"
+        ]
+    },
+    "oblación": {
+        "sinonimos": [
+            "ofrenda",
+            "sacrificio"
+        ],
+        "antonimos": []
+    },
+    "obnubilar": {
+        "sinonimos": [
+            "ofuscar",
+            "obcecarse",
+            "confundir"
+        ],
+        "antonimos": []
+    },
+    "óbolo": {
+        "sinonimos": [
+            "donativo",
+            "dádiva",
+            "pequeñez"
+        ],
+        "antonimos": [
+            "abundancia"
+        ]
+    },
+    "obstinado": {
+        "sinonimos": [
+            "tozudo",
+            "contumaz",
+            "acérrimo"
+        ],
+        "antonimos": [
+            "remiso"
+        ]
+    },
+    "obturar": {
+        "sinonimos": [
+            "taponar",
+            "cerrar",
+            "cegar"
+        ],
+        "antonimos": [
+            "destapar"
+        ]
+    },
+    "obviar": {
+        "sinonimos": [
+            "apartar",
+            "evitar",
+            "eludir"
+        ],
+        "antonimos": [
+            "afrontar"
+        ]
+    },
+    "ocaso": {
+        "sinonimos": [
+            "decadencia",
+            "atardecer",
+            "occidente",
+            "crepúsculo",
+            ""
+        ],
+        "antonimos": []
+    },
+    "ocluir": {
+        "sinonimos": [
+            "cerrar"
+        ],
+        "antonimos": [
+            "abrir"
+        ]
+    },
+    "ojeriza": {
+        "sinonimos": [
+            "antipatía",
+            "inquina",
+            "tirria",
+            "inquina"
+        ],
+        "antonimos": [
+            "amistad"
+        ]
+    },
+    "ominoso": {
+        "sinonimos": [
+            "abominable",
+            "odioso",
+            "execrable"
+        ],
+        "antonimos": [
+            "bueno",
+            ""
+        ]
+    },
+    "opimo": {
+        "sinonimos": [
+            "rico",
+            "fértil",
+            "copioso"
+        ],
+        "antonimos": [
+            "escaso"
+        ]
+    },
+    "opugnar": {
+        "sinonimos": [
+            "contradecir",
+            "refutar",
+            "negar",
+            "combatir ≠"
+        ],
+        "antonimos": []
+    },
+    "orbital": {
+        "sinonimos": [
+            "relativo a la órbita"
+        ],
+        "antonimos": []
+    },
+    "orear": {
+        "sinonimos": [
+            "ventilar",
+            "airear"
+        ],
+        "antonimos": []
+    },
+    "oropel": {
+        "sinonimos": [
+            "apariencia",
+            "abalorio",
+            "adorno"
+        ],
+        "antonimos": [
+            "sobriedad",
+            ""
+        ]
+    },
+    "orto": {
+        "sinonimos": [
+            "nacimiento",
+            "aparición",
+            "oriente"
+        ],
+        "antonimos": []
+    },
+    "ortodoxia": {
+        "sinonimos": [
+            "pureza",
+            "fidelidad",
+            "rectitud"
+        ],
+        "antonimos": [
+            "heterodoxia"
+        ]
+    },
+    "ostensible": {
+        "sinonimos": [
+            "patente",
+            "visible",
+            "manifiesto"
+        ],
+        "antonimos": [
+            "oscuro"
+        ]
+    },
+    "ostracismo": {
+        "sinonimos": [
+            "destierro",
+            "postergación"
+        ],
+        "antonimos": [
+            "regreso"
+        ]
+    },
+    "pábulo": {
+        "sinonimos": [
+            "fundamento",
+            "base",
+            "alimento",
+            "pasto ≠"
+        ],
+        "antonimos": []
+    },
+    "pachorra": {
+        "sinonimos": [
+            "cachaza",
+            "flema",
+            "cuajo",
+            "calma",
+            "dilación",
+            ""
+        ],
+        "antonimos": []
+    },
+    "paladín": {
+        "sinonimos": [
+            "defensor",
+            "héroe",
+            "paladino"
+        ],
+        "antonimos": [
+            "agresor"
+        ]
+    },
+    "paliado": {
+        "sinonimos": [
+            "atenuado"
+        ],
+        "antonimos": []
+    },
+    "panegírico": {
+        "sinonimos": [
+            "apología",
+            "elogio",
+            "encomio",
+            "exaltación ≠"
+        ],
+        "antonimos": []
+    },
+    "pánfilo": {
+        "sinonimos": [
+            "pausado",
+            "soso"
+        ],
+        "antonimos": [
+            "hábil"
+        ]
+    },
+    "pantomima": {
+        "sinonimos": [
+            "mímica",
+            "imitación",
+            "farsa"
+        ],
+        "antonimos": [
+            "veracidad"
+        ]
+    },
+    "parangón": {
+        "sinonimos": [
+            "semejanza",
+            "comparación",
+            "analogía ≠"
+        ],
+        "antonimos": []
+    },
+    "parco": {
+        "sinonimos": [
+            "sobrio",
+            "escaso",
+            "frugal"
+        ],
+        "antonimos": [
+            "superabundante"
+        ]
+    },
+    "parodia": {
+        "sinonimos": [
+            "imitación",
+            "burla",
+            "pantomima"
+        ],
+        "antonimos": [
+            "original"
+        ]
+    },
+    "patente": {
+        "sinonimos": [
+            "manifiesto",
+            "visible",
+            "claro",
+            "perceptible ≠"
+        ],
+        "antonimos": []
+    },
+    "pedigüeño": {
+        "sinonimos": [
+            "que pide con frecuencia e importunidad",
+            ""
+        ],
+        "antonimos": []
+    },
+    "peregrino": {
+        "sinonimos": [
+            "viajero",
+            "extraño"
+        ],
+        "antonimos": [
+            "frecuente"
+        ]
+    },
+    "perentorio": {
+        "sinonimos": [
+            "urgente",
+            "apremiante"
+        ],
+        "antonimos": [
+            "aplazable"
+        ]
+    },
+    "perfidia": {
+        "sinonimos": [
+            "maldad",
+            "traición",
+            "alevosía"
+        ],
+        "antonimos": [
+            "honradez",
+            ""
+        ]
+    },
+    "pérfido": {
+        "sinonimos": [
+            "traidor",
+            "falso",
+            "astuto"
+        ],
+        "antonimos": [
+            "sincero",
+            "benigno"
+        ]
+    },
+    "periplo": {
+        "sinonimos": [
+            "circunnavegación",
+            "viaje",
+            "travesía",
+            "circuito",
+            ""
+        ],
+        "antonimos": []
+    },
+    "perjurar": {
+        "sinonimos": [
+            "jurar en falso"
+        ],
+        "antonimos": [
+            "cumplir",
+            "moderarse"
+        ]
+    },
+    "permutar": {
+        "sinonimos": [
+            "cambiar",
+            "canjear",
+            "trocar"
+        ],
+        "antonimos": [
+            "fijar",
+            "permanecer"
+        ]
+    },
+    "perorar": {
+        "sinonimos": [
+            "hablar",
+            "suplicar",
+            "orar"
+        ],
+        "antonimos": [
+            "callar"
+        ]
+    },
+    "perpetuidad": {
+        "sinonimos": [
+            "inmortalidad",
+            "eternidad"
+        ],
+        "antonimos": [
+            "mortalidad"
+        ]
+    },
+    "perspicacia": {
+        "sinonimos": [
+            "penetración",
+            "",
+            "sagacidad"
+        ],
+        "antonimos": [
+            "tontería"
+        ]
+    },
+    "persuadido": {
+        "sinonimos": [
+            "convencido"
+        ],
+        "antonimos": [
+            "dudoso"
+        ]
+    },
+    "pertinaz": {
+        "sinonimos": [
+            "obstinado",
+            "recalcitrante",
+            "terco"
+        ],
+        "antonimos": [
+            "dejado",
+            ""
+        ]
+    },
+    "pesaroso": {
+        "sinonimos": [
+            "arrepentido",
+            "sentido",
+            "afligido"
+        ],
+        "antonimos": [
+            "satisfecho"
+        ]
+    },
+    "pignoración": {
+        "sinonimos": [
+            "hipoteca"
+        ],
+        "antonimos": []
+    },
+    "pignorar": {
+        "sinonimos": [
+            "empeñar",
+            "hipotecar"
+        ],
+        "antonimos": [
+            "devolver",
+            "desempeñar"
+        ]
+    },
+    "pigricia": {
+        "sinonimos": [
+            "pereza",
+            "ociosidad",
+            "negligencia",
+            "descuido ≠"
+        ],
+        "antonimos": []
+    },
+    "plagiar": {
+        "sinonimos": [
+            "copiar",
+            "robar"
+        ],
+        "antonimos": []
+    },
+    "planicie": {
+        "sinonimos": [
+            "llanura",
+            "sabana",
+            "plano",
+            "desierto",
+            "meseta",
+            ""
+        ],
+        "antonimos": []
+    },
+    "platero": {
+        "sinonimos": [
+            "asno de pelaje gris plateado",
+            "persona u objeto"
+        ],
+        "antonimos": []
+    },
+    "plúmbeo": {
+        "sinonimos": [
+            "pesado",
+            "plomizo",
+            "machacón"
+        ],
+        "antonimos": []
+    },
+    "pomo": {
+        "sinonimos": [
+            "agarrado",
+            "tirador"
+        ],
+        "antonimos": []
+    },
+    "ponzoñoso": {
+        "sinonimos": [
+            "venenoso",
+            "tóxico"
+        ],
+        "antonimos": [
+            "benigno",
+            "saludable"
+        ]
+    },
+    "porfía": {
+        "sinonimos": [
+            "discusión",
+            "disputa",
+            "contienda"
+        ],
+        "antonimos": [
+            "paz",
+            "tolerancia"
+        ]
+    },
+    "postergación": {
+        "sinonimos": [
+            "aplazamiento",
+            "desprecio"
+        ],
+        "antonimos": [
+            "recuerdo"
+        ]
+    },
+    "postergar": {
+        "sinonimos": [
+            "diferir",
+            "posponer"
+        ],
+        "antonimos": [
+            "anteponer"
+        ]
+    },
+    "postrero": {
+        "sinonimos": [
+            "último",
+            "zaguero"
+        ],
+        "antonimos": [
+            "anterior"
+        ]
+    },
+    "prebenda": {
+        "sinonimos": [
+            "beneficio",
+            "canonjía",
+            "preferencia"
+        ],
+        "antonimos": [
+            "pérdida"
+        ]
+    },
+    "precario": {
+        "sinonimos": [
+            "inestable",
+            "transitorio",
+            "efímero"
+        ],
+        "antonimos": [
+            "duradero"
+        ]
+    },
+    "preclaro": {
+        "sinonimos": [
+            "ilustre",
+            "célebre",
+            "insigne"
+        ],
+        "antonimos": [
+            "secundario"
+        ]
+    },
+    "prédica": {
+        "sinonimos": [
+            "homilía",
+            "discurso",
+            "diatriba",
+            "sermón"
+        ],
+        "antonimos": []
+    },
+    "predio": {
+        "sinonimos": [
+            "heredad",
+            "hacienda"
+        ],
+        "antonimos": []
+    },
+    "prelación": {
+        "sinonimos": [
+            "preferencia",
+            "anticipación"
+        ],
+        "antonimos": []
+    },
+    "premioso": {
+        "sinonimos": [
+            "lento",
+            "ajustado",
+            "retardado"
+        ],
+        "antonimos": [
+            "rápido"
+        ]
+    },
+    "prestancia": {
+        "sinonimos": [
+            "gallardía",
+            "distinción"
+        ],
+        "antonimos": [
+            "inferioridad"
+        ]
+    },
+    "prevalecer": {
+        "sinonimos": [
+            "sobresalir",
+            "perdurar",
+            "subsistir",
+            "crecer"
+        ],
+        "antonimos": []
+    },
+    "principalía": {
+        "sinonimos": [
+            "principalidad"
+        ],
+        "antonimos": []
+    },
+    "prístino": {
+        "sinonimos": [
+            "primitivo",
+            "original"
+        ],
+        "antonimos": []
+    },
+    "probidad": {
+        "sinonimos": [
+            "honradez",
+            "rectitud",
+            "integridad"
+        ],
+        "antonimos": [
+            "deshonor"
+        ]
+    },
+    "probo": {
+        "sinonimos": [
+            "honrado"
+        ],
+        "antonimos": [
+            "deshonesto",
+            "deshonrado"
+        ]
+    },
+    "proclive": {
+        "sinonimos": [
+            "inclinación",
+            "tendencia"
+        ],
+        "antonimos": []
+    },
+    "profuso": {
+        "sinonimos": [
+            "abundante",
+            "copioso / prodigado"
+        ],
+        "antonimos": []
+    },
+    "prohijar": {
+        "sinonimos": [
+            "adoptar",
+            "acoger"
+        ],
+        "antonimos": [
+            "abandonar"
+        ]
+    },
+    "prolijidad": {
+        "sinonimos": [
+            "redundancia",
+            "minuciosidad",
+            "ambages ≠"
+        ],
+        "antonimos": []
+    },
+    "prolijo": {
+        "sinonimos": [
+            "extenso",
+            "dilatado",
+            "difuso"
+        ],
+        "antonimos": [
+            "concreto"
+        ]
+    },
+    "prominencia": {
+        "sinonimos": [
+            "elevación"
+        ],
+        "antonimos": [
+            "llanura"
+        ]
+    },
+    "propensión": {
+        "sinonimos": [
+            "tendencia",
+            "inclinación",
+            "vocación",
+            ""
+        ],
+        "antonimos": []
+    },
+    "provecto": {
+        "sinonimos": [
+            "viejo",
+            "maduro",
+            "caduco"
+        ],
+        "antonimos": [
+            "joven"
+        ]
+    },
+    "pujante": {
+        "sinonimos": [
+            "potente",
+            "vigoroso",
+            "brioso"
+        ],
+        "antonimos": [
+            "débil"
+        ]
+    },
+    "pujanza": {
+        "sinonimos": [
+            "fuerza grande",
+            "robustez"
+        ],
+        "antonimos": [
+            "debilidad"
+        ]
+    },
+    "pulular": {
+        "sinonimos": [
+            "abundar",
+            "bullir"
+        ],
+        "antonimos": []
+    },
+    "purgar": {
+        "sinonimos": [
+            "limpiar",
+            "satisfacer",
+            "expiar",
+            "expeler ≠"
+        ],
+        "antonimos": []
+    },
+    "purulento": {
+        "sinonimos": [
+            "virulento",
+            "supuración"
+        ],
+        "antonimos": []
+    },
+    "quimera": {
+        "sinonimos": [
+            "ilusión",
+            "fantasía",
+            "ficción",
+            "utopía"
+        ],
+        "antonimos": [
+            "realidad"
+        ]
+    },
+    "quinqué": {
+        "sinonimos": [
+            "lámpara"
+        ],
+        "antonimos": []
+    },
+    "rábula": {
+        "sinonimos": [
+            "Abogado indocto",
+            "charlatán y vocinglero."
+        ],
+        "antonimos": []
+    },
+    "ramplón": {
+        "sinonimos": [
+            "tosco",
+            "vulgar"
+        ],
+        "antonimos": [
+            "selecto",
+            "raro"
+        ]
+    },
+    "rayano": {
+        "sinonimos": [
+            "limítrofe",
+            "contiguo"
+        ],
+        "antonimos": [
+            "distante"
+        ]
+    },
+    "reata": {
+        "sinonimos": [
+            "hilera",
+            "cuerda",
+            "fila"
+        ],
+        "antonimos": []
+    },
+    "rebatible": {
+        "sinonimos": [
+            "refutable",
+            "que se puede rebatir (rechazar o"
+        ],
+        "antonimos": []
+    },
+    "rebatir": {
+        "sinonimos": [
+            "impugnar",
+            "vencer"
+        ],
+        "antonimos": [
+            "acatar",
+            "confirmar"
+        ]
+    },
+    "rebrote": {
+        "sinonimos": [
+            "nuevo brote",
+            "retoño",
+            "hijo"
+        ],
+        "antonimos": []
+    },
+    "recabar": {
+        "sinonimos": [
+            "postular",
+            "pedir",
+            "reclamar"
+        ],
+        "antonimos": [
+            "apartar",
+            "rechazar"
+        ]
+    },
+    "reciedumbre": {
+        "sinonimos": [
+            "fuerza",
+            "fortaleza",
+            "vigor"
+        ],
+        "antonimos": []
+    },
+    "recio": {
+        "sinonimos": [
+            "fuerte",
+            "riguroso",
+            "duro"
+        ],
+        "antonimos": [
+            "suave",
+            "lento",
+            "flaco"
+        ]
+    },
+    "recoleto": {
+        "sinonimos": [
+            "austero",
+            "retirado",
+            "recogido"
+        ],
+        "antonimos": [
+            "mundano"
+        ]
+    },
+    "rectificar": {
+        "sinonimos": [
+            "corregir",
+            "ajustar",
+            "arrepentirse",
+            "refutar",
+            ""
+        ],
+        "antonimos": []
+    },
+    "redimir": {
+        "sinonimos": [
+            "rescatar",
+            "liberar"
+        ],
+        "antonimos": [
+            "esclavizar"
+        ]
+    },
+    "reflexivo": {
+        "sinonimos": [
+            "pensativo",
+            "sensato",
+            "deliberado",
+            "tranquilo ≠"
+        ],
+        "antonimos": []
+    },
+    "refutar": {
+        "sinonimos": [
+            "oponer",
+            "rebatir",
+            "impugnar"
+        ],
+        "antonimos": [
+            "corroborar",
+            ""
+        ]
+    },
+    "regalía": {
+        "sinonimos": [
+            "privilegio",
+            "franquicia",
+            "exención"
+        ],
+        "antonimos": []
+    },
+    "rehusar": {
+        "sinonimos": [
+            "declinar",
+            "renunciar",
+            "esquivar"
+        ],
+        "antonimos": [
+            "aceptar"
+        ]
+    },
+    "remanente": {
+        "sinonimos": [
+            "residuo",
+            "resto",
+            "sobrante"
+        ],
+        "antonimos": []
+    },
+    "remesa": {
+        "sinonimos": [
+            "envío",
+            "expedición",
+            "partida"
+        ],
+        "antonimos": [
+            "importación"
+        ]
+    },
+    "reminiscencia": {
+        "sinonimos": [
+            "recuerdo",
+            "memoria"
+        ],
+        "antonimos": []
+    },
+    "remiso": {
+        "sinonimos": [
+            "refractario",
+            "reacio"
+        ],
+        "antonimos": [
+            "dócil",
+            "obediente"
+        ]
+    },
+    "rémora": {
+        "sinonimos": [
+            "obstáculo",
+            "estorbo",
+            "lastre"
+        ],
+        "antonimos": [
+            "facilidad"
+        ]
+    },
+    "reprensible": {
+        "sinonimos": [
+            "incalificable",
+            "punible",
+            "blasfemable"
+        ],
+        "antonimos": []
+    },
+    "reprobable": {
+        "sinonimos": [
+            "incalificable",
+            "inconveniente ≠"
+        ],
+        "antonimos": []
+    },
+    "reprobar": {
+        "sinonimos": [
+            "censurar",
+            "vituperar",
+            "condenar",
+            "silbar ≠"
+        ],
+        "antonimos": []
+    },
+    "réprobo": {
+        "sinonimos": [
+            "malvado"
+        ],
+        "antonimos": [
+            "bueno"
+        ]
+    },
+    "reprueba": {
+        "sinonimos": [
+            "REPROBAR ~ censurar",
+            "vituperar ≠"
+        ],
+        "antonimos": []
+    },
+    "requebrar": {
+        "sinonimos": [
+            "piropear",
+            "lisonjear"
+        ],
+        "antonimos": [
+            "despreciar"
+        ]
+    },
+    "reservado": {
+        "sinonimos": [
+            "circunspecto",
+            "callado",
+            "disimulado",
+            ""
+        ],
+        "antonimos": []
+    },
+    "retahíla": {
+        "sinonimos": [
+            "sarta",
+            "serie",
+            "fila",
+            "inventario",
+            "acervo"
+        ],
+        "antonimos": [
+            "corte"
+        ]
+    },
+    "reticencia": {
+        "sinonimos": [
+            "reserva",
+            "ironía",
+            "rodeo",
+            "retintín ≠"
+        ],
+        "antonimos": []
+    },
+    "reticente": {
+        "sinonimos": [
+            "parco",
+            "circunspecto",
+            "evasivo",
+            "sarcástico"
+        ],
+        "antonimos": []
+    },
+    "reverberar": {
+        "sinonimos": [
+            "reflejar",
+            "resplandecer"
+        ],
+        "antonimos": []
+    },
+    "revocar": {
+        "sinonimos": [
+            "abolir",
+            "derogar",
+            "anular",
+            "abdicar"
+        ],
+        "antonimos": [
+            "ratificar",
+            ""
+        ]
+    },
+    "revocatorio": {
+        "sinonimos": [
+            "que revoca o invalida"
+        ],
+        "antonimos": []
+    },
+    "rielar": {
+        "sinonimos": [
+            "fulgurar",
+            "brillar",
+            "chispear"
+        ],
+        "antonimos": []
+    },
+    "roñería": {
+        "sinonimos": [
+            "tacañería",
+            "avaricia"
+        ],
+        "antonimos": [
+            "generosidad"
+        ]
+    },
+    "rubricar": {
+        "sinonimos": [
+            "firmar",
+            "signar"
+        ],
+        "antonimos": []
+    },
+    "rumboso": {
+        "sinonimos": [
+            "generoso",
+            "garboso"
+        ],
+        "antonimos": [
+            "moderado",
+            "avaro"
+        ]
+    },
+    "rutilante": {
+        "sinonimos": [
+            "resplandeciente",
+            "brillante"
+        ],
+        "antonimos": [
+            "apagado"
+        ]
+    },
+    "sagaz": {
+        "sinonimos": [
+            "astuto",
+            "inteligente"
+        ],
+        "antonimos": [
+            "ingenuo",
+            "tardo"
+        ]
+    },
+    "salaz": {
+        "sinonimos": [
+            "muy inclinado a la lujuria",
+            "lujurioso"
+        ],
+        "antonimos": [
+            "casto"
+        ]
+    },
+    "saltear": {
+        "sinonimos": [
+            "acometer",
+            "cocinar"
+        ],
+        "antonimos": []
+    },
+    "sátira": {
+        "sinonimos": [
+            "ironía",
+            "burla",
+            "zaherimiento"
+        ],
+        "antonimos": []
+    },
+    "sayo": {
+        "sinonimos": [
+            "ropa",
+            "casaca"
+        ],
+        "antonimos": []
+    },
+    "secesión": {
+        "sinonimos": [
+            "separación",
+            "segregación"
+        ],
+        "antonimos": []
+    },
+    "servilismo": {
+        "sinonimos": [
+            "adulación",
+            "vasallaje",
+            "sumisión"
+        ],
+        "antonimos": [
+            "orgullo",
+            ""
+        ]
+    },
+    "sibarita": {
+        "sinonimos": [
+            "epicúreo",
+            "comodón",
+            "refinado"
+        ],
+        "antonimos": []
+    },
+    "sibilino": {
+        "sinonimos": [
+            "oscuro",
+            "misterioso",
+            "esotérico"
+        ],
+        "antonimos": [
+            "claro"
+        ]
+    },
+    "sobado": {
+        "sinonimos": [
+            "muy usado"
+        ],
+        "antonimos": []
+    },
+    "sobreseer": {
+        "sinonimos": [
+            "desistir",
+            "cesar",
+            "dejar sin curso"
+        ],
+        "antonimos": []
+    },
+    "sobrio": {
+        "sinonimos": [
+            "parco",
+            "frugal",
+            "circunspecto",
+            "sencillo",
+            "templado"
+        ],
+        "antonimos": []
+    },
+    "socarrar": {
+        "sinonimos": [
+            "tostar",
+            "chamuscar",
+            "quemar",
+            "soflamar"
+        ],
+        "antonimos": []
+    },
+    "sojuzgar": {
+        "sinonimos": [
+            "dominar",
+            "esclavizar",
+            "someter"
+        ],
+        "antonimos": [
+            "liberar"
+        ]
+    },
+    "solaz": {
+        "sinonimos": [
+            "esparcimiento",
+            "recreo",
+            "descanso"
+        ],
+        "antonimos": [
+            "fastidio",
+            ""
+        ]
+    },
+    "solazar": {
+        "sinonimos": [
+            "divertir",
+            "regodearse"
+        ],
+        "antonimos": [
+            "aburrir",
+            "trabajar"
+        ]
+    },
+    "solícito": {
+        "sinonimos": [
+            "atento",
+            "considerado",
+            "servicial"
+        ],
+        "antonimos": [
+            "apático"
+        ]
+    },
+    "somero": {
+        "sinonimos": [
+            "superficial",
+            "sucinto",
+            "rápido"
+        ],
+        "antonimos": []
+    },
+    "sórdido": {
+        "sinonimos": [
+            "sucio",
+            "avaro",
+            "deshonesto"
+        ],
+        "antonimos": [
+            "generoso",
+            "decente"
+        ]
+    },
+    "soslayando": {
+        "sinonimos": [
+            "SOSLAYAR ~ evitar",
+            "eludir",
+            "obviar ≠"
+        ],
+        "antonimos": []
+    },
+    "soslayar": {
+        "sinonimos": [
+            "evitar",
+            "eludir",
+            "obviar"
+        ],
+        "antonimos": [
+            "afrontar"
+        ]
+    },
+    "soterrado": {
+        "sinonimos": [
+            "enterrado",
+            "secreto"
+        ],
+        "antonimos": [
+            "manifiesto"
+        ]
+    },
+    "suberoso": {
+        "sinonimos": [
+            "de corcho"
+        ],
+        "antonimos": []
+    },
+    "sublime": {
+        "sinonimos": [
+            "excelso",
+            "eminente"
+        ],
+        "antonimos": [
+            "vulgar"
+        ]
+    },
+    "subrepticio": {
+        "sinonimos": [
+            "que se hace o toma ocultamente y a"
+        ],
+        "antonimos": []
+    },
+    "subterfugio": {
+        "sinonimos": [
+            "pretexto",
+            "evasiva",
+            "medio"
+        ],
+        "antonimos": [
+            "verdad"
+        ]
+    },
+    "subvenir": {
+        "sinonimos": [
+            "amparar",
+            "ayudar"
+        ],
+        "antonimos": []
+    },
+    "subvertir": {
+        "sinonimos": [
+            "trastornar",
+            "agitar"
+        ],
+        "antonimos": [
+            "ordenar",
+            "respetar"
+        ]
+    },
+    "sucinto": {
+        "sinonimos": [
+            "conciso",
+            "breve",
+            "resumido"
+        ],
+        "antonimos": [
+            "largo",
+            "confuso"
+        ]
+    },
+    "sufragar": {
+        "sinonimos": [
+            "ayudar",
+            "costear",
+            "mantener"
+        ],
+        "antonimos": [
+            "abandonar"
+        ]
+    },
+    "supeditar": {
+        "sinonimos": [
+            "someter",
+            "vejar",
+            "posponer"
+        ],
+        "antonimos": [
+            "rebelarse",
+            ""
+        ]
+    },
+    "supremacía": {
+        "sinonimos": [
+            "hegemonía",
+            "superioridad"
+        ],
+        "antonimos": [
+            "inferioridad"
+        ]
+    },
+    "suturar": {
+        "sinonimos": [
+            "cicatrizar"
+        ],
+        "antonimos": [
+            "trepar",
+            "trinchar",
+            "resecar"
+        ]
+    },
+    "tácito": {
+        "sinonimos": [
+            "callado",
+            "implícito",
+            "sobrentendido"
+        ],
+        "antonimos": [
+            "hablador",
+            ""
+        ]
+    },
+    "taimado": {
+        "sinonimos": [
+            "ladino",
+            "sagaz",
+            "bellaco",
+            "astuto",
+            "disimulado y"
+        ],
+        "antonimos": []
+    },
+    "talante": {
+        "sinonimos": [
+            "modo",
+            "voluntad",
+            "humor",
+            "aspecto",
+            "estado",
+            "son"
+        ],
+        "antonimos": []
+    },
+    "taxativo": {
+        "sinonimos": [
+            "circunscrito",
+            "textual",
+            "concreto"
+        ],
+        "antonimos": [
+            "impreciso",
+            ""
+        ]
+    },
+    "tedio": {
+        "sinonimos": [
+            "aburrimiento",
+            "hastío",
+            "desgana"
+        ],
+        "antonimos": [
+            "entretenimiento",
+            ""
+        ]
+    },
+    "tergiversar": {
+        "sinonimos": [
+            "torcer",
+            "falsear",
+            "cambiar"
+        ],
+        "antonimos": []
+    },
+    "ternario": {
+        "sinonimos": [
+            "trino",
+            "triple"
+        ],
+        "antonimos": []
+    },
+    "timorato": {
+        "sinonimos": [
+            "tímido",
+            "apocado",
+            "decaído"
+        ],
+        "antonimos": []
+    },
+    "tornadizo": {
+        "sinonimos": [
+            "veleidoso",
+            "voluble",
+            "variable"
+        ],
+        "antonimos": [
+            "equilibrado",
+            ""
+        ]
+    },
+    "tosco": {
+        "sinonimos": [
+            "burdo",
+            "áspero",
+            "grueso"
+        ],
+        "antonimos": [
+            "exquisito",
+            "fino"
+        ]
+    },
+    "transgresor": {
+        "sinonimos": [
+            "infractor",
+            "desobediente"
+        ],
+        "antonimos": []
+    },
+    "transigente": {
+        "sinonimos": [
+            "que transige (consentir)",
+            "tolerante",
+            ""
+        ],
+        "antonimos": []
+    },
+    "trémulo": {
+        "sinonimos": [
+            "tembloroso",
+            "asustado"
+        ],
+        "antonimos": [
+            "tranquilo"
+        ]
+    },
+    "trepanar": {
+        "sinonimos": [
+            "perforar",
+            "agujerear",
+            "operar"
+        ],
+        "antonimos": [
+            "suturar"
+        ]
+    },
+    "truculento": {
+        "sinonimos": [
+            "cruel",
+            "atroz",
+            "tremebundo"
+        ],
+        "antonimos": [
+            "dulce",
+            "suave"
+        ]
+    },
+    "turba": {
+        "sinonimos": [
+            "muchedumbre",
+            "multitud"
+        ],
+        "antonimos": [
+            "soledad",
+            "orden"
+        ]
+    },
+    "turbamulta": {
+        "sinonimos": [
+            "multitud",
+            "confusa y desordenada ≠"
+        ],
+        "antonimos": []
+    },
+    "turgente": {
+        "sinonimos": [
+            "erecto",
+            "hinchado"
+        ],
+        "antonimos": [
+            "deshinchado",
+            "fláccido"
+        ]
+    },
+    "ubérrimo": {
+        "sinonimos": [
+            "abundante fecundo",
+            "fértil"
+        ],
+        "antonimos": [
+            "escaso",
+            "estéril"
+        ]
+    },
+    "ubicuo": {
+        "sinonimos": [
+            "presente",
+            "universal",
+            "extendido"
+        ],
+        "antonimos": [
+            "ausente",
+            ""
+        ]
+    },
+    "ultraísmo": {
+        "sinonimos": [
+            "Movimiento poético promulgado en"
+        ],
+        "antonimos": []
+    },
+    "unción": {
+        "sinonimos": [
+            "devoción",
+            "fervor",
+            "extremaunción"
+        ],
+        "antonimos": []
+    },
+    "urdir": {
+        "sinonimos": [
+            "tramar",
+            "maquinar",
+            "conspirar"
+        ],
+        "antonimos": []
+    },
+    "usura": {
+        "sinonimos": [
+            "codicia",
+            "avaricia"
+        ],
+        "antonimos": [
+            "generosidad"
+        ]
+    },
+    "usurpar": {
+        "sinonimos": [
+            "apropiarse",
+            "invadir",
+            "despojar"
+        ],
+        "antonimos": [
+            "reingresar"
+        ]
+    },
+    "vacuo": {
+        "sinonimos": [
+            "vacío",
+            "vano",
+            "libre"
+        ],
+        "antonimos": []
+    },
+    "vaho": {
+        "sinonimos": [
+            "vapor",
+            "aliento",
+            "hálito"
+        ],
+        "antonimos": [
+            "claridad"
+        ]
+    },
+    "valetudinario": {
+        "sinonimos": [
+            "enfermizo",
+            "caduco",
+            "viejo",
+            "achacoso"
+        ],
+        "antonimos": []
+    },
+    "vástago": {
+        "sinonimos": [
+            "descendiente",
+            "brote",
+            "espiga",
+            "varilla ≠"
+        ],
+        "antonimos": []
+    },
+    "vasto": {
+        "sinonimos": [
+            "extenso",
+            "amplio",
+            "dilatado"
+        ],
+        "antonimos": [
+            "limitado"
+        ]
+    },
+    "vate": {
+        "sinonimos": [
+            "poeta",
+            "rapsoda",
+            "juglar",
+            "adivino"
+        ],
+        "antonimos": []
+    },
+    "vehemencia": {
+        "sinonimos": [
+            "ardor",
+            "apasionamiento",
+            "ímpetu",
+            ""
+        ],
+        "antonimos": []
+    },
+    "veleidad": {
+        "sinonimos": [
+            "capricho",
+            "versatilidad",
+            "inestabilidad",
+            ""
+        ],
+        "antonimos": []
+    },
+    "veleidoso": {
+        "sinonimos": [
+            "inconstante",
+            "mudable"
+        ],
+        "antonimos": [
+            "inmutable",
+            ""
+        ]
+    },
+    "venal": {
+        "sinonimos": [
+            "vendible",
+            "sobornable"
+        ],
+        "antonimos": []
+    },
+    "ventura": {
+        "sinonimos": [
+            "felicidad",
+            "suerte / contingencia",
+            "casualidad /"
+        ],
+        "antonimos": []
+    },
+    "venustidad": {
+        "sinonimos": [
+            "hermosura perfecta o muy agraciada"
+        ],
+        "antonimos": []
+    },
+    "vespertino": {
+        "sinonimos": [
+            "crepuscular",
+            "por la tarde"
+        ],
+        "antonimos": []
+    },
+    "vilipendiar": {
+        "sinonimos": [
+            "despreciar",
+            "difamar",
+            "insultar"
+        ],
+        "antonimos": [
+            "honrar"
+        ]
+    },
+    "visar": {
+        "sinonimos": [
+            "examinar",
+            "refrendar",
+            "firmar",
+            "reconocer"
+        ],
+        "antonimos": []
+    },
+    "viso": {
+        "sinonimos": [
+            "aspecto",
+            "apariencia"
+        ],
+        "antonimos": []
+    },
+    "vitualla": {
+        "sinonimos": [
+            "víveres"
+        ],
+        "antonimos": []
+    },
+    "vituperar": {
+        "sinonimos": [
+            "condenar",
+            "censurar",
+            "reprobar",
+            "difamar ≠"
+        ],
+        "antonimos": []
+    },
+    "vituperio": {
+        "sinonimos": [
+            "vilipendio",
+            "reproche",
+            "afrenta",
+            "insulto≠ loa"
+        ],
+        "antonimos": []
+    },
+    "volatilizar": {
+        "sinonimos": [
+            "evaporizar",
+            "disipar"
+        ],
+        "antonimos": [
+            "solidificar",
+            "licuar"
+        ]
+    },
+    "volición": {
+        "sinonimos": [
+            "voluntad",
+            "deseo",
+            "disposición"
+        ],
+        "antonimos": []
+    },
+    "voluble": {
+        "sinonimos": [
+            "variable",
+            "versátil",
+            "inconstante"
+        ],
+        "antonimos": [
+            "decidido"
+        ]
+    },
+    "voluta": {
+        "sinonimos": [
+            "hélice",
+            "espiral",
+            "adorno"
+        ],
+        "antonimos": []
+    },
+    "voraz": {
+        "sinonimos": [
+            "que come o destruye desmesuradamente",
+            ""
+        ],
+        "antonimos": []
+    },
+    "yantar": {
+        "sinonimos": [
+            "comer",
+            "jamar",
+            "manducar"
+        ],
+        "antonimos": [
+            "ayunar"
+        ]
+    },
+    "yelmo": {
+        "sinonimos": [
+            "casco",
+            "armadura"
+        ],
+        "antonimos": []
+    },
+    "yermo": {
+        "sinonimos": [
+            "estéril",
+            "improductivo",
+            "árido",
+            "erial"
+        ],
+        "antonimos": [
+            "fecundo"
+        ]
+    },
+    "yerto": {
+        "sinonimos": [
+            "tieso",
+            "rígido"
+        ],
+        "antonimos": [
+            "flexible",
+            "frágil"
+        ]
+    },
+    "yugo": {
+        "sinonimos": [
+            "carga pesada",
+            "prisión",
+            "atadura / velo"
+        ],
+        "antonimos": [
+            "libertad"
+        ]
+    },
+    "zafio": {
+        "sinonimos": [
+            "grosero",
+            "inculto",
+            "tosco"
+        ],
+        "antonimos": [
+            "culto"
+        ]
+    },
+    "zozobra": {
+        "sinonimos": [
+            "inquietud",
+            "ansiedad",
+            "naufragio ≠"
+        ],
+        "antonimos": []
+    }
+}

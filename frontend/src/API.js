@@ -148,6 +148,34 @@ const obtenerSinonimos = async (palabra) => {
   }
 };
 
+const obtenerSinonimos2 = async (palabra) => {
+  try {
+    const response = await fetch(SERVER_URL +`/synonym-sinant?word=${palabra}`);
+    if (!response.ok) {
+      throw new Error(`Error en la solicitud: ${response.status} - ${response.statusText}`);
+    }
+
+    const contentJson = await response.json();
+
+    if (contentJson.error) {
+      throw new Error(contentJson.error);
+    }
+
+    const synonyms = contentJson;
+    if (synonyms.synoyms_list.length === 0 && palabra.endsWith('s')) {
+      const singularPalabra = palabra.slice(0, -1);
+      console.log(`No se encontraron sinónimos para "${palabra}". Intentando con "${singularPalabra}"...`);
+      return obtenerSinonimos(singularPalabra);
+    }
+
+    console.log('Sinónimos obtenidos:', synonyms);
+    return synonyms;
+  } catch (error) {
+    console.error('Error al obtener los sinónimos:', error);
+    throw error;
+  }
+}
+
 
 const obtenerEjemplos = async (palabra) => {
   try {
@@ -174,5 +202,5 @@ const obtenerEjemplos = async (palabra) => {
 };
 
 //obtenerEjemplos
-const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSigla, obtenerRAE, obtenerSinonimos, obtenerEjemplos };
+const API = { obtenerPictograma, obtenerFrecuencia, obtenerDefinicion, obtenerSigla, obtenerRAE, obtenerSinonimos, obtenerSinonimos2, obtenerEjemplos };
 export default API;
