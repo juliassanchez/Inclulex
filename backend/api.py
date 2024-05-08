@@ -56,7 +56,7 @@ def get_frecuencia():
 def get_definition_easy():
     try:
         # Abrir el archivo JSON
-        with open('Dictionary.json', 'r', encoding='utf-8') as json_file:
+        with open('dictionary.json', 'r', encoding='utf-8') as json_file:
             dictionary = json.load(json_file)
 
         # Obtener la palabra de la solicitud
