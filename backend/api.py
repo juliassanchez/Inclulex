@@ -5,8 +5,8 @@ import sqlite3
 from flask import Flask, request, jsonify
 from werkzeug.utils import escape
 from multiwordnet.wordnet import WordNet
-# from multiwordnet.db import compile
-# compile("spanish")
+from multiwordnet.db import compile
+compile("spanish")
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
@@ -45,8 +45,7 @@ def get_frecuencia():
             return jsonify(frecuencia)
 
     except sqlite3.Error as error:
-        print("Error al ejecutar la consulta:", error)
-        return jsonify({'error': 'Error al ejecutar la consulta SQL'}), 500
+        return jsonify({'error': 'Error al ejecutar la consulta SQL'}), error
     finally:
         if conexion:
             conexion.close()
