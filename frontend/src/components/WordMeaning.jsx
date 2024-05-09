@@ -181,24 +181,26 @@ const WordMeaning = (props) => {
 
   return (
     <Container fluid className="word-meaning-container" role="main" style={{ marginTop: '90px', textAlign: 'center' }}>
-  <h1 className='palabra' role="banner">{palabra}</h1>
-  <OverlayTrigger
-    placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={
-      frecuencia < 1000 ? (
-        <Tooltip id="frecuencia-tooltip">No es una palabra frecuente</Tooltip>
-      ) : (
-        <Tooltip id="frecuencia-tooltip">Es una palabra frecuente</Tooltip>
-      )
-    }><p className='mini-texto'>
-    Se trata de una palabra {' '}
-    <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button' role="navigation">
-      {frecuencia < 1000 ? "Compleja" : "Simple"}
-    </Button>
-    </p>
-    
-  </OverlayTrigger>
+    <h1 className='palabra' role="banner">{palabra}</h1>
+    <OverlayTrigger
+      placement="auto"
+      delay={{ show: 250, hide: 400 }}
+      overlay={
+        frecuencia < 1000 ? (
+          <Tooltip id="frecuencia-tooltip">No es una palabra frecuente</Tooltip>
+        ) : (
+          <Tooltip id="frecuencia-tooltip">Es una palabra frecuente</Tooltip>
+        )
+      }>
+      <p className='mini-texto'>
+        Se trata de una palabra {' '}
+        <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button' role="navigation">
+          {frecuencia < 1000 ? "Compleja" : "Simple"}
+        </Button>
+      </p>
+    </OverlayTrigger>
+
+
   <br />
   <Row>
     <Col md={8} className="d-flex flex-column">
@@ -211,23 +213,23 @@ const WordMeaning = (props) => {
         ))}
       </ListGroup>
     </Col>
-    <Col md={4}>
-      <section>
-        <h2 className='subtitulo'>Pictogramas</h2>
-        {pictograma.length > 0 && (
-          <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Carousel variant='dark'>
+    <Col md={4} className="d-flex justify-content-center">
+  <section>
+    <h2 className='subtitulo'>Pictogramas</h2>
+    {pictograma.length > 0 && (
+      <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Carousel variant='dark'>
           {pictograma.map((pictoURL, index) => (
             <Carousel.Item key={index}>
               <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Carousel.Item>
           ))}
         </Carousel>
+      </div>
+    )}
+  </section>
+</Col>
 
-          </div>
-        )}
-      </section>
-    </Col>
   </Row>
   <br />
   <Row>

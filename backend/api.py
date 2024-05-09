@@ -1,4 +1,3 @@
-import spacy
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import re
 import json
@@ -6,8 +5,8 @@ import sqlite3
 from flask import Flask, request, jsonify
 from werkzeug.utils import escape
 from multiwordnet.wordnet import WordNet
-from multiwordnet.db import compile
-compile("spanish")
+# from multiwordnet.db import compile
+# compile("spanish")
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
@@ -179,15 +178,9 @@ def get_synonym_sinant():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
-
-        
-# Cargar el modelo de lenguaje de español de Spacy
-nlp = spacy.load("es_core_news_sm")
-
 # Cargar el tokenizador y el modelo pre-entrenado de GPT-2 en español
 
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, set_seed
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 tokenizer = AutoTokenizer.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
 model = AutoModelForCausalLM.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
 generator = pipeline('text-generation', tokenizer=tokenizer, model=model)
