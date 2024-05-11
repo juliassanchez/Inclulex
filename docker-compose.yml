@@ -2,19 +2,23 @@ version: '3'
 services:
   frontend:
     build: ./frontend
-    container_name: frontend   
+    container_name: incluLex-frontend
     ports:
       - "5173:5173"
     networks:
       - incluLex-network      
+    restart: always      
 
   backend:
     build: ./backend
-    container_name: backend
+    container_name: incluLex-backend
     ports:
       - "3000:3000"
     networks:
       - incluLex-network   
+    restart: always   
+    volumes:
+      - ./backend:/app/backend
        
 
 networks:
