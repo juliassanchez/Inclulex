@@ -1,3 +1,4 @@
+import os
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import re
 import json
@@ -18,6 +19,11 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
 }
 
+# Database path
+LOCAL_PATH = os.path.dirname(os.path.realpath(__file__))
+DATABASE_PATH = os.path.join(LOCAL_PATH, 'frecuencia.db')
+
+
 # Ruta para obtener la frecuencia de una palabra
 @app.route('/api/frecuencia', methods=['GET'])
 def get_frecuencia():
@@ -27,7 +33,7 @@ def get_frecuencia():
 
     try:
         # Conexión a la base de datos
-        conexion = sqlite3.connect('frecuencia.db')
+        conexion = sqlite3.connect(DATABASE_PATH)
         cursor = conexion.cursor()
 
         # Consulta SQL para obtener la frecuencia de la palabra
@@ -45,7 +51,7 @@ def get_frecuencia():
             return jsonify(frecuencia)
 
     except sqlite3.Error as error:
-        return jsonify({'error': 'Error al ejecutar la consulta SQL'}), error
+        return jsonify({'error': 'Error al ejecutar la consulta SQL: {}'.format(str(error))}), 500
     finally:
         if conexion:
             conexion.close()
