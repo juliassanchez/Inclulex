@@ -6,12 +6,13 @@ services:
     ports:
       - "5173:5173"
     networks:
-      - incluLex-network      
-    restart: always      
+      - incluLex-network  
 
   backend:
     build: ./backend
     container_name: incluLex-backend
+    environment:
+      PYTHONUNBUFFERED: 1    
     ports:
       - "3000:3000"
     networks:

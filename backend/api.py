@@ -33,6 +33,7 @@ def get_frecuencia():
 
     try:
         # Conexión a la base de datos
+        print(f'Intentando abrir base de datos: {DATABASE_PATH}')
         conexion = sqlite3.connect(DATABASE_PATH)
         cursor = conexion.cursor()
 
