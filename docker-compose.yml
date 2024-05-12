@@ -17,7 +17,7 @@ services:
       - "3000:3000"
     networks:
       - incluLex-network   
-    restart: always   
+    restart: on-failure  
     volumes:
       - ./backend:/app/backend
        
