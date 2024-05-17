@@ -66,38 +66,34 @@ const WordMeaning = (props) => {
         
         const obtenerSinonimos = async () => {
           try {
-            let nuevosSinonimos = await API.obtenerSinonimos(palabra);
-            let sinonimos = nuevosSinonimos.synoyms_list || [];
-        
-            if (sinonimos.length === 0) {
-              nuevosSinonimos = await API.obtenerSinonimos2(palabra);
-              sinonimos = nuevosSinonimos.synoyms_list || [];
-            }
-                
-            // Obtener la frecuencia de cada sinónimo
-            const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
-              try {
-                const frecuencia = await API.obtenerFrecuencia(sinonimo);
-                return { sinonimo, frecuencia };
-              } catch (error) {
-                console.error('Error al obtener la frecuencia:', error);
-                return { sinonimo, frecuencia: 0 };
+              let nuevosSinonimos = await API.obtenerSinonimos(palabra);
+              let sinonimos = nuevosSinonimos.synoyms_list || [];
+
+              if (sinonimos.length === 0) {
+                  nuevosSinonimos = await API.obtenerSinonimos2(palabra);
+                  sinonimos = nuevosSinonimos.synoyms_list || [];
               }
-            }));
-                
-            // Ordenar los sinónimos por frecuencia en orden descendente
-            frecuencias.sort((a, b) => b.frecuencia - a.frecuencia);
-                
-            // Tomar los primeros 5 sinónimos después de ordenarlos
-            const primerosSinonimos = frecuencias.slice(0, 5).map((obj) => obj.sinonimo);
-                
-            setSinonimos(() => {
-              return primerosSinonimos.length > 0 ? primerosSinonimos : ['No se encontraron sinónimos'];
-            });
+
+              if (sinonimos.length > 5) {
+                  const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
+                      try {
+                          const frecuencia = await API.obtenerFrecuencia(sinonimo);
+                          return { sinonimo, frecuencia };
+                      } catch (error) {
+                          console.error('Error al obtener la frecuencia:', error);
+                          return { sinonimo, frecuencia: 0 };
+                      }
+                  }));
+
+                  frecuencias.sort((a, b) => b.frecuencia - a.frecuencia);
+                  sinonimos = frecuencias.slice(0, 5).map((obj) => obj.sinonimo);
+              }
+
+              setSinonimos(sinonimos.length > 0 ? sinonimos : ['No se encontraron sinónimos']);
           } catch (error) {
-            console.error('Error al obtener los sinónimos:', error);
+              console.error('Error al obtener los sinónimos:', error);
           }
-        };
+      };
         
         
 
@@ -162,20 +158,29 @@ const WordMeaning = (props) => {
           }
         };
 
-        obtenerPictograma();
-        obtenerFrecuencia();
-        obtenerDefinicion();
-        obtenerSinonimos();
-        obtenerEjemplos();
+        const obtenerDatos = async () => {
+          await Promise.all([
+              obtenerFrecuencia(),
+              obtenerDefinicion(),
+              obtenerSinonimos(),
+              obtenerPictograma()
+          ]);
+          obtenerEjemplos();
+        };
+
+        obtenerDatos();
 
         return () => {
-          setEjemplos([
-            <Spinner animation="border" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </Spinner>
-          ]);
-          setPictograma([]);
-        };
+            setSignificado([]);
+            setSinonimos([]);
+            setPictograma([]);
+            setFrecuencia(0);
+            setEjemplos([
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            ]);
+      };
       }, [palabra]);
 
 
