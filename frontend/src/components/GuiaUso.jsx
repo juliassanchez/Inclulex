@@ -26,7 +26,7 @@ const GuiaUso = (props) => {
                                 <p>La barra de navegación se encuentra en la parte superior de la página y contiene los siguientes elementos:</p>
                                 <ListGroup>
                                     <ListGroupItem>
-                                        <strong>Inicio:</strong> Te lleva a la página de inicio de IncluLex Hub.
+                                        <strong>IncluLex:</strong> Te lleva a la página de inicio de IncluLex Hub.
                                     </ListGroupItem>
                                     <ListGroupItem>
                                         <strong>Proyecto:</strong> Te muestra información sobre el proyecto IncluLex Hub.
@@ -35,7 +35,7 @@ const GuiaUso = (props) => {
                                         <strong>Guía de Uso:</strong> Te lleva a esta guía de uso.
                                     </ListGroupItem>
                                     <ListGroupItem>
-                                        <strong>Modo Oscuro:</strong> Activa o desactiva el modo oscuro.
+                                        <strong>Modo Claro / Oscuro:</strong> Permite cambiar los colores de la plataforma de tonos claros a oscuros y viceversa.
                                     </ListGroupItem>
                                     <ListGroupItem>
                                         <Row className="justify-content-center">
@@ -115,7 +115,7 @@ const GuiaUso = (props) => {
 
 const SectionIndex = ({ scrollToSection }) => {
     return (
-      <div style={{ position: 'fixed', paddingLeft: '20px', width: 'auto', paddingTop: '2%'}}>
+      <div className='fixed-index'>
         <p>Índice de Secciones</p>
         <ListGroup variant="flush">
             <ListGroupItem action onClick={() => scrollToSection('contenido-principal')} className='list-item'>Contenido Principal</ListGroupItem>

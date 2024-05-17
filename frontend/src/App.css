@@ -337,5 +337,19 @@ a:focus {
   font-weight: bold;
 }
 
+.fixed-index {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  bottom: 0; /* Hace que el índice fijo ocupe toda la altura disponible */
+  overflow-y: auto; /* Agrega barras de desplazamiento vertical si es necesario */
+  padding: 20px; /* Ajusta según tus necesidades */
+  width: 30vh; /* Ancho inicial del índice */
+  background-color: white; /* Ajusta el color de fondo según tu diseño */
+  z-index: 999; /* Ajusta según necesites */
+}
+
+
+
 
 
