@@ -5,4 +5,5 @@ gunicorn==22.0.0
 multiwordnet==0.1.5
 requests==2.31.0
 torch==2.2.2
+transformers==4.40.1
 Werkzeug==3.0.2
