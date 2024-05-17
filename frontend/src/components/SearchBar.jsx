@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import inclulexLogo from '/logo.svg';
@@ -11,28 +11,43 @@ const SearchBar = (props) => {
   const navigate = useNavigate();
 
   const dictEs = new Typo('es', null, null, { dictionaryPath: '/assets' });
+  const validCharsRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]*$/; // Ajustado para permitir solo letras y espacios
 
   const handleSearch = () => {
-    const suggestions = dictEs.suggest(searchTerm.toLowerCase());
-    const correctedWord = suggestions.length > 0 ? suggestions[0] : searchTerm;
-
     if (!searchTerm.trim()) {
       alert('Por favor ingrese una palabra antes de buscar.');
       return;
-    } else {
-      navigate(`/search/${correctedWord.toLowerCase()}`);
     }
+
+    if (!validCharsRegex.test(searchTerm)) {
+      alert('Por favor ingrese solo caracteres válidos (letras y espacios).');
+      return;
+    }
+
+    const suggestions = dictEs.suggest(searchTerm.toLowerCase());
+    const correctedWord = suggestions.length > 0 ? suggestions[0] : searchTerm;
+
+    navigate(`/search/${correctedWord.toLowerCase()}`);
   };
 
-  const searchInputClass = props.darkMode ? 'dark-mode-search-input' : 'light-mode-search-input';
-  const searchButtonClass = props.darkMode ? 'dark-mode-search-button' : 'light-mode-search-button';
-  const explanationTextClass = props.darkMode ? 'dark-mode-explanation-text' : 'light-mode-explanation-text';
+  const handleInputChange = (e) => {
+    const { value } = e.target;
+    if (validCharsRegex.test(value) || value === '') {
+      setSearchTerm(value);
+    } else {
+      alert('Por favor ingrese solo caracteres válidos (letras y espacios).');
+    }
+  };
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       handleSearch();
     }
   };
+
+  const searchInputClass = props.darkMode ? 'dark-mode-search-input' : 'light-mode-search-input';
+  const searchButtonClass = props.darkMode ? 'dark-mode-search-button' : 'light-mode-search-button';
+  const explanationTextClass = props.darkMode ? 'dark-mode-explanation-text' : 'light-mode-explanation-text';
 
   return (
     <>
@@ -49,7 +64,7 @@ const SearchBar = (props) => {
           type="text"
           placeholder="Ingrese una palabra"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           className={`search-input ${searchInputClass}`}
           spellCheck="true"
@@ -70,3 +85,4 @@ const SearchBar = (props) => {
 };
 
 export default SearchBar;
+

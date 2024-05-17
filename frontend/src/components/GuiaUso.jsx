@@ -17,6 +17,35 @@ const GuiaUso = (props) => {
             </Col>
             <Col sm={10}>
                 <div >
+                    <Section title="Contenido Principal" id="contenido-principal" darkMode={props.darkMode}>
+                        <p>En esta guía de uso, te explicamos cómo utilizar nuestra plataforma IncluLex Hub. Aquí encontrarás información sobre las distintas secciones de la página y cómo sacar el máximo provecho de ellas.</p>
+                    </Section>
+                    <Section title="Barra de navegación" id="barra-navegación" darkMode={props.darkMode}>
+                        <Row>
+                            <Col>
+                                <p>La barra de navegación se encuentra en la parte superior de la página y contiene los siguientes elementos:</p>
+                                <ListGroup>
+                                    <ListGroupItem>
+                                        <strong>Inicio:</strong> Te lleva a la página de inicio de IncluLex Hub.
+                                    </ListGroupItem>
+                                    <ListGroupItem>
+                                        <strong>Proyecto:</strong> Te muestra información sobre el proyecto IncluLex Hub.
+                                    </ListGroupItem>
+                                    <ListGroupItem>
+                                        <strong>Guía de Uso:</strong> Te lleva a esta guía de uso.
+                                    </ListGroupItem>
+                                    <ListGroupItem>
+                                        <strong>Modo Oscuro:</strong> Activa o desactiva el modo oscuro.
+                                    </ListGroupItem>
+                                    <ListGroupItem>
+                                        <Row className="justify-content-center">
+                                    <img src="/src/assets/navbar.png" alt="NavBar" style={{ maxWidth: '90%', maxHeight: '90%', width: 'auto', height: 'auto' }} />
+                                    </Row>
+                                    </ListGroupItem>
+                                </ListGroup>
+                            </Col>
+                        </Row>
+                    </Section>
                     <Section title="Página de inicio - IncluLex" id="pagina-de-inicio" darkMode={props.darkMode}>
                         <Row>
                             <Col>
@@ -24,14 +53,12 @@ const GuiaUso = (props) => {
                                 <ListGroup>
                                     <ListGroupItem>
                                         <p>Utilizar nuestro buscador para encontrar información detallada sobre palabras complejas que te interesen.</p>
-                                        <img src="/src/assets/buscador.jpg" alt="Buscador" style={{ maxWidth: '90%', maxHeight: '90%', width: 'auto', height: 'auto' }} />
+                                        <Row className="justify-content-center">
+                                        <img src="/src/assets/buscador.jpg" alt="Buscador" style={{ maxWidth: '60%', maxHeight: '60%', width: 'auto', height: 'auto' }} />
+                                        </Row>
                                     </ListGroupItem>
                                     <ListGroupItem>
-                                        Acceder a una guía de uso para comprender mejor cómo aprovechar al máximo nuestra página y sus características.
-                                    </ListGroupItem>
-                                    <ListGroupItem>
-                                        <p>Seleccionar entre los modos de visualización claro u oscuro según tus preferencias.</p>
-                                        <img src="/src/assets/modo.png" alt="Modo" style={{ maxWidth: '50%', maxHeight: '50%', width: 'auto', height: 'auto',  margin: 'auto', display: 'block' }} />
+                                        Acceder a la barra de navegación para obtener más información sobre el proyecto y la guía de uso.
                                     </ListGroupItem>
                                 </ListGroup>
                             </Col>
@@ -55,7 +82,18 @@ const GuiaUso = (props) => {
                                             </Row>
                                         </Col>
                                     </ListGroupItem>
-                                    <ListGroupItem><strong>Ejemplos de Uso:</strong> Explora ejemplos que ilustran cómo se utiliza la palabra en contextos diferentes.</ListGroupItem>
+                                    <ListGroupItem>
+                                        <strong>Ejemplos de Uso:</strong>
+                                        <Col>
+                                            <p className="mb-0">Explora ejemplos que ilustran cómo se utiliza la palabra en contextos diferentes. 
+                                    Si no te gustan los ejemplos de uso, no te preocupes! Puedes generar distintos ejemplos pulsando este botón:</p>
+                                        </Col>
+                                        <Col>
+                                        <Row className="justify-content-center">
+                                        <img src="/src/assets/generar-ejemplos.png" alt="Generar ejemplos" style={{ maxWidth: '30%', height: 'auto' }} />
+                                        </Row>
+                                        </Col>
+                                    </ListGroupItem>
                                     <ListGroupItem><strong>Sinónimos:</strong> Encuentra palabras similares que pueden enriquecer tu vocabulario.</ListGroupItem>
                                     <ListGroupItem><strong>Definición Simple:</strong> Obtén una explicación clara y concisa del significado de la palabra.</ListGroupItem>
                                     <ListGroupItem><strong>Pictograma:</strong> Observa a través de una representación gráfica la palabra buscada.</ListGroupItem>
@@ -67,7 +105,7 @@ const GuiaUso = (props) => {
                         </Row>
                     </Section>
                     <Section title="Proyecto" id="pagina-proyecto" darkMode={props.darkMode}>
-                      
+                      <p> En esta página podrás obtener toda la información del proyecto, como la motivación, accesibilidad, referencias y enlace al codigo fuente de la plataforma. </p>
                     </Section>
                 </div>
             </Col>
@@ -80,10 +118,11 @@ const SectionIndex = ({ scrollToSection }) => {
       <div style={{ position: 'fixed', paddingLeft: '20px', width: 'auto', paddingTop: '2%'}}>
         <p>Índice de Secciones</p>
         <ListGroup variant="flush">
-          <ListGroupItem action onClick={() => scrollToSection('contenido-principal')} className='list-item'>Contenido Principal</ListGroupItem>
-          <ListGroupItem action onClick={() => scrollToSection('pagina-de-inicio')} className='list-item'>Página de inicio - IncluLex</ListGroupItem>
-          <ListGroupItem action onClick={() => scrollToSection('pagina-de-busqueda')} className='list-item'>Página de búsqueda</ListGroupItem>
-          <ListGroupItem action onClick={() => scrollToSection('pagina-proyecto')} className='list-item'>Proyecto</ListGroupItem>
+            <ListGroupItem action onClick={() => scrollToSection('contenido-principal')} className='list-item'>Contenido Principal</ListGroupItem>
+            <ListGroupItem action onClick={() => scrollToSection('barra-navegación')} className='list-item'>Barra de navegación</ListGroupItem>
+            <ListGroupItem action onClick={() => scrollToSection('pagina-de-inicio')} className='list-item'>Página de inicio - IncluLex</ListGroupItem>
+            <ListGroupItem action onClick={() => scrollToSection('pagina-de-busqueda')} className='list-item'>Página de búsqueda</ListGroupItem>
+            <ListGroupItem action onClick={() => scrollToSection('pagina-proyecto')} className='list-item'>Proyecto</ListGroupItem>
         </ListGroup>
       </div>
     );

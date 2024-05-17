@@ -17,6 +17,30 @@ const WordMeaning = (props) => {
     ])
     const [frecuencia, setFrecuencia] = useState(0)
 
+    const obtenerEjemplos = async () => {
+      console.log('Obteniendo ejemplos...');
+      setEjemplos([
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      ]);
+      try {
+        const nuevosEjemplos = await API.obtenerEjemplos(palabra);
+        const ejemplos = nuevosEjemplos.frases_generadas || [];
+        console.log('Ejemplos obtenidos:', ejemplos);
+        // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
+        setEjemplos(ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos']);
+      } catch (error) {
+        console.error('Error al obtener los ejemplos:', error);
+        // Establecer el estado de los ejemplos como el spinner nuevamente
+        setEjemplos([
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        ]);
+      }
+    };
+
     useEffect(() => {
 
         const obtenerFrecuencia = async () => {
@@ -96,7 +120,6 @@ const WordMeaning = (props) => {
       };
         
         
-
         const obtenerPictograma = async () => {
           try {
             const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase());
@@ -136,25 +159,6 @@ const WordMeaning = (props) => {
         
             // Si no se puede obtener el pictograma con ninguna palabra alternativa, establecemos pictograma como vacío
             setPictograma([]);
-          }
-        };
-        
-        const obtenerEjemplos = async () => {
-          console.log('Obteniendo ejemplos...');
-          try {
-            const nuevosEjemplos = await API.obtenerEjemplos(palabra);
-            const ejemplos = nuevosEjemplos.frases_generadas || [];
-            console.log('Ejemplos obtenidos:', ejemplos);
-            // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
-            setEjemplos(ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos']);
-          } catch (error) {
-            console.error('Error al obtener los ejemplos:', error);
-            // Establecer el estado de los ejemplos como el spinner nuevamente
-            setEjemplos([
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-              </Spinner>
-            ]);
           }
         };
 
@@ -246,9 +250,11 @@ const WordMeaning = (props) => {
             <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
           ))}
         </ListGroup>
+        {ejemplos.length === 3 ? ( <Button variant="success" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
+        
       </section>
     </Col> 
-    <Col md={4}>
+    <Col  md={4} className="d-flex justify-content-center">
       <section>
         <h2 className='subtitulo'>Sinónimos</h2>
         <ListGroup className='custom-list-group-container'>

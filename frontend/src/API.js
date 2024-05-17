@@ -1,5 +1,5 @@
-// const SERVER_URL = 'http://127.0.0.1:3000/api';
-const SERVER_URL = 'http://10.117.129.37:3000/api';
+const SERVER_URL = 'http://127.0.0.1:3000/api';
+// const SERVER_URL = 'http://10.117.129.37:3000/api';
 const obtenerPictograma = async (palabra) => {
   try {
     const respuestaIds = await fetch(`https://api.arasaac.org/v1/pictograms/es/search/${palabra}`);

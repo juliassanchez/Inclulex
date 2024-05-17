@@ -331,5 +331,11 @@ a:focus {
   color: #fff;
 }
 
+.examples-button {
+  margin-top: 2vh;
+  font-family: 'Gotham', sans-serif;
+  font-weight: bold;
+}
+
 
 
