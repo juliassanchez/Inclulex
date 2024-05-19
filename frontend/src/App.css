@@ -16,14 +16,12 @@ body.light-mode {
   color: #000;
 }
 
-/* Ajusta los estilos de la navbar */
 .navbar-custom {
   height: 10vh;
   padding: 0 2%;
   font-family: "Noto Sans JP", sans-serif;
   font-size: large;
   box-sizing: border-box;
-  z-index: 1000;
 }
 
 /* Ajusta el estilo de los iconos dentro de los enlaces de navegación */
@@ -32,6 +30,12 @@ body.light-mode {
   height: auto;
   margin-left: 0.5vw;
 }
+
+.navbar-custom .container {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -80,6 +84,7 @@ body.light-mode {
     align-self: flex-end;
   }
 }
+
 
 
 .brand-text {
@@ -257,7 +262,7 @@ body.light-mode {
   color: #3240D1;
   font-size: 5vw;
   text-transform: uppercase;
-  margin-top: 8vh;
+  margin-top: 10vh;
 }
 
 
@@ -470,8 +475,6 @@ a:focus {
   color: #fff; /* Color al pasar el ratón por encima */
 }
 
-
-
 .main-content {
   margin-left: 0; /* Resetea el margen a 0 */
   padding: 20px;
@@ -479,7 +482,7 @@ a:focus {
 
 @media (min-width: 768px) {
   .main-content {
-      margin-left: 16.66667%; /* Compensa el ancho de la sidebar en pantallas grandes */
+      margin-left: 16.66667%;
   }
 }
 

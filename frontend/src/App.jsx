@@ -33,13 +33,13 @@ function App() {
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
       <Navbar id="nav" bg={darkMode ? 'dark' : 'light'} variant={darkMode ? 'dark' : 'light'} expand="lg" fixed="top" className="navbar-custom">
-        <Container>
+        <Container className="navbar-container">
           <Navbar.Brand href="/" style={{ fontWeight: 'bold' }}>
             <img alt="Botón de inicio" src="/logo.svg" width="30" height="30" className="d-inline-block align-top" /> IncluLex
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto"> {/* Esto debería asegurar que los elementos permanezcan a la izquierda */}
               <Nav.Link href="/guia-uso">
                 Guía de uso
                 <img src="/src/assets/question-circle.svg" alt="Info" className="nav-icon" />
@@ -67,7 +67,7 @@ function App() {
           <Route index element={<SearchBar darkMode={darkMode} />} />
           <Route path='search/:palabra' element={<WordMeaning darkMode={darkMode} />} />
           <Route path='/guia-uso' element={<GuiaUso darkMode={darkMode} />} />
-          <Route path='/proyecto' element={<Proyecto/>} />
+          <Route path='/proyecto' element={<Proyecto />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -76,5 +76,6 @@ function App() {
 }
 
 export default App;
+
 
 
