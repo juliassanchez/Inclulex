@@ -11,7 +11,7 @@ const SearchBar = (props) => {
   const navigate = useNavigate();
 
   const dictEs = new Typo('es', null, null, { dictionaryPath: '/assets' });
-  const validCharsRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]*$/; // Ajustado para permitir solo letras y espacios
+  const validCharsRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ´\s]*$/; // Ajustado para permitir solo letras y espacios
 
   const handleSearch = () => {
     if (!searchTerm.trim()) {

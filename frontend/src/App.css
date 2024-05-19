@@ -255,10 +255,11 @@ body.light-mode {
   font-family: 'Gotham', sans-serif;
   font-weight: bold;
   color: #3240D1;
-  font-size: 500%;
-  text-transform:uppercase;
+  font-size: 6vw;
+  text-transform: uppercase;
   margin-top: 6vh;
 }
+
 
 .dark-mode .palabra {
   color: #42AFFE;
