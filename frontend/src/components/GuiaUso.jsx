@@ -45,7 +45,7 @@ const GuiaUso = (props) => {
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Row className="justify-content-center">
-                                            <img src="/src/assets/navbar.png" alt="NavBar" style={{ maxWidth: '90%', maxHeight: '90%', width: 'auto', height: 'auto' }} />
+                                            <img src="/src/assets/navbar.png" alt="NavBar" style={{ maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto' }} />
                                         </Row>
                                     </ListGroup.Item>
                                 </ListGroup>
@@ -82,8 +82,8 @@ const GuiaUso = (props) => {
                                         </Col>
                                         <Col>
                                             <Row className="justify-content-center">
-                                                <img src="/src/assets/frecuencia-simple.png" alt="Frecuencia Simple" style={{ maxWidth: '15%', height: 'auto' }} />
-                                                <img src="/src/assets/frecuencia-compleja.png" alt="Frecuencia Compleja" style={{ maxWidth: '15%', height: 'auto' }} />
+                                                <img src="/src/assets/frecuencia-simple.png" alt="Frecuencia Simple" style={{ maxWidth: '20%', height: 'auto' }} />
+                                                <img src="/src/assets/frecuencia-compleja.png" alt="Frecuencia Compleja" style={{ maxWidth: '20%', height: 'auto' }} />
                                             </Row>
                                         </Col>
                                     </ListGroup.Item>
@@ -95,7 +95,7 @@ const GuiaUso = (props) => {
                                         </Col>
                                         <Col>
                                             <Row className="justify-content-center">
-                                                <img src="/src/assets/generar-ejemplos.png" alt="Generar ejemplos" style={{ maxWidth: '30%', height: 'auto' }} />
+                                                <img src="/src/assets/generar-ejemplos.png" alt="Generar ejemplos" style={{ maxWidth: '40%', height: 'auto' }} />
                                             </Row>
                                         </Col>
                                     </ListGroup.Item>
@@ -105,7 +105,7 @@ const GuiaUso = (props) => {
                                 </ListGroup>
                                 <br /> {/* Salto de línea */}
                                 <p>Siempre podrás volver a la página de inicio pulsando en el botón "Buscar otra palabra"</p>
-                                <img src="/src/assets/buscar-otra.png" alt="Buscar otra palabra" style={{ maxWidth: '30%', maxHeight: '30%', width: 'auto', height: 'auto', margin: 'auto', display: 'block' }} />
+                                <img src="/src/assets/buscar-otra.png" alt="Buscar otra palabra" style={{ maxWidth: '40%', maxHeight: '40%', width: 'auto', height: 'auto', margin: 'auto', display: 'block' }} />
                             </Col>
                         </Row>
                     </Section>

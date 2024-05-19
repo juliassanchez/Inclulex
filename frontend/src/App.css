@@ -230,8 +230,8 @@ body.light-mode {
   font-family: 'Gotham', sans-serif;
   font-weight: lighter;
   color: #000;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .dark-mode .explanation-text {
@@ -378,6 +378,7 @@ body.light-mode {
   margin-top: 10vh;
   font-family: 'Gotham', sans-serif;
 }
+
 
 .section-content {
   background-color: #f0f0f0;

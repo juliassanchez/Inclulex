@@ -37,8 +37,8 @@ const Proyecto = () => {
         </p>
         <h1 className='explanation-text'>Referencias</h1>
         <Row className="justify-content-center">
-        <img src="/src/assets/ARASAAC.png" alt="ARASAAC" style={{ maxWidth: '20%', height: 'auto' }} href="https://arasaac.org/"/>
-        <img src="/src/assets/hulat.png" alt="EasierHulat" style={{ maxWidth: '20%', height: 'auto' }} href="https://hulat.inf.uc3m.es"/>
+        <img src="/src/assets/ARASAAC.png" alt="ARASAAC" style={{ maxWidth: '30%', height: 'auto' }} href="https://arasaac.org/"/>
+        <img src="/src/assets/hulat.png" alt="EasierHulat" style={{ maxWidth: '30%', height: 'auto' }} href="https://hulat.inf.uc3m.es"/>
         </Row>
         </div>
     );
