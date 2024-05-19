@@ -436,7 +436,14 @@ a:focus {
   margin-top: 2vh;
   font-family: 'Gotham', sans-serif;
   font-weight: bold;
+  font-variant: dark;
 }
+
+.dark-mode .examples-button {
+  color: #000;
+  background-color: #fff;
+}
+
 
 .sidebar {
   position: fixed;
@@ -446,6 +453,24 @@ a:focus {
   padding-top: 6%;
   border-right: 1px solid #dee2e6; /* Borde derecho */
 }
+
+.sidebar .nav-link {
+  color: #3240D1; /* Cambia este valor al color que desees */
+}
+
+.dark-mode .sidebar .nav-link {
+  color: #42AFFE; /* Cambia este valor al color que desees */
+}
+
+.sidebar .nav-link:hover {
+  color: #000; /* Color al pasar el ratón por encima */
+}
+
+.dark-mode .nav-link:hover {
+  color: #fff; /* Color al pasar el ratón por encima */
+}
+
+
 
 .main-content {
   margin-left: 0; /* Resetea el margen a 0 */

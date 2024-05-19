@@ -250,7 +250,7 @@ const WordMeaning = (props) => {
             <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
           ))}
         </ListGroup>
-        {ejemplos.length === 3 ? ( <Button variant="success" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
+        {ejemplos.length === 3 ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
         
       </section>
     </Col> 
