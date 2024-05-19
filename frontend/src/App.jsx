@@ -32,33 +32,33 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-      <Navbar id="nav" className='navbar' bg={darkMode ? 'dark' : 'light'} variant={darkMode ? 'dark' : 'ligth'} fixed="top">
+      <Navbar id="nav" bg={darkMode ? 'dark' : 'light'} variant={darkMode ? 'dark' : 'light'} expand="lg" fixed="top" className="navbar-custom">
         <Container>
           <Navbar.Brand href="/" style={{ fontWeight: 'bold' }}>
-            <img alt="Botón de inicio" src="/logo.svg" width="30" height="30" className="d-inline-block align-top"/> IncluLex
+            <img alt="Botón de inicio" src="/logo.svg" width="30" height="30" className="d-inline-block align-top" /> IncluLex
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/guia-uso">
                 Guía de uso
-                <img src="/src/assets/question-circle.svg" alt="Info" style={{ width: '1.5vw', height: 'auto', marginLeft: '0.5vw' }} />
+                <img src="/src/assets/question-circle.svg" alt="Info" className="nav-icon" />
               </Nav.Link>
               <Nav.Link href="/proyecto">
                 Proyecto
-                <img src="/src/assets/book.svg" alt="Info" style={{ width: '1.5vw', height: 'auto', marginLeft: '0.5vw' }} />
+                <img src="/src/assets/book.svg" alt="Info" className="nav-icon" />
               </Nav.Link>
             </Nav>
+            <Form.Check
+              type="switch"
+              id="custom-switch"
+              label={switchLabel}
+              className='switch'
+              checked={darkMode}
+              onChange={toggleDarkMode}
+              style={{ width: '160px' }}
+            />
           </Navbar.Collapse>
-          <Form.Check
-            type="switch"
-            id="custom-switch"
-            label={switchLabel}
-            className='switch'
-            checked={darkMode}
-            onChange={toggleDarkMode}
-            style={{ width: '160px'}}
-          />
         </Container>
       </Navbar>
 

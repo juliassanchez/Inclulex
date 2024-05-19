@@ -16,20 +16,74 @@ body.light-mode {
   color: #000;
 }
 
-.navbar {
-  height: 80px;
-  padding: 10px;
+/* Ajusta los estilos de la navbar */
+.navbar-custom {
+  height: 10vh;
+  padding: 0 2%;
   font-family: "Noto Sans JP", sans-serif;
   font-size: large;
-  position:fixed;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-.navbar-brand:focus {
-  outline: 2px solid #3240D1;
+/* Ajusta el estilo de los iconos dentro de los enlaces de navegación */
+.nav-icon {
+  width: 1.5vw;
+  height: auto;
+  margin-left: 0.5vw;
 }
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .nav-icon {
+    width: 5vw; /* Ajusta el tamaño de los iconos para pantallas más pequeñas */
+  }
+
+  .navbar-custom {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    margin-right: 0.5rem;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler {
+    margin-left: 10px; /* Espacio entre el brand y el toggle */
+  }
+
+  .form-check {
+    margin-top: 1rem; /* Espacio adicional entre el toggle y el switch */
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-collapse .me-auto {
+    width: 100%;
+  }
+
+  .navbar-collapse .form-check {
+    align-self: flex-end;
+  }
+}
+
 
 .brand-text {
-  font-size: 100px;
+  font-size: 15vh;
   text-align: center; /* Alinea el texto en el centro horizontalmente */
   font-family: 'Gotham', sans-serif;
   font-weight: bold;
@@ -63,21 +117,23 @@ body.light-mode {
   margin: 10vh;
 }
 
+/* General Styles */
 .search-bar-container {
   display: flex;
-  align-items: bottom;
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   margin: 10vh;
+  flex-wrap: wrap;
 }
 
 .search-input {
-  margin-right: 5px;
-  padding: 10px;
+  margin-right: 0.05%;
+  padding: 2vh;
   font-size: calc(2rem - 0.2rem);
-  height: 8vh; /* Altura del input ajustada */
+  height: 8vh;
   width: 40%;
-  border: 2px solid #3240D1 ; /* Color del borde del input */
-  background-color: #fff; /* Color de fondo del input */
+  border: 2px solid #3240D1;
+  background-color: #fff;
   border-radius: 0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -92,19 +148,19 @@ body.light-mode {
 }
 
 .search-input::placeholder {
-  color: #3240D1; 
+  color: #3240D1;
 }
 
 .dark-mode .search-input::placeholder {
-  color: #fff; 
+  color: #fff;
 }
 
 .search-button {
-  margin-left: -5px;
+  margin-left: -0.05%;
   height: 8vh;
   background-color: #3240D1;
-  color: #fff; 
-  border: none; 
+  color: #fff;
+  border: none;
   font-family: 'Gotham', sans-serif;
   font-size: calc(2.5rem - 0.2rem);
   cursor: pointer;
@@ -115,12 +171,53 @@ body.light-mode {
 }
 
 .search-button:focus {
-  border: 2px solid #3240D1; /* Cambia el borde del elemento cuando está enfocado */
+  border: 2px solid #3240D1;
 }
 
-.dark-mode .search-button{
+.dark-mode .search-button {
   background-color: #3240D1;
 }
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .search-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .search-button {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .brand-text {
+    font-size: 1.5rem;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .search-button {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .explanation-text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
 
 .carousel-item:focus {
   outline: 2px solid blue; /* Add a blue outline when item is focused */
@@ -147,10 +244,6 @@ body.light-mode {
   height: 100vh;
 }
 
-.row-container {
-  margin: 5px;
-}
-
 .col-container {
   display: flex;
   align-items: center;
@@ -162,7 +255,7 @@ body.light-mode {
   font-family: 'Gotham', sans-serif;
   font-weight: bold;
   color: #3240D1;
-  font-size: 70px;
+  font-size: 500%;
   text-transform:uppercase;
   margin-top: 6vh;
 }
@@ -175,7 +268,7 @@ body.light-mode {
   font-family: 'Gotham', sans-serif;
   font-weight: bold;
   color: #000;
-  font-size: 40px;
+  font-size: 250%;
 }
 
 .dark-mode .subtitulo {
@@ -185,15 +278,17 @@ body.light-mode {
 .texto {
   font-family: 'Gotham', sans-serif;
   color: #000;
-  font-size: 21px;
+  font-size: 125%;
   text-align: justify;
-  margin-left: 35px;
+  justify-content: center;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .mini-texto {
   font-family: 'Gotham', sans-serif;
   color: #000;
-  font-size: 21px;
+  font-size: 125%;
   text-align: center;
   font-weight: bold;
 }
@@ -226,7 +321,7 @@ body.light-mode {
   color: #fff; /* Cambia el color del texto del botón a blanco */
   border: none; /* Elimina el borde del botón */
   font-family: 'Gotham', sans-serif;
-  font-size: 30px; /* Cambia el tamaño de la fuente del botón */
+  font-size: 150%; /* Cambia el tamaño de la fuente del botón */
   cursor: pointer;
   border-radius: 5px;
   align-items: bottom;
@@ -244,7 +339,7 @@ body.light-mode {
 
 .frecuency-button {
   font-family: 'Gotham', sans-serif;
-  font-size: 20px; /* Cambia el tamaño de la fuente del botón */
+  font-size: 100%; /* Cambia el tamaño de la fuente del botón */
   font-weight: bold;
   border-radius: 0px;
 }
@@ -269,8 +364,8 @@ body.light-mode {
 
 .switch {
   position: absolute;
-  top: 20px; 
-  right: 30px;
+  top: 3vh; 
+  right: 3vw;
   color: black;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -337,17 +432,26 @@ a:focus {
   font-weight: bold;
 }
 
-.fixed-index {
+.sidebar {
   position: fixed;
-  top: 10%;
+  top: 0;
   left: 0;
-  bottom: 0; /* Hace que el índice fijo ocupe toda la altura disponible */
-  overflow-y: auto; /* Agrega barras de desplazamiento vertical si es necesario */
-  padding: 20px; /* Ajusta según tus necesidades */
-  width: 30vh; /* Ancho inicial del índice */
-  background-color: white; /* Ajusta el color de fondo según tu diseño */
-  z-index: 999; /* Ajusta según necesites */
+  height: 100vh; /* Altura completa de la ventana */
+  padding-top: 6%;
+  border-right: 1px solid #dee2e6; /* Borde derecho */
 }
+
+.main-content {
+  margin-left: 0; /* Resetea el margen a 0 */
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+      margin-left: 16.66667%; /* Compensa el ancho de la sidebar en pantallas grandes */
+  }
+}
+
 
 
 
