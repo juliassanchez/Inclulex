@@ -214,7 +214,7 @@ const WordMeaning = (props) => {
   <Row>
     <Col md={8} className="d-flex flex-column">
       <h2 className="subtitulo">Significado</h2>
-      <ListGroup className="custom-list-group">
+      <ListGroup className="custom-list-group my-auto">
         {significado.map((definicion, index) => (
           <ListGroupItem key={index} className="texto custom-list-group">
             {definicion}
