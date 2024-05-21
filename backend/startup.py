@@ -1,6 +1,6 @@
 
 from multiwordnet.db import compile
-from .utils import load_nlp_model
+from utils import load_nlp_model
 
 # Ejecutar compile-spanish
 print('Running compile-spanish function...')

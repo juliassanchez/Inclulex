@@ -9,7 +9,7 @@ from multiwordnet.db import compile
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
-from .utils import load_nlp_model
+from utils import load_nlp_model
 
 app = Flask(__name__)
 CORS(app)
