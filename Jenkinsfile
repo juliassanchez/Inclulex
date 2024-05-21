@@ -35,7 +35,7 @@ pipeline {
             }
         }
 
-        stage('Run compile spanish') {
+        stage('Load NLP Model') {
 
             steps {
                 script {

@@ -1,5 +1,4 @@
 import os
-from transformers import AutoTokenizer, AutoModelForCausalLM
 import re
 import json
 import sqlite3
@@ -10,6 +9,7 @@ from multiwordnet.db import compile
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
+from .utils import load_nlp_model
 
 app = Flask(__name__)
 CORS(app)
@@ -183,18 +183,13 @@ def get_synonym_sinant():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Cargar el tokenizador y el modelo pre-entrenado de GPT-2 en español
-
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
-tokenizer = AutoTokenizer.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
-model = AutoModelForCausalLM.from_pretrained("PlanTL-GOB-ES/gpt2-large-bne")
-generator = pipeline('text-generation', tokenizer=tokenizer, model=model)
-
 @app.route('/api/examples', methods=['GET'])
 def get_ejemplos():
     if request.method == 'GET':
         word = escape(request.args.get('word'))
         # Obtener ejemplos de uso de la palabra
+        nlp_model = load_nlp_model()
+        generator = nlp_model['generator']
         frases_generadas = generator(f"Nos referimos a {word}", num_return_sequences=3)
         lista_frases = [generacion['generated_text'] for generacion in frases_generadas]
 
