@@ -18,10 +18,8 @@ services:
     networks:
       - incluLex-network   
     restart: on-failure  
-    # volumes:
-    #   - ./backend:/app/backend
     volumes:
-      - ./backend/frecuencia.db:/app/backend/frecuencia.db    
+      - ./backend:/app/backend    
        
 
 networks:
