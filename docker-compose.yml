@@ -18,8 +18,8 @@ services:
     networks:
       - incluLex-network   
     restart: on-failure  
-    volumes:
-      - ./backend:/app/backend
+    # volumes:
+    #   - ./backend:/app/backend
        
 
 networks:
