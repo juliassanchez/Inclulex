@@ -33,6 +33,15 @@ pipeline {
                     sh dockerComposeUp
                 }
             }
-        }        
+        }
+
+        stage('Run compile spanish') {
+
+            steps {
+                script {
+                    sh "docker-compose exec -T backend python3 startup.py"
+                }
+            }
+        }                
     }
 }

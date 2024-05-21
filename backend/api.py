@@ -7,7 +7,6 @@ from flask import Flask, request, jsonify
 from werkzeug.utils import escape
 from multiwordnet.wordnet import WordNet
 from multiwordnet.db import compile
-compile("spanish")
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
