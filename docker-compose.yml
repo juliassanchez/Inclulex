@@ -21,7 +21,7 @@ services:
     # volumes:
     #   - ./backend:/app/backend
     volumes:
-      - ./frecuencia.db:/app/backend/frecuencia.db    
+      - ./backend/frecuencia.db:/app/backend/frecuencia.db    
        
 
 networks:
