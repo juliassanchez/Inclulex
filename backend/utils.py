@@ -17,7 +17,6 @@ def load_nlp_model():
         model_name,
         device_map="cuda",
         quantization_config=bnb_config,
-        device_map="auto"
     )       
 
     return {
