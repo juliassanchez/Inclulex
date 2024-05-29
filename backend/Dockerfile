@@ -10,8 +10,6 @@ WORKDIR /app/backend
 # Copy requirements and install Python dependencies
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN pip install accelerate
-RUN python -m pip install bitsandbytes --prefer-binary --extra-index-url=https://jllllll.github.io/bitsandbytes-windows-webui
 
 # Copy application code
 COPY . .
