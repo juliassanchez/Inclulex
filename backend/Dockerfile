@@ -9,7 +9,8 @@ WORKDIR /app/backend
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -i https://pypi.org/simple/ bitsandbytes
 
 # Copy application code
 COPY . .
