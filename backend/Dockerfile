@@ -3,9 +3,9 @@ FROM python:3.10.2-slim
 WORKDIR /app/backend
 
 # Install system dependencies
-RUN apt-get update && \
-    apt-get install -y vim sqlite3 && \
-    apt-get clean
+# RUN apt-get update && \
+#     apt-get install -y vim sqlite3 && \
+#     apt-get clean
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt requirements.txt
