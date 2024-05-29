@@ -1,0 +1,17 @@
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: camaleón
+RESPUESTA: El camaleón se camufló de la jirafa cambiando de color.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: proyecto
+RESPUESTA: María está muy emocionada con su proyecto de ciencia sobre la energía solar.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: accesibilidad
+RESPUESTA: El nuevo parque de la ciudad ha sido diseñado teniendo en cuenta la accesibilidad, incluyendo rampas y caminos amplios para personas en sillas de ruedas.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: pico
+RESPUESTA: Durante la excursión a la montaña, llegamos al pico justo a tiempo para ver la puesta de sol.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: nube
+RESPUESTA: Estábamos disfrutando del picnic en el parque cuando una gran nube cubrió el sol.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: hola
+RESPUESTA: Al entrar a la reunión, Ana saludó a todos con un cálido hola y una gran sonrisa.
