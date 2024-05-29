@@ -10,6 +10,10 @@ from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
 from utils import load_nlp_model
+import torch
+from transformers import pipeline
+from langchain import PromptTemplate
+from langchain import HuggingFacePipeline
 
 app = Flask(__name__)
 CORS(app)
@@ -182,16 +186,66 @@ def get_synonym_sinant():
                 return jsonify({"error": f"No se encontraron sinónimos para la palabra '{word}'."}), 404
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+with open('Instrucciones.txt', 'r') as file:
+    instrucciones = file.read()
+
+with open('EjemplosSimplificacion.txt', 'r') as file:
+    ejemplos_simplificación = file.read()
+
+template = """
+Dame un ejemplo con la palabra de la entrada utilizando un lenguaje muy sencillo.
+
+% TONO
+ - No uses palabras complejas.
+ - Utiliza un lenguaje sencillo.
+ - Simplifica en un tono para que sea comprendido por personas con discapacidad intelectual.
+
+%INICIO DE EJEMPLOS
+{ejemplos_simplificación}
+%FIN DE EJEMPLOS
+
+% INSTRUCCIONES {instrucciones}
+
+% TUS TAREAS
+- Primero, escribe el ejemplo.
+- Segundo, simplifica la respuesta del ejemplo.
+
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: {entrada}
+
+RESPUESTA:
+"""
 
 @app.route('/api/examples', methods=['GET'])
 def get_ejemplos():
     if request.method == 'GET':
-        word = escape(request.args.get('word'))
-        # Obtener ejemplos de uso de la palabra
+        entrada = escape(request.args.get('word'))
+        # Cargar desde utils
         nlp_model = load_nlp_model()
-        generator = nlp_model['generator']
-        frases_generadas = generator(f"Nos referimos a {word}", num_return_sequences=3)
-        lista_frases = [generacion['generated_text'] for generacion in frases_generadas]
+        # Obtener ejemplos de uso de la palabra
+        prompt= PromptTemplate(
+            input_variables=['ejemplos_simplificación','instrucciones','entrada'],
+            #input_variables=['entrada'],
+            template=template,)
+        final_prompt = prompt.format(ejemplos_simplificación=ejemplos_simplificación, instrucciones=instrucciones,entrada=entrada)
+        #final_prompt = prompt.format(entrada=entrada)
+        text_generator = pipeline(
+                "text-generation",
+                model=nlp_model['model'],
+                tokenizer=nlp_model['tokenizer'],
+                max_new_tokens=100,
+                #max_new_tokens=3000,
+                return_full_text = False,
+                temperature=0.3,
+                num_return_sequences=2,
+                top_p=0.95,
+                top_k=1,
+                do_sample=True
+        )
+        llm = HuggingFacePipeline(pipeline=text_generator)
+        invoke=re.split(r'\n\n', llm.invoke(final_prompt), 1)[0]
+        lista_frases = [invoke]
 
         return jsonify({"frases_generadas": lista_frases})
 

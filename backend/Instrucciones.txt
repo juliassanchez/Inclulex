@@ -1,0 +1,22 @@
+- Empezar la frase por mayúscula.
+- No escribas palabras o frases en mayúsculas, a menos que sean siglas.
+- Separa las ideas relacionadas con un punto en lugar de una coma.
+- No uses punto y coma.
+- Usa un lenguaje sencillo y cotidiano.
+- Usa palabras apropiadas para el usuario final del documento.
+- Evita términos técnicos o complejos.
+- Evita exageraciones.
+- Evita palabras en otros idiomas a menos que sean ampliamente conocidas y se expliquen adecuadamente.
+- Evita abreviaturas.
+- Evita expresiones o metáforas que puedan no ser comprendidas por todos los lectores, a menos que sean comunes.
+- Usa la misma palabra para referirse al mismo objeto o referente en todo el texto.
+- Utiliza oraciones simples y evita las complejas.
+- Emplea el presente de indicativo siempre que sea posible.
+- Evita tiempos verbales poco comunes, así como condicionales y subjuntivos.
+- Evita la voz pasiva.
+- Usa el imperativo solo cuando sea claro para evitar confusiones.
+- Evita oraciones impersonales.
+- Evita usar dos o más verbos seguidos, excepto con verbos modales como "deber," "querer," "saber," y "poder."
+- Prefiere oraciones afirmativas, a menos que sea una prohibición clara donde las formas negativas sean más directas.
+- Evita las negaciones y dobles negaciones.
+- Incluye solo una idea principal en cada oración.
