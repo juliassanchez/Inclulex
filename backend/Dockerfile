@@ -12,6 +12,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install accelerate
 RUN pip install -i https://pypi.org/simple/ bitsandbytes
+RUN pip3 install torch torchvision torchaudio
 
 # Copy application code
 COPY . .
