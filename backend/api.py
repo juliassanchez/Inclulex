@@ -223,11 +223,11 @@ def get_ejemplos():
         entrada = escape(request.args.get('word'))
         
         prompt = PromptTemplate(
-            input_variables=['ejemplos_simplificacion', 'instrucciones', 'entrada'],
+            input_variables=['ejemplos_simplificación', 'instrucciones', 'entrada'],
             template=template,
         )
         final_prompt = prompt.format(
-            ejemplos_simplificacion=ejemplos_simplificación, 
+            ejemplos_simplificación=ejemplos_simplificación, 
             instrucciones=instrucciones, 
             entrada=entrada
         )
