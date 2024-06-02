@@ -19,7 +19,14 @@ services:
       - incluLex-network   
     restart: on-failure  
     volumes:
-      - ./backend:/app/backend    
+      - ./backend:/app/backend
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]          
        
 
 networks:
