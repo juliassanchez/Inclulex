@@ -14,11 +14,13 @@ def load_nlp_model():
     tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir='/app/backend/cache')
 
     tokenizer.pad_token = tokenizer.eos_token
-    torch.cuda.empty_cache()
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         device_map="cuda",
         quantization_config=bnb_config
     )       
 
-    return model, tokenizer
+    return {
+        'model': model,
+        'tokenizer': tokenizer
+    }
