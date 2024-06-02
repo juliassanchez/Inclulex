@@ -20,7 +20,4 @@ def load_nlp_model():
         quantization_config=bnb_config
     )       
 
-    return {
-        'model': model,
-        'tokenizer': tokenizer
-    }
+    return model, tokenizer

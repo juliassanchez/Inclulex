@@ -216,13 +216,12 @@ CREA UNA FRASE DE EJEMPLO CON LA PALABRA: {entrada}
 
 RESPUESTA:
 """
+from startup import nlp_model, nlp_tokenizer
 
 @app.route('/api/examples', methods=['GET'])
 def get_ejemplos():
     if request.method == 'GET':
         entrada = escape(request.args.get('word'))
-        # Cargar desde utils
-        nlp_model = load_nlp_model()
         # Obtener ejemplos de uso de la palabra
         prompt= PromptTemplate(
             input_variables=['ejemplos_simplificación','instrucciones','entrada'],
@@ -232,8 +231,8 @@ def get_ejemplos():
         #final_prompt = prompt.format(entrada=entrada)
         text_generator = pipeline(
                 "text-generation",
-                model=nlp_model['model'],
-                tokenizer=nlp_model['tokenizer'],
+                model=nlp_model,
+                tokenizer=nlp_tokenizer,
                 max_new_tokens=100,
                 #max_new_tokens=3000,
                 return_full_text = False,
