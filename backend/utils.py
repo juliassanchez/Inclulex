@@ -11,6 +11,9 @@ def load_nlp_model():
         bnb_4bit_compute_dtype=torch.float16,
         device_map="auto"
     )
+    # Clear GPU cache
+    torch.cuda.empty_cache()
+
     tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir='/app/backend/cache')
 
     tokenizer.pad_token = tokenizer.eos_token
