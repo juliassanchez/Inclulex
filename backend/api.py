@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 from utils import load_nlp_model
 import torch
 from transformers import pipeline
-from langchain import PromptTemplate
-from langchain import HuggingFacePipeline
+from langchain_core.prompts import PromptTemplate
+from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 
 app = Flask(__name__)
 CORS(app)
