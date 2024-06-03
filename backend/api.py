@@ -217,35 +217,35 @@ CREA UNA FRASE DE EJEMPLO CON LA PALABRA: {entrada}
 RESPUESTA:
 """
 
-# @app.route('/api/examples', methods=['GET'])
-# def get_ejemplos():
-#     if request.method == 'GET':
-#         entrada = escape(request.args.get('word'))
-#         # Cargar desde utils
-#         nlp_model = load_nlp_model()
-#         # Obtener ejemplos de uso de la palabra
-#         prompt= PromptTemplate(
-#             input_variables=['ejemplos_simplificación','instrucciones','entrada'],
-#             #input_variables=['entrada'],
-#             template=template,)
-#         final_prompt = prompt.format(ejemplos_simplificación=ejemplos_simplificación, instrucciones=instrucciones,entrada=entrada)
-#         #final_prompt = prompt.format(entrada=entrada)
-#         text_generator = pipeline(
-#                 "text-generation",
-#                 model=nlp_model['model'],
-#                 tokenizer=nlp_model['tokenizer'],
-#                 max_new_tokens=100,
-#                 #max_new_tokens=3000,
-#                 return_full_text = False,
-#                 temperature=0.3,
-#                 num_return_sequences=2,
-#                 top_p=0.95,
-#                 top_k=1,
-#                 do_sample=True
-#         )
-#         llm = HuggingFacePipeline(pipeline=text_generator)
-#         invoke=re.split(r'\n\n', llm.invoke(final_prompt), 1)[0]
-#         lista_frases = [invoke]
+@app.route('/api/examples', methods=['GET'])
+def get_ejemplos():
+    if request.method == 'GET':
+        entrada = escape(request.args.get('word'))
+        # Cargar desde utils
+        nlp_model = load_nlp_model()
+        # Obtener ejemplos de uso de la palabra
+        prompt= PromptTemplate(
+            input_variables=['ejemplos_simplificación','instrucciones','entrada'],
+            #input_variables=['entrada'],
+            template=template,)
+        final_prompt = prompt.format(ejemplos_simplificación=ejemplos_simplificación, instrucciones=instrucciones,entrada=entrada)
+        #final_prompt = prompt.format(entrada=entrada)
+        text_generator = pipeline(
+                "text-generation",
+                model=nlp_model['model'],
+                tokenizer=nlp_model['tokenizer'],
+                max_new_tokens=100,
+                #max_new_tokens=3000,
+                return_full_text = False,
+                temperature=0.3,
+                num_return_sequences=2,
+                top_p=0.95,
+                top_k=1,
+                do_sample=True
+        )
+        llm = HuggingFacePipeline(pipeline=text_generator)
+        invoke=re.split(r'\n\n', llm.invoke(final_prompt), 1)[0]
+        lista_frases = [invoke]
 
-#         return jsonify({"frases_generadas": lista_frases})
+        return jsonify({"frases_generadas": lista_frases})
 
