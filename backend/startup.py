@@ -14,8 +14,6 @@ print('compile-spanish function executed successfully.')
 # Cargar el tokenizador y el modelo pre-entrenado de GPT-2 en español
 print('Loading NLP model...')
 
-global nlp_model
-global tokenizer
-nlp_model, tokenizer = load_nlp_model()
+load_nlp_model()
 
 print('NLP model loaded successfully.')

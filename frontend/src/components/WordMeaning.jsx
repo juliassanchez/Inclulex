@@ -16,8 +16,10 @@ const WordMeaning = (props) => {
     </Spinner>
     ])
     const [frecuencia, setFrecuencia] = useState(0)
+    const [isLoading, setIsLoading] = useState(true);
 
     const obtenerEjemplos = async () => {
+      setIsLoading(true);
       console.log('Obteniendo ejemplos...');
       setEjemplos([
         <Spinner animation="border" role="status">
@@ -30,6 +32,7 @@ const WordMeaning = (props) => {
         console.log('Ejemplos obtenidos:', ejemplos);
         // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
         setEjemplos(ejemplos.length > 0 ? ejemplos : ['No se encontraron ejemplos']);
+        setIsLoading(false);
       } catch (error) {
         console.error('Error al obtener los ejemplos:', error);
         // Establecer el estado de los ejemplos como el spinner nuevamente
@@ -250,7 +253,7 @@ const WordMeaning = (props) => {
             <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
           ))}
         </ListGroup>
-        {ejemplos.length === 3 ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
+        {!isLoading ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
         
       </section>
     </Col> 
