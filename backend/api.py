@@ -9,7 +9,7 @@ from multiwordnet.db import compile
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
-from utils import load_nlp_model
+from startup import nlp_model, tokenizer
 import torch
 from transformers import pipeline
 from langchain_core.prompts import PromptTemplate
@@ -222,7 +222,7 @@ def get_ejemplos():
     if request.method == 'GET':
         entrada = escape(request.args.get('word'))
         # Cargar desde utils
-        nlp_model = load_nlp_model()
+        # nlp_model = load_nlp_model()
         # Obtener ejemplos de uso de la palabra
         prompt= PromptTemplate(
             input_variables=['ejemplos_simplificación','instrucciones','entrada'],
@@ -232,8 +232,8 @@ def get_ejemplos():
         #final_prompt = prompt.format(entrada=entrada)
         text_generator = pipeline(
                 "text-generation",
-                model=nlp_model['model'],
-                tokenizer=nlp_model['tokenizer'],
+                model=nlp_model,
+                tokenizer=tokenizer,
                 max_new_tokens=100,
                 #max_new_tokens=3000,
                 return_full_text = False,

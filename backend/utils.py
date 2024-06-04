@@ -11,8 +11,6 @@ def load_nlp_model():
         bnb_4bit_compute_dtype=torch.float16,
         device_map="auto"
     )
-    # Clear GPU cache
-    torch.cuda.empty_cache()
 
     tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir='/app/backend/cache')
 
@@ -23,7 +21,4 @@ def load_nlp_model():
         quantization_config=bnb_config
     )       
 
-    return {
-        'model': model,
-        'tokenizer': tokenizer
-    }
+    return model, tokenizer
