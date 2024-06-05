@@ -33,4 +33,4 @@ COPY frecuencia.db frecuencia.db
 RUN chmod 777 frecuencia.db
 
 # Command to run the application
-CMD ["gunicorn", "-b", "0.0.0.0:3000", "--timeout", "120", "-w", "4", "--reload", "wsgi:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:3000", "--reload", "wsgi:app"]
