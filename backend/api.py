@@ -64,7 +64,7 @@ def get_frecuencia():
 def get_definition_easy():
     try:
         # Abrir el archivo JSON
-        with open('dictionary.json', 'r', encoding='utf-8') as json_file:
+        with open('assets/dictionary.json', 'r', encoding='utf-8') as json_file:
             dictionary = json.load(json_file)
 
         # Obtener la palabra de la solicitud
@@ -160,7 +160,7 @@ def get_synonym_lwn():
 def get_synonym_sinant():
     try:
         # Abrir el archivo JSON de sinónimos
-        with open('sinant.json', 'r', encoding='utf-8') as json_file:
+        with open('assets/sinant.json', 'r', encoding='utf-8') as json_file:
             sinant_data = json.load(json_file)
 
         # Obtener la palabra de la solicitud
@@ -187,10 +187,10 @@ def get_synonym_sinant():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-with open('Instrucciones.txt', 'r') as file:
+with open('assets/Instrucciones.txt', 'r') as file:
     instrucciones = file.read()
 
-with open('EjemplosSimplificacion.txt', 'r') as file:
+with open('assets/EjemplosSimplificacion.txt', 'r') as file:
     ejemplos_simplificación = file.read()
 
 template = """
@@ -216,13 +216,13 @@ CREA UNA FRASE DE EJEMPLO CON LA PALABRA: {entrada}
 
 RESPUESTA:
 """
+# Cargar desde utils
+nlp_model = load_nlp_model()
 
 @app.route('/api/examples', methods=['GET'])
 def get_ejemplos():
     if request.method == 'GET':
         entrada = escape(request.args.get('word'))
-        # Cargar desde utils
-        nlp_model = load_nlp_model()
         # Obtener ejemplos de uso de la palabra
         prompt= PromptTemplate(
             input_variables=['ejemplos_simplificación','instrucciones','entrada'],
@@ -237,7 +237,7 @@ def get_ejemplos():
                 max_new_tokens=100,
                 #max_new_tokens=3000,
                 return_full_text = False,
-                temperature=0.5,
+                temperature=0.3,
                 num_return_sequences=5,
                 top_p=0.95,
                 top_k=50,
