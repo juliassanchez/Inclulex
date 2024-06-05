@@ -1,6 +1,6 @@
 
 from multiwordnet.db import compile
-from utils import load_nlp_model
+from utils import NLPModel
 
 # Ejecutar compile-spanish
 print('Running compile-spanish function...')
@@ -14,6 +14,6 @@ print('compile-spanish function executed successfully.')
 # Cargar el tokenizador y el modelo pre-entrenado de GPT-2 en español
 print('Loading NLP model...')
 
-load_nlp_model()
+nlp_model = NLPModel()
 
 print('NLP model loaded successfully.')
