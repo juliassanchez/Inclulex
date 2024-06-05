@@ -4,16 +4,12 @@ from transformers import (AutoTokenizer,
                           BitsAndBytesConfig)
 
 class NLPModel:
-    _instance = None
+    def __init__(self):
+        self.model_name = 'stabilityai/stablelm-2-12b'
+        self.tokenizer = None
+        self.model = None
 
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(NLPModel, cls).__new__(cls)
-            cls._instance._load_nlp_model()
-        return cls._instance
-
-    def _load_nlp_model(self):
-        model_name = 'stabilityai/stablelm-2-12b'
+    def load_model(self):
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type="nf4",
@@ -23,10 +19,10 @@ class NLPModel:
         # Clear GPU cache
         torch.cuda.empty_cache()
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir='/app/backend/cache')
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, cache_dir='/app/backend/cache')
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
+            self.model_name,
             device_map="cuda",
             quantization_config=bnb_config
         )

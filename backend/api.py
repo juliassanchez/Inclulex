@@ -9,7 +9,7 @@ from multiwordnet.db import compile
 from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
-from utils import NLPModel
+import startup
 import torch
 from transformers import pipeline
 from langchain_core.prompts import PromptTemplate
@@ -216,8 +216,8 @@ CREA UNA FRASE DE EJEMPLO CON LA PALABRA: {entrada}
 
 RESPUESTA:
 """
-# Cargar desde utils
-nlp_model = NLPModel()
+nlp_model = startup.MODEL
+tokenizer = startup.TOKENIZER
 
 @app.route('/api/examples', methods=['GET'])
 def get_ejemplos():
@@ -232,8 +232,8 @@ def get_ejemplos():
         #final_prompt = prompt.format(entrada=entrada)
         text_generator = pipeline(
                 "text-generation",
-                model=nlp_model.get_model(),
-                tokenizer=nlp_model.get_tokenizer(),
+                model=nlp_model,
+                tokenizer=tokenizer,
                 max_new_tokens=100,
                 #max_new_tokens=3000,
                 return_full_text = False,

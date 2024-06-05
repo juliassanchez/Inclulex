@@ -15,5 +15,9 @@ print('compile-spanish function executed successfully.')
 print('Loading NLP model...')
 
 nlp_model = NLPModel()
+nlp_model.load_model()
+
+MODEL = nlp_model.get_model()
+TOKENIZER = nlp_model.get_tokenizer()
 
 print('NLP model loaded successfully.')
