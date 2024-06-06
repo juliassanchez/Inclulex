@@ -236,7 +236,7 @@ def get_ejemplos():
                 #max_new_tokens=3000,
                 return_full_text = False,
                 temperature=0.3,
-                num_return_sequences=5,
+                num_return_sequences=3,
                 top_p=0.95,
                 top_k=20,
                 do_sample=True

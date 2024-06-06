@@ -24,3 +24,6 @@ RESPUESTA: Voy a disfrutar de un día soleado en la playa.
 
 CREA UNA FRASE DE EJEMPLO CON LA PALABRA: siempre
 RESPUESTA: Siempre desayuno a las ocho de la mañana.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: limpio
+RESPUESTA: Después de limpiar durante horas, finalmente dejé la casa completamente limpia y ordenada.
