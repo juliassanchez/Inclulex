@@ -34,7 +34,10 @@ const WordMeaning = (props) => {
           let frase = ejemplos[0].split('.')[0];
           frase = frase + ".";
           console.log(frase);
-      }
+        }
+        else {
+          let frase = 'No se encontraron ejemplos';
+        }
         // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
         setEjemplos(ejemplos.length > 0 ? [frase] : ['No se encontraron ejemplos']);
         setIsLoading(false);
@@ -258,7 +261,7 @@ const WordMeaning = (props) => {
             <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
           ))}
         </ListGroup>
-        {!isLoading ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<></>)}
+        {!isLoading ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<><br></br><p>Los ejemplos de uso pueden tardar en cargar unos segundos.</p></>)}
         
       </section>
     </Col> 
