@@ -42,7 +42,7 @@ const Proyecto = () => {
             los pictogramas utilizados en IncluLex Hub, fundamentales para mejorar la comunicación visual en nuestra plataforma.</li>
         <li className="explanation-text">Agradecemos a <a className="enlace" href="https://www.siglas.com.es/"> Siglas</a> por proporcionar las siglas que utilizamos en este proyecto.</li>
         <li className="explanation-text">Agradecemos a <a className="enlace" href="https://guao.org/sites/default/files/biblioteca/Diccionario%20básico%20de%20español.pdf"> Guao.org</a> por proporcionar el diccionario del cual se obtienen las definiciones y algunos sinónimos que utilizamos en este proyecto.</li>
-        <li className="explanation-text">Agradecemos a <a className="enlace" href="https://huggingface.co/PlanTL-GOB-ES/gpt2-large-bne"> Text Mining Unit (TeMU) en el Centro de Supercomputación de Barcelona (BSC)</a> por proporcionar la IA generativa mediante la cual se obtienen los ejemplos de uso de IncluLex Hub. </li>
+        <li className="explanation-text">Agradecemos a <a className="enlace" href="https://huggingface.co/stabilityai/stablelm-2-12b"> Stability AI</a> por proporcionar la IA generativa mediante la cual se obtienen los ejemplos de uso de IncluLex Hub. </li>
         <li className="explanation-text">Proyecto <a className="enlace" href="https://github.com/LURMORENO/easier"> EASIER</a>. Grupo <a className="enlace" href="https://hulat.inf.uc3m.es"> HULAT</a>. </li>
         </ul>
         <Row className="justify-content-center">
