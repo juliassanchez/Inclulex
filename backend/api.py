@@ -238,7 +238,7 @@ def get_ejemplos():
                 temperature=0.3,
                 num_return_sequences=5,
                 top_p=0.95,
-                top_k=50,
+                top_k=20,
                 do_sample=True
         )
         llm = HuggingFacePipeline(pipeline=text_generator)
