@@ -30,13 +30,12 @@ const WordMeaning = (props) => {
         const nuevosEjemplos = await API.obtenerEjemplos(palabra);
         const ejemplos = nuevosEjemplos.frases_generadas || [];
         console.log('Ejemplos obtenidos:', ejemplos);
+        let frase;
         if (ejemplos.length > 0) {
-          let frase = ejemplos[0].split('.')[0];
-          frase = frase + ".";
+          frase = ejemplos[0].split('.')[0] + ".";
           console.log(frase);
-        }
-        else {
-          let frase = 'No se encontraron ejemplos';
+        } else {
+          frase = 'No se encontraron ejemplos';
         }
         // Actualizar el estado de ejemplos después de obtener los nuevos ejemplos
         setEjemplos(ejemplos.length > 0 ? [frase] : ['No se encontraron ejemplos']);
