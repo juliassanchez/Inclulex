@@ -15,3 +15,12 @@ RESPUESTA: Estábamos disfrutando del picnic en el parque cuando una gran nube c
 
 CREA UNA FRASE DE EJEMPLO CON LA PALABRA: hola
 RESPUESTA: Al entrar a la reunión, Ana saludó a todos con un cálido hola y una gran sonrisa.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: duro
+RESPUESTA: El trabajo de ayer fue muy duro.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: disfrutar
+RESPUESTA: Voy a disfrutar de un día soleado en la playa.
+
+CREA UNA FRASE DE EJEMPLO CON LA PALABRA: siempre
+RESPUESTA: Siempre desayuno a las ocho de la mañana.
