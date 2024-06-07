@@ -8,8 +8,8 @@ import API from '../API';
 const WordMeaning = (props) => {
     const { palabra } = useParams();
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
-    const [sinonimos, setSinonimos] = useState([])
-    const [pictograma, setPictograma] = useState(['No se encontraron pictogramas'])
+    const [sinonimos, setSinonimos] = useState(['No se encontraron sinónimos.'])
+    const [pictograma, setPictograma] = useState(['No se encontraron pictogramas.'])
     const [ejemplos, setEjemplos] = useState([
       <Spinner animation="border" role="status">
       <span className="visually-hidden">Loading...</span>
@@ -123,7 +123,7 @@ const WordMeaning = (props) => {
                   sinonimos = frecuencias.slice(0, 5).map((obj) => obj.sinonimo);
               }
 
-              setSinonimos(sinonimos.length > 0 ? sinonimos : ['No se encontraron sinónimos']);
+              setSinonimos(sinonimos.length > 0 ? sinonimos : ['No se encontraron sinónimos.']);
           } catch (error) {
               console.error('Error al obtener los sinónimos:', error);
           }
@@ -250,9 +250,11 @@ const WordMeaning = (props) => {
     </Carousel>
   </div>
 ) : (
-  <div style={{ width: '300px', height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
-    <p className='mini-texto-picto'>No se encontraron pictogramas</p>
-  </div>
+  <ListGroup className='custom-list-group-container'>
+    <ListGroup.Item className='mini-texto-picto custom-list-group'>
+          No se encontraron pictogramas.
+  </ListGroup.Item>
+  </ListGroup>
 )}
 
   </section>
@@ -277,12 +279,18 @@ const WordMeaning = (props) => {
       <section>
         <h2 className='subtitulo'>Sinónimos</h2>
         <ListGroup className='custom-list-group-container'>
-          {sinonimos.map((sinonimo, index) => (
-            <ListGroup.Item key={index} className='texto custom-list-group'>
-              <Link to={`/search/${sinonimo.toLowerCase()}`} className='link-sinonimo'>{sinonimo}</Link>
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
+      {sinonimos.length > 0 ? (
+        sinonimos.map((sinonimo, index) => (
+          <ListGroup.Item key={index} className='texto custom-list-group'>
+            <Link to={`/search/${sinonimo.toLowerCase()}`} className='link-sinonimo'>{sinonimo}</Link>
+          </ListGroup.Item>
+        ))
+      ) : (
+        <ListGroup.Item className='mini-texto-picto custom-list-group'>
+          No se encontraron sinónimos.
+        </ListGroup.Item>
+      )}
+    </ListGroup>
       </section>
     </Col>   
   </Row>
