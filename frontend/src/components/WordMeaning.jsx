@@ -265,13 +265,13 @@ const WordMeaning = (props) => {
   <Row>
     <Col md={8} className="d-flex flex-column">
       <section>
-        <h2 className='subtitulo'>Ejemplos de uso</h2>
+        <h2 className='subtitulo'>Ejemplo de uso</h2>
         <ListGroup className='custom-list-group'>
           {ejemplos.map((ejemplo, index) => (
             <ListGroup.Item key={index} className='texto custom-list-group'>{ejemplo}</ListGroup.Item>
           ))}
         </ListGroup>
-        {!isLoading ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otros ejemplos de uso</Button>): (<><br></br><p>Los ejemplos de uso pueden tardar en cargar unos segundos.</p></>)}
+        {!isLoading ? ( <Button variant="dark" onClick={obtenerEjemplos} className="examples-button">Generar otro ejemplo de uso</Button>): (<><br></br><p>Los ejemplos de uso pueden tardar en cargar unos segundos.</p></>)}
         
       </section>
     </Col> 
