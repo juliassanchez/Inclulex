@@ -9,7 +9,7 @@ const WordMeaning = (props) => {
     const { palabra } = useParams();
     const [significado, setSignificado] = useState(['Esta palabra no se encuentra actualmente en nuestros diccionarios'])
     const [sinonimos, setSinonimos] = useState([])
-    const [pictograma, setPictograma] = useState([])
+    const [pictograma, setPictograma] = useState(['No se encontraron pictogramas'])
     const [ejemplos, setEjemplos] = useState([
       <Spinner animation="border" role="status">
       <span className="visually-hidden">Loading...</span>
@@ -153,19 +153,19 @@ const WordMeaning = (props) => {
               }
             }
         
-            // Si no se pudo obtener el pictograma con los sinónimos, intentamos con la definición
-            if (significado.length > 0) {
-              try {
-                const pictoURLs = await API.obtenerPictograma(significado[0].toLowerCase());
-                // Si pictoURLs no está vacío, lo establecemos como pictograma
-                if (pictoURLs.length > 0) {
-                  setPictograma(pictoURLs);
-                  return;
-                }
-              } catch (definicionError) {
-                console.error('Error al obtener el pictograma con la definición:', definicionError);
-              }
-            }
+            // // Si no se pudo obtener el pictograma con los sinónimos, intentamos con la definición
+            // if (significado.length > 0) {
+            //   try {
+            //     const pictoURLs = await API.obtenerPictograma(significado[0].toLowerCase());
+            //     // Si pictoURLs no está vacío, lo establecemos como pictograma
+            //     if (pictoURLs.length > 0) {
+            //       setPictograma(pictoURLs);
+            //       return;
+            //     }
+            //   } catch (definicionError) {
+            //     console.error('Error al obtener el pictograma con la definición:', definicionError);
+            //   }
+            // }
         
             // Si no se puede obtener el pictograma con ninguna palabra alternativa, establecemos pictograma como vacío
             setPictograma([]);
@@ -213,9 +213,13 @@ const WordMeaning = (props) => {
       }>
       <p className='mini-texto'>
         Se trata de una palabra {' '}
-        <Button variant={frecuencia < 1000 ? "danger" : "success"} active className='frecuency-button' role="navigation">
-          {frecuencia < 1000 ? "Compleja" : "Simple"}
-        </Button>
+        <Button
+        variant={frecuencia < 1000 ? "danger" : "success"}
+        className='frecuency-button'
+        role="navigation"
+        style={{ pointerEvents: 'none' }}>
+        {frecuencia < 1000 ? "Compleja" : "Simple"}
+      </Button>
       </p>
     </OverlayTrigger>
 
@@ -235,17 +239,22 @@ const WordMeaning = (props) => {
     <Col md={4} className="d-flex justify-content-center">
   <section>
     <h2 className='subtitulo'>Pictogramas</h2>
-    {pictograma.length > 0 && (
-      <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <Carousel variant='dark'>
-          {pictograma.map((pictoURL, index) => (
-            <Carousel.Item key={index}>
-              <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
-    )}
+    {pictograma.length > 0 ? (
+  <div style={{ width: '300px', height: '300px', overflow: 'hidden', backgroundColor: '#ffffff', padding: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <Carousel variant='dark'>
+      {pictograma.map((pictoURL, index) => (
+        <Carousel.Item key={index}>
+          <img src={pictoURL} alt={`Pictograma ${index + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  </div>
+) : (
+  <div style={{ width: '300px', height: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
+    <p className='mini-texto-picto'>No se encontraron pictogramas</p>
+  </div>
+)}
+
   </section>
 </Col>
 

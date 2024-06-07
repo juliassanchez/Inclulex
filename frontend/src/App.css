@@ -302,6 +302,12 @@ body.light-mode {
   text-align: center;
   font-weight: bold;
 }
+.mini-texto-picto {
+  font-family: 'Gotham', sans-serif;
+  color: #000;
+  font-size: 125%;
+  text-align: center;
+}
 
 .dark-mode .mini-texto {
   color: #fff;
