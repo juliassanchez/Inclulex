@@ -26,7 +26,7 @@ const WordMeaning = (props) => {
       </Spinner>
     ]);
     try {
-      const nuevosEjemplos = await API.obtenerEjemplos(palabra, { signal });
+      const nuevosEjemplos = await API.obtenerEjemplos(palabra, signal);
       const ejemplos = nuevosEjemplos.frases_generadas || [];
       console.log('Ejemplos obtenidos:', ejemplos);
       let frase;
@@ -56,7 +56,7 @@ const WordMeaning = (props) => {
 
     const obtenerFrecuencia = async () => {
       try {
-        const nuevaFrecuencia = await API.obtenerFrecuencia(palabra, { signal });
+        const nuevaFrecuencia = await API.obtenerFrecuencia(palabra, signal);
         setFrecuencia(() => {
           return nuevaFrecuencia;
         });
@@ -71,12 +71,12 @@ const WordMeaning = (props) => {
       try {
         let definiciones = [];
 
-        const nuevaDefinicion = await API.obtenerDefinicion(palabra, { signal });
+        const nuevaDefinicion = await API.obtenerDefinicion(palabra, signal);
         if (nuevaDefinicion && nuevaDefinicion.definition_list && nuevaDefinicion.definition_list.length > 0) {
           definiciones = nuevaDefinicion.definition_list;
         } else {
           console.log('No se encontró una definición. Intentando obtener la sigla...');
-          const sigla = await API.obtenerSigla(palabra, { signal });
+          const sigla = await API.obtenerSigla(palabra, signal );
           setSignificado([sigla]);
           return;
         }
@@ -87,7 +87,7 @@ const WordMeaning = (props) => {
           console.error('Error al obtener la definición:', error);
           console.log('Intentando obtener desde RAE...');
           try {
-            const respuestaRAE = await API.obtenerRAE(palabra, { signal });
+            const respuestaRAE = await API.obtenerRAE(palabra,  signal);
             const definicionesRAE = respuestaRAE.definition_list || [];
             setSignificado(definicionesRAE.length > 0 ? definicionesRAE : ['No se encontraron definiciones en la RAE']);
           } catch (raeError) {
@@ -102,18 +102,18 @@ const WordMeaning = (props) => {
 
     const obtenerSinonimos = async () => {
       try {
-        let nuevosSinonimos = await API.obtenerSinonimos(palabra, { signal });
+        let nuevosSinonimos = await API.obtenerSinonimos(palabra, signal);
         let sinonimos = nuevosSinonimos.synoyms_list || [];
 
         if (sinonimos.length === 0) {
-          nuevosSinonimos = await API.obtenerSinonimos2(palabra, { signal });
+          nuevosSinonimos = await API.obtenerSinonimos2(palabra, signal );
           sinonimos = nuevosSinonimos.synoyms_list || [];
         }
 
         if (sinonimos.length > 5) {
           const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
             try {
-              const frecuencia = await API.obtenerFrecuencia(sinonimo, { signal });
+              const frecuencia = await API.obtenerFrecuencia(sinonimo, signal );
               return { sinonimo, frecuencia };
             } catch (error) {
               if (error.name !== 'AbortError') {
@@ -137,7 +137,7 @@ const WordMeaning = (props) => {
 
     const obtenerPictograma = async () => {
       try {
-        const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase(), { signal });
+        const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase(), signal );
         setPictograma(pictoURLs);
       } catch (error) {
         if (error.name !== 'AbortError') {
@@ -146,7 +146,7 @@ const WordMeaning = (props) => {
           if (sinonimos.length > 0) {
             for (const sinonimo of sinonimos) {
               try {
-                const pictoURLs = await API.obtenerPictograma(sinonimo.toLowerCase(), { signal });
+                const pictoURLs = await API.obtenerPictograma(sinonimo.toLowerCase(), signal);
                 if (pictoURLs.length > 0) {
                   setPictograma(pictoURLs);
                   return;
