@@ -56,12 +56,14 @@ const WordMeaning = (props) => {
 
     const obtenerFrecuencia = async () => {
       try {
-        const nuevaFrecuencia = await API.obtenerFrecuencia(palabra);
+        const nuevaFrecuencia = await API.obtenerFrecuencia(palabra, { signal });
         setFrecuencia(() => {
           return nuevaFrecuencia;
         });
       } catch (error) {
-        console.error('Error al obtener la frecuencia:', error);
+        if (error.name !== 'AbortError') {
+          console.error('Error al obtener la frecuencia:', error);
+        }
       }
     };
 
@@ -69,48 +71,54 @@ const WordMeaning = (props) => {
       try {
         let definiciones = [];
 
-        const nuevaDefinicion = await API.obtenerDefinicion(palabra);
+        const nuevaDefinicion = await API.obtenerDefinicion(palabra, { signal });
         if (nuevaDefinicion && nuevaDefinicion.definition_list && nuevaDefinicion.definition_list.length > 0) {
           definiciones = nuevaDefinicion.definition_list;
         } else {
           console.log('No se encontró una definición. Intentando obtener la sigla...');
-          const sigla = await API.obtenerSigla(palabra);
+          const sigla = await API.obtenerSigla(palabra, { signal });
           setSignificado([sigla]);
           return;
         }
 
         setSignificado(definiciones.length > 0 ? definiciones : ['Esta palabra no se encuentra actualmente en nuestros diccionarios']);
       } catch (error) {
-        console.error('Error al obtener la definición:', error);
-        console.log('Intentando obtener desde RAE...');
-        try {
-          const respuestaRAE = await API.obtenerRAE(palabra);
-          const definicionesRAE = respuestaRAE.definition_list || [];
-          setSignificado(definicionesRAE.length > 0 ? definicionesRAE : ['No se encontraron definiciones en la RAE']);
-        } catch (raeError) {
-          console.error('Error al obtener la definición desde RAE:', raeError);
-          setSignificado(['No se pudo obtener la definición desde la RAE']);
+        if (error.name !== 'AbortError') {
+          console.error('Error al obtener la definición:', error);
+          console.log('Intentando obtener desde RAE...');
+          try {
+            const respuestaRAE = await API.obtenerRAE(palabra, { signal });
+            const definicionesRAE = respuestaRAE.definition_list || [];
+            setSignificado(definicionesRAE.length > 0 ? definicionesRAE : ['No se encontraron definiciones en la RAE']);
+          } catch (raeError) {
+            if (raeError.name !== 'AbortError') {
+              console.error('Error al obtener la definición desde RAE:', raeError);
+              setSignificado(['No se pudo obtener la definición desde la RAE']);
+            }
+          }
         }
       }
     };
 
     const obtenerSinonimos = async () => {
       try {
-        let nuevosSinonimos = await API.obtenerSinonimos(palabra);
+        let nuevosSinonimos = await API.obtenerSinonimos(palabra, { signal });
         let sinonimos = nuevosSinonimos.synoyms_list || [];
 
         if (sinonimos.length === 0) {
-          nuevosSinonimos = await API.obtenerSinonimos2(palabra);
+          nuevosSinonimos = await API.obtenerSinonimos2(palabra, { signal });
           sinonimos = nuevosSinonimos.synoyms_list || [];
         }
 
         if (sinonimos.length > 5) {
           const frecuencias = await Promise.all(sinonimos.map(async (sinonimo) => {
             try {
-              const frecuencia = await API.obtenerFrecuencia(sinonimo);
+              const frecuencia = await API.obtenerFrecuencia(sinonimo, { signal });
               return { sinonimo, frecuencia };
             } catch (error) {
-              console.error('Error al obtener la frecuencia:', error);
+              if (error.name !== 'AbortError') {
+                console.error('Error al obtener la frecuencia:', error);
+              }
               return { sinonimo, frecuencia: 0 };
             }
           }));
@@ -121,32 +129,38 @@ const WordMeaning = (props) => {
 
         setSinonimos(sinonimos.length > 0 ? sinonimos : ['No se encontraron sinónimos.']);
       } catch (error) {
-        console.error('Error al obtener los sinónimos:', error);
+        if (error.name !== 'AbortError') {
+          console.error('Error al obtener los sinónimos:', error);
+        }
       }
     };
 
     const obtenerPictograma = async () => {
       try {
-        const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase());
+        const pictoURLs = await API.obtenerPictograma(palabra.toLowerCase(), { signal });
         setPictograma(pictoURLs);
       } catch (error) {
-        console.error('Error al obtener el pictograma:', error);
+        if (error.name !== 'AbortError') {
+          console.error('Error al obtener el pictograma:', error);
 
-        if (sinonimos.length > 0) {
-          for (const sinonimo of sinonimos) {
-            try {
-              const pictoURLs = await API.obtenerPictograma(sinonimo.toLowerCase());
-              if (pictoURLs.length > 0) {
-                setPictograma(pictoURLs);
-                return;
+          if (sinonimos.length > 0) {
+            for (const sinonimo of sinonimos) {
+              try {
+                const pictoURLs = await API.obtenerPictograma(sinonimo.toLowerCase(), { signal });
+                if (pictoURLs.length > 0) {
+                  setPictograma(pictoURLs);
+                  return;
+                }
+              } catch (sinonimoError) {
+                if (sinonimoError.name !== 'AbortError') {
+                  console.error('Error al obtener el pictograma con el sinónimo:', sinonimoError);
+                }
               }
-            } catch (sinonimoError) {
-              console.error('Error al obtener el pictograma con el sinónimo:', sinonimoError);
             }
           }
-        }
 
-        setPictograma([]);
+          setPictograma([]);
+        }
       }
     };
 
