@@ -309,6 +309,10 @@ body.light-mode {
   text-align: center;
 }
 
+.dark-mode .mini-texto-picto {
+  color: #fff;
+}
+
 .dark-mode .mini-texto {
   color: #fff;
 }
