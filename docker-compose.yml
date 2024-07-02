@@ -1,5 +1,4 @@
-version: '3.8'
-
+version: '3'
 services:
   frontend:
     build: ./frontend
@@ -13,9 +12,7 @@ services:
     build: ./backend
     container_name: incluLex-backend
     environment:
-      - PYTHONUNBUFFERED=1
-      - NVIDIA_VISIBLE_DEVICES=all
-      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      PYTHONUNBUFFERED: 1    
     ports:
       - "3000:3000"
     networks:
@@ -29,9 +26,9 @@ services:
           devices:
             - driver: nvidia
               count: 1
-              capabilities: [gpu]
-    runtime: nvidia       
+              capabilities: [gpu]          
+       
 
 networks:
   incluLex-network:
-    driver: bridge
+    driver: bridge       
