@@ -1,5 +1,4 @@
-// const SERVER_URL = 'http://127.0.0.1:3000/api';
-const SERVER_URL = 'http://10.117.129.37:3000/api';
+const SERVER_URL = 'http://127.0.0.1:3000/api';
 
 const obtenerPictograma = async (palabra, signal) => {
   try {
