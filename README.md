@@ -1,5 +1,9 @@
 # IncluLex
 
+## Proyect
+
+IncluLex Hub is a web-based platform designed to improve information accessibility by simplifying complex text for users with cognitive disabilities, limited language proficiency, or low literacy levels. The platform integrates various linguistic resources to provide simplified definitions, synonyms, and pictograms using Natural Language Processing (NLP) techniques and lexical simplification models. It adheres to accessibility standards (WCAG 2.1) and promotes inclusion by offering a user-friendly interface. The platform is built with a React frontend and a Flask-based backend, ensuring scalability and efficient data handling.
+
 ## React Client Application Routes
 
 - Route `/`: main page
@@ -13,6 +17,8 @@
 - Table `frecuencia` - contains palabra frecuencia
 - JSON `dictionary` - contains palabra definition
 - JSON `sinant` - contains palabra sinónimos
+- Text File `EjemplosSimplificacion`- contains input output simplification examples
+- Text File `Instrucciones`- contains different instructions for the LLM to follow
 
 ## Main React Components
 
