@@ -28,7 +28,18 @@ IncluLex Hub is a web-based platform designed to improve information accessibili
 
 (only _main_ components, minor ones may be skipped)
 
+## Architecture
+![Figure 1: Inclulex Architecture](images/architecture.png)
+
+### Backend
+![Figure 2: Backend Architecture](images/backend.png)
+
+## Web Overview
+![Figure 3: Overview1](images/home.png)
+![Figure 4: Overview2](images/wordmeaning.png)
+![Figure 5: Overview3](images/proyecto.png)
+
 ## Quickstart
 
-cd backend; python3 startup.py;
-cd frontend; npm run dev;
+`cd backend`; `python3 startup.py`;
+`cd frontend`; `npm run dev`;
