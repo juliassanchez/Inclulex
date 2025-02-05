@@ -35,9 +35,10 @@ IncluLex Hub is a web-based platform designed to improve information accessibili
 ![Figure 2: Backend Architecture](images/Backend.png)
 
 ## Web Overview
-![Figure 3: Overview1](images/home.png)
+
+https://github.com/user-attachments/assets/27d37622-e695-4c63-9fc6-d6b7b68097ea
+
 ![Figure 4: Overview2](images/WordMeaning.png)
-![Figure 5: Overview3](images/Proyecto.png)
 
 ## Quickstart
 
